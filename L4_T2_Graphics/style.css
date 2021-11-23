@@ -9,8 +9,9 @@ body{
     font-family: sans-serif;
     width: 200px;
     display: flex;
-    justify-content: right;
-
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid gray;
 }
 
 img{
@@ -18,6 +19,6 @@ img{
 }
 
 span{
-    margin-right: 10px;
+    margin-left: 15px;
 }
 
