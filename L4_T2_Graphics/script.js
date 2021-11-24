@@ -16,9 +16,9 @@ function enlargeImage(id, path){
     let basePath = elem.src;
 
     elem.addEventListener("click", function(){this.src = path;
-        this.style.width = 150 + "px";});
+        this.style.width = 240 + "px";});
     elem.addEventListener("mouseout", function(){
-        this.style.width = 80 + "px";
+        this.style.width = 90 + "px";
         this.src = basePath;
        });
 }
