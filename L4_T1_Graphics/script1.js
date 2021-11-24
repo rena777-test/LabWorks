@@ -22,16 +22,16 @@ function clickHandlerImage(){
 
 function clickHandlerMap(){
     if(flag){
-        $("imgBtn").src = "imgs/button.jpg";
-    }else{
         $("imgBtn").src = "imgs/frame1.jpg";
+    }else{
+        $("imgBtn").src = "imgs/frame3.jpg";
     }
     flag = !flag;
 }
 
 function clickHandlerLogo(){
     if(flag){
-        $("imgBtn").src = "imgs/button.jpg";
+        $("imgBtn").src = "imgs/logo2.jpg";
     }else{
         $("imgBtn").src = "imgs/Logo.png";
     }
