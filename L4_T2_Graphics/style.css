@@ -7,18 +7,28 @@ body{
     color: lightslategrey;
     font-size: 20px;
     font-family: sans-serif;
- /*    width: 25%; */
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 70%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     border: 1px solid gray;
 }
 
 img{
     width: 90px;
+    height: 70px;
 }
 
 span{
     margin-left: 15px;
+}
+
+#display{
+    border: 1px solid gray;
+}
+
+#wrapper{
+    display: grid;
+    grid-template-columns: 25% 73%;
+    height: 480px;
 }
 
