@@ -1,0 +1,137 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+header{
+    background-image: url('img/cvetenie_vishni.jpg');
+    background-size: cover;
+    height: 600px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    position: fixed;
+    gap:29px;
+}
+
+.navbar-logo {
+    padding: 7px 7px 7px 10px;
+}
+
+ul {
+    display: flex;/* выровнять по горизонтали */
+    padding-left: 0; /* обнулить встрокенные стили */
+    list-style: none;
+    margin-top: 0;
+}
+
+li{
+    position: relative;
+}
+  
+li:focus-within > .submenu,    /*1 чтоб табочка заходила в подменю  */  /* 2,установим связь между пунктом родителя и подменю которое расположено в нем */
+li:hover > .submenu{/* рекомендовано ">" с его помощью мы указываем, что свойство
+     должно применяться только на прямого потомка  */
+    /* display: flex; */
+    clip: auto;/* вместо display flex */
+    width: auto;
+    height: auto;
+    margin: 0;
+    animation: one 1s 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+}
+
+@keyframes one{
+    0% {
+         top: 200px;
+     }
+ 
+     100% {
+         top: 28px;
+     }
+ }
+
+.menu a{
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    padding:10px 58px;
+    /* color: white; */
+}
+
+a{
+    display: block;/* Визуализируем ссылки в меню */
+    color: black;
+    text-decoration: none;
+   
+   /*  background-color: #ccc; */
+    white-space: nowrap;/* cвойство запрещает перенос на новую строку */
+    opacity: 0.8;
+}
+
+li:hover > a,/*при нажатии на подменю, предыдущий пункт меню подсвечивается */
+a:hover{
+    background-color:pink;
+      /*  background-color: #ccc; */
+}
+/* стандартизировать поведение элементов(поУмолчаниюПриНажатииНа Tab появляетсяРамка */
+/* тогда обводку отключают в CSS ОБЯЗАТЕЛЬНО */
+/* надо дописать ей что-то на замену */
+
+a:focus{
+    outline: none;/* отключили обводку */
+    background-color: yellow;
+}
+/*  При нажатии Tab подменю не работает, поможет в этом псевдокласс*/
+/* псевдокласс  focus-within */
+
+.submenu{
+   /*display: none; плохое решение для чистовой верстки */
+    flex-direction: column;
+    grid-template-columns: minmax(100px, auto);
+    position: absolute;/* При помощи position absolute подменю выпало из потока */
+    /* и перестало влиять на высоту меню  и текст не будет отбиваться*/
+  /*   padding-top: 1em; */
+    clip: rect(0 0 0 0);/* вместо display none */
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+ }
+
+ .submenu a{
+    padding:5px 38px;
+ }
+
+ .submenuToSubmenu{
+    width: 100px;
+    top: 0;
+    left: 100%;
+}
+ /* для вертикального меню----------------------------------------- */
+/*  .menu--vert{                                          
+     flex-direction: column;
+     width: 200px;
+ }
+
+ .menu--vert .submenu{
+     top: 0;
+     left: 100%;
+ } */
+
+
+ 
+
+
+
+
+ 
+
