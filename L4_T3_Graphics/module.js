@@ -50,11 +50,12 @@ function createBarChart(data, width, height, color, border){
 window.addEventListener("load", init , false);
 
 function init(){
-    let chart = createBarChart([60,20,75,120,86,150,270,500,300,250],
-        800,
+    let container = document.getElementById("chartContainer");
+    let chart = createBarChart([60,20,55,75,120,86,300,150,500,250],
+        window.innerWidth -5,
         300,
         "lightblue");
-    let container = document.getElementById("chartContainer");
+    
     container.append(chart);
     console.log(container);   
 }
