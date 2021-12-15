@@ -1,0 +1,195 @@
+body{
+    background-color: #a0a0a0;
+}
+
+.wrap{
+    width: 492px;
+    height: 491px;
+    margin: 0 auto;
+    border: white 3px solid;
+}
+
+.map{
+    margin: 0 auto;
+}
+
+img{
+    width: 485px;
+    height: 485px;
+    border: 3px solid #a0a0a0;
+   /*  border-bottom: white 3px solid; */
+}
+
+/* Keyframes */
+@keyframes pinBeforeWave {
+    from {
+        width: 0;
+        height: 0;
+        margin-left: -2px;
+        margin-top: -2px;
+    }
+    to {
+        width: 40px;
+        height: 40px;
+        margin-left: -21px;
+        margin-top: -21px;
+        opacity: 0;
+    }
+}
+
+@keyframes pinAfterWave {
+    from {
+        width: 0;
+        height: 0;
+        margin-left: -2px;
+        margin-top: -2px;
+    }
+    to {
+        width: 66px;
+        height: 66px;
+        margin-left: -34px;
+        margin-top: -34px;
+        opacity: 0;
+    }
+}
+
+.point{
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    cursor: pointer;
+}
+
+.hamburg{
+    top: 267px;
+    left: 506px;
+}
+
+.turin{
+    top: 363px;
+    left: 493px;
+}
+
+.madrid{
+    top: 415px;
+    left: 378px;
+}
+
+.krakow{
+    top: 294px;
+    left: 583px;
+}
+
+.kyiv{
+    top: 276px;
+    left: 661px;
+}
+
+.point:hover{
+    animation-play-state: paused;
+}
+
+.point .town {
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    left: 17px;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 1px 1px 0px #e77878;
+}
+
+.point:before,
+.point:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    display: block;
+    border-radius: 50%;
+    border: 1px solid #f3244a;
+    width: 0;
+    height: 0;
+    margin-left: -2px;
+    margin-top: -2px;
+}
+
+.point:before {
+    animation: pinBeforeWave 1s ease-in infinite;
+}
+.point:after {
+    animation: pinAfterWave 1s ease-in infinite;
+}
+
+.point:hover:before,
+.point:hover:after {
+    animation-play-state: paused;
+}
+
+.point .popover {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    min-width: 70px;
+    height: auto;
+    background: rgb(131, 130, 130);
+    padding: 6px;
+    bottom: 15px;
+    left: -8px;
+    box-shadow: 4px 4px 0px 0px rgba(240, 237, 237, 0.2);
+    z-index: 3;
+    transition: all 0.2s ease-in-out 0.5s;
+    transform: rotateY(90deg);
+}
+
+.point .popover:before {  /*  Стилизация стрелочка под всплывашкой */
+    content: '';
+    width: 10px;
+    height: 10px;
+    background:  rgb(131, 130, 130);
+    position: absolute;
+    bottom: -5px;
+    left: 8px;
+    -webkit-transform: rotateZ(45deg);/*  Мультибраузерность */
+    -o-transform: rotateZ(45deg);
+    -moz-transform: rotateZ(45deg);
+    transform: rotateZ(45deg);
+}
+
+.point:hover .popover {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    transform: rotateY(0deg);
+}
+
+.point .popover .date {
+    font-size: 7px;
+    font-style: italic;
+    color: #eee;
+}
+
+.point .popover .button {
+    display: block;
+    padding: 6px;
+    margin-top: 10px;
+    font-size: 5px;
+    font-weight: bolder;
+    letter-spacing: 1.9px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fafafa;
+    background-color: red;
+    transition: all 0.2s ease-in-out;
+}
+
+.point .popover .button:hover {
+    background-color: hsl(27, 94%, 50%);
+}
+
+
+
+
