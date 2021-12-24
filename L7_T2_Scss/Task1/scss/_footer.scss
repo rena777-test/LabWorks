@@ -1,0 +1,26 @@
+$widthFooter:100%;
+$colorForP:#fff;
+$fontSize:12px;
+
+footer {
+    height: $size -20;
+    background-color:$colorFooter;
+    .container {
+        opacity: 0.5;
+        width: $widthFooter;
+        @include elementsSpace(flex);
+        @include elementsInTheСenter(center);
+        
+            img {
+                width: $size/5;
+                height: $size/5;
+                margin: $size/10;
+            }
+    }
+    .div {
+        @include elementsSpace(flex);
+        @include elementsInTheСenter(center);
+        color: $colorForP;
+        font-size:$fontSize;
+    }
+}

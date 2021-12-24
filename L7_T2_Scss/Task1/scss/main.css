@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ccc;
+}
+
+header {
+  width: 96%;
+  padding: 20px;
+  background-color: indianred;
+}
+header .nav {
+  margin: 0 auto;
+}
+header .nav li {
+  display: inline-block;
+  width: 24%;
+}
+header .nav li a {
+  text-decoration: none;
+  color: #dbe6db;
+  font-size: 30px;
+  background-color: indianred;
+  width: 100%;
+}
+header .nav li a:hover {
+  background-color: #858383;
+  font-size: 20px;
+  padding: 30px 40px 22px;
+}
+
+footer {
+  height: 100px -20;
+  background-color: #414040;
+}
+footer .container {
+  opacity: 0.5;
+  width: 100%;
+  -webkit-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -webkit-animation: center;
+  -moz-animation: center;
+  -o-animation: center;
+  -ms-animation: center;
+  justify-content: center;
+}
+footer .container img {
+  width: 20px;
+  height: 20px;
+  margin: 10px;
+}
+footer .div {
+  -webkit-display: flex;
+  -moz-display: flex;
+  -o-display: flex;
+  -ms-display: flex;
+  display: flex;
+  -webkit-animation: center;
+  -moz-animation: center;
+  -o-animation: center;
+  -ms-animation: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 12px;
+}
+
+/* @import 'mixin'; */
+main {
+  height: 350px;
+  background-color: #d98383;
+  padding: 10px auto;
+}
+main aside {
+  border: 2px solid brown;
+  margin: 10px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  border-radius: 20px;
+  text-align: center;
+}

@@ -1,0 +1,23 @@
+@mixin  border($x){
+    -webkit-border-radius:$x;
+    -moz-border-radius:$x;
+    -o-border-radius:$x;
+    -ms-border-radius:$x;
+    border-radius: $x;
+}
+
+@mixin elementsSpace($fl) {
+    -webkit-display:$fl;
+    -moz-display:$fl;
+    -o-display:$fl;
+    -ms-display:$fl;
+    display: $fl;
+}
+
+@mixin elementsInTheСenter($c) {
+     -webkit-animation: $c;   
+     -moz-animation: $c;   
+     -o-animation: $c;   
+     -ms-animation: $c;   
+   justify-content: $c;
+}

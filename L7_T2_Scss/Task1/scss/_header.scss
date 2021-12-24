@@ -1,0 +1,37 @@
+$headerSize:10px;
+$colorBody: #ccc;
+$colorHover: rgb(133, 131, 131);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: $colorBody;
+}
+
+header {
+    width: 96%;
+    padding: $headerSize*2;
+    background-color: $colorHeader;
+    .nav {
+         background-color: $colorHeader;
+         margin:0 auto;
+        li {
+           display: inline-block;
+           width:24%;
+            a {
+                text-decoration: none;
+                color: rgb(219, 230, 219);
+                font-size: $headerSize*3;
+                &:hover {
+                    background-color: $colorHover;
+                    font-size: $headerSize*2;
+                    padding: $headerSize*3  $headerSize*4 $headerSize*2.2;
+                }
+            }
+        }
+    }
+}
+ 
+
+
+

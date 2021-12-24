@@ -1,0 +1,15 @@
+.wrap{
+    display: flex;
+}
+
+div{
+    width: 300px;
+    height: 300px;
+/*     background: repeating-radial-gradient(ellipse 80px 20px at 180% center,white 5px,green 25px);  */
+    background: repeating-radial-gradient(ellipse 80px 50px at 50px 50%,rgb(247, 193, 16) 1px ,rgb(247, 193, 16) 15px,rgb(21, 153, 21) 28px,rgb(21, 153, 21) 63px,rgb(110, 213, 245) 75px,white 40px ); 
+   /*  transform: rotateY(180deg); */
+/*     background: radial-gradient(ellipse 80px 20px at center 180% ,yellow 5px,green 25px);  */
+   /*  background: repeating-radial-gradient(ellipse 10px 15px at 60% center, #B9ECFE, #B9ECFE 10px, #82DDFF 20px, #6ea1e0 30px, #2186c1 40px);
+ */
+
+}

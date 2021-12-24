@@ -1,0 +1,19 @@
+$size: 100px;
+$colorHeader: indianred;
+$colorFooter: rgb(65, 64, 64);
+
+@import 'header';
+@import 'footer';
+
+
+main {
+    height:$size*3.5;
+    background-color:lighten($colorHeader,10%);
+    padding: 10px auto;
+    aside {
+        border: 2px solid brown;
+        margin: $size/10;
+        text-align: center;
+        @include border(10px);
+    }
+}

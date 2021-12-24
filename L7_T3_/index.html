@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--     Создайте страницу новостей, используя, header, nav, article, footer. Выполните оформление стилей
+    основного блока контейнера –в файле main.scss. Стили для остальных блоков – подключите, используя
+    @import. В стилях каждого блока страницы – должно быть минимум 2 переменные и цикл, а остальные
+    свойства scss наВаше усмотрение. -->
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        ul {
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+        }
+
+        li {
+            list-style: none;
+            border: 1px solid gray;
+        }
+        .nav{
+            max-width: 1200px;
+            border: 2px solid red;
+        }
+
+       .nav  a {
+           
+            background-color: greenyellow;
+            color: green;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 15px;
+            width: auto;
+        }
+
+        .logo img{
+            width: 70px;
+            margin: 10px 0px 10px 25px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#">
+                    <img src="img/news_128x128-32_22252.png" alt="news">
+                </a>
+            </div>
+        </div>
+        <div class="clearfix"></div>
+      <div class="nav">
+        <ul>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">MEMBERS ACADEMY</a></li>
+            <li><a href="#">RESOURCES</a></li>
+            <li><a href="#">BLOG</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">WHAT`S NEW</a></li>
+            <li><a href="#">ADVENT</a></li>
+            <li><a href="#">PODCAST</a></li>
+            <li><a href="#">ABOUT ME</a></li>
+            <li><a href="#">WHAT`S NEW</a></li>
+            <li><a href="#">ADVENT</a></li>
+        </ul>
+      </div>
+    </header>
+</body>
+
+</html>
