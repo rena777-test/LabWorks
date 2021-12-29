@@ -1,0 +1,32 @@
+$size:48;
+$colorBisque:bisque;
+$fontSize:15px;
+$colorText:black;
+$colorText1:blue;
+$colorText2:red;
+$burgundy:hsl(0, 56%, 45%);
+$pngMain:10px;
+
+@import 'header';
+@import 'footer';
+
+main {
+    width: 80%;
+    height: auto;
+    background-color:lighten($colorBisque,2%);
+    margin: 10px auto;
+    padding: $pngMain*1.5;
+    font-size: $fontSize*0.7;
+}
+
+p{
+    @if $size >= 100 {  // цвет черный
+        color: lighten($colorText1,2%);
+    }
+    @else if $size >= 50 {
+        background-color: $colorText1;// синий фон
+    }
+    @else {
+       background-color: $colorText2;//красный фон
+    }
+}

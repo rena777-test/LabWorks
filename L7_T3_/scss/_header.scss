@@ -1,0 +1,56 @@
+$marginHead:10px;
+$cHead:gray;
+$bgdColor:orange;
+
+body {
+    margin: 0px;
+    background-color:$colorBisque;
+    font-family: Arial, Helvetica, sans-serif;
+    color: lighten($colorText,5%);
+}
+
+header {
+  .logo {
+    margin:calc($marginHead / 2) $marginHead * 10.5 calc($marginHead * -1.7);
+    img {
+        width: 52px;
+    }
+  }
+  .nav {
+    width: 100%;
+    background-color: lighten($burgundy,5%);
+    height: auto;
+    ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        li {
+            list-style: none;
+            text-align: center;
+            padding: 24px;
+            a {
+                text-decoration: none;
+                color:$burgundy;
+                width: 200px;
+                color: sandybrown;
+                &:hover {
+                   text-decoration: underline;
+                    font-size: $fontSize -2;
+                }
+            }
+        }
+    }
+  }
+}
+
+@for $i from 1 through 7 {
+  .li#{$i}{
+    &:hover{
+      background-color:lighten($bgdColor, 10%);
+    }
+    & a:hover{
+        color:$cHead;
+    }
+  }
+}
+

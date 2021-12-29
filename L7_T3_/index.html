@@ -5,48 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!--     Создайте страницу новостей, используя, header, nav, article, footer. Выполните оформление стилей
-    основного блока контейнера –в файле main.scss. Стили для остальных блоков – подключите, используя
-    @import. В стилях каждого блока страницы – должно быть минимум 2 переменные и цикл, а остальные
-    свойства scss наВаше усмотрение. -->
-
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-
-        ul {
-            border: 2px solid blue;
-            display: flex;
-            justify-content: center;
-        }
-
-        li {
-            list-style: none;
-            border: 1px solid gray;
-        }
-        .nav{
-            max-width: 1200px;
-            border: 2px solid red;
-        }
-
-       .nav  a {
-           
-            background-color: greenyellow;
-            color: green;
-            text-decoration: none;
-            padding: 10px;
-            font-size: 15px;
-            width: auto;
-        }
-
-        .logo img{
-            width: 70px;
-            margin: 10px 0px 10px 25px;
-        }
-    </style>
+    <title>Task2</title>
+    <!--     Создайте страницу новостей, используя, header, nav, article, footer. 
+        Выполните оформление стилей основного блока контейнера –в файле main.scss. 
+        Стили для остальных блоков – подключите, используя @import. В стилях каждого 
+        блока страницы – должно быть минимум 2 переменные и цикл, а остальные свойства 
+        scss наВаше усмотрение. -->
+    <link rel="stylesheet" href="scss/main.css"> <!-- css папки еще нет но она появится -->
 </head>
 
 <body>
@@ -59,23 +24,69 @@
             </div>
         </div>
         <div class="clearfix"></div>
-      <div class="nav">
-        <ul>
-            <li><a href="#">HOME</a></li>
-            <li><a href="#">MEMBERS ACADEMY</a></li>
-            <li><a href="#">RESOURCES</a></li>
-            <li><a href="#">BLOG</a></li>
-            <li><a href="#">PODCAST</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">WHAT`S NEW</a></li>
-            <li><a href="#">ADVENT</a></li>
-            <li><a href="#">PODCAST</a></li>
-            <li><a href="#">ABOUT ME</a></li>
-            <li><a href="#">WHAT`S NEW</a></li>
-            <li><a href="#">ADVENT</a></li>
-        </ul>
-      </div>
+        <div class="nav">
+            <ul>
+                <li class="li1"><a href="#">HOME</a></li>
+                <li class="li2"><a href="#">MEMBERS ACADEMY</a></li>
+                <li class="li3"><a href="#">RESOURCES</a></li>
+                <li class="li4"><a href="#">BLOG</a></li>
+                <li class="li5"><a href="#">PODCAST</a></li>
+                <li class="li6"><a href="#">ABOUT ME</a></li>
+                <li class="li7"><a href="#">WHAT`S NEW</a></li>
+            </ul>
+        </div>
     </header>
+    <main>
+        <article>
+            <h3> "Creator IQ" - winner of the "Autumn Cup" Battle of the corporations</h3>
+            <span>December 14, 2021 08:49 AM</span>
+            <p>
+                The competitions of the final stage of the "Autumn Cup" took place.
+                Based on its results, the winner and prize-winners of the tournament were
+                determined.
+                The competitions of the final stage of the "Autumn Cup" took place.
+                Based on its results, the winner and prize-winners of the tournament were
+                determined.
+                The competitions of the final stage of the "Autumn Cup" took place.
+                Based on its results, the winner and prize-winners of the tournament were
+                determined.
+            </p>
+            <p>
+                The Mad Head competition is the fifth and final stage of the Fall Cup of
+                the seventh season of the Battle of the Corporations. 17 teams took part
+                in it. For two and a half hours, the participants answered the questions
+                of the presenter on various topics, showing not only erudition, but also
+                intuition and ingenuity.
+            </p>
+            <p>
+                The first team with a score of 31.5 points was the team "Nertus", the second
+                finished last year's winners "Creator IQ" (30), and the third again were the
+                players of "Alfa-Bank" (28.5 points).
+            </p>
+            <p>
+                Considering the results of performances at the previous stages (karting, darts
+                and mini-football), the "Autumn Cup" was won by "Creator IQ". In the "last bend"
+                the winners were able to bypass the leader of the season after the first four
+                stages, the "Staleks", which took only seventh place at the "Mad Head" stage.
+                The third place is taken by the employees of the "Hello" company. Consistently
+                high results throughout all stages, especially the "silver" in mini-football
+                competitions, allowed them to get the bronze Cup of the autumn part of the
+                season.
+            </p>
+            <p>
+                In February the teams will start fighting in the new five stages of the "Spring Cup".
+                The first is bowling.
+            </p>
+        </article>
+    </main>
+    <footer>
+            <span>Follow us:</span>
+            <div class="icon-insta icon"></div>
+            <div class="icon-twitter icon"></div>
+            <div class="icon-facebook icon"></div>
+            <div class="icon-youtube icon"></div>
+       
+    </footer>
 </body>
 
 </html>

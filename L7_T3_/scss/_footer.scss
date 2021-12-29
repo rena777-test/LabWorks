@@ -1,0 +1,44 @@
+$black:hsl(0, 33%, 9%);
+$white:#fff;
+$size:100%;
+$size2:100px;
+
+footer {
+    background-color:lighten($black,15%);
+    color:$white;
+    height:calc($size2 * 1.18);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: $fontSize*0.8;
+    /* .footerImg {
+        height:118px;
+        font-size: $fontSize*0.8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        img {
+            width: 17px;
+            display: block;
+        }
+    } */
+   
+}
+
+.icon {
+    width: calc($size2 / 4.2);
+    height: $size2 * 0.25;
+     margin: {
+         left: calc($size2 / 5);
+        /*  top: calc($size2 / 4); */
+     };
+}
+
+
+@each $icn in youtube, facebook, twitter, insta {
+    .icon-#{$icn}{
+        background-image: url('../img/#{$icn}.png');
+        background-size: $size $size;
+    }
+}
