@@ -1,0 +1,280 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+}
+
+.container{
+    max-width: 540px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+h1{
+    text-transform:uppercase;
+    font-size: 64px;
+    margin:105px 0 50px 0;
+    letter-spacing: 0.1em;
+}
+
+p{
+    line-height: 150%;
+    font-size: 14px;
+    margin: 0;
+}
+
+header{
+    background-image: url("/img/photo_2021-12-29_19-16-26.jpg");
+    padding-top: 55px;
+    padding-bottom: 105px;  
+    background-repeat: no-repeat;
+    background-size: cover;
+    .contacts{
+        display: flex;
+        background: rgba(51, 51, 51, 0.75);
+        position: absolute;
+        top: 0;
+        left: 0;
+        height:1045px;
+        padding: 60px;
+        flex-direction: column;
+        justify-content: flex-end;
+        .text{
+                display: flex;
+                align-items: center;
+                writing-mode: vertical-lr;
+                transform: scale(-1);
+                color: #C4C4C4;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1.75px;
+                &::before{
+                    content: '';
+                    display: block;
+                    width: 3px;
+                    height: 80px;
+                    background-color: #C4C4C4;
+                    margin-bottom: 40px;
+                    margin-top: 10px;
+                } 
+        }
+        .socials{
+            a{                     // амперсанд нужен чтобы не было вложенности внутри ссылки
+                width: 26px;        // там есть какой то элемент с таким то классом - нет!
+                height: 26px;          
+                display: block;  
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+                margin-top: 30px;
+                                             // амперсанд нужен для того что
+                &.insta{                   //ссылка с таким классом будет иметь свои стили
+                    background-image: url('../icons/inst.svg');
+                    &:hover{
+                        background-image: url('../icons/instHover.svg');
+                    }
+                }                  
+                &.fb{
+                    background-image: url('../icons/fb.svg');
+                    &:hover{
+                        background-image: url('../icons/fbHover.svg');
+                    }
+                }
+                &.vk{
+                    background-image: url('../icons/vk.svg');
+                    &:hover{
+                        background-image: url('../icons/vkHover.svg');
+                    }
+                }
+                &.youtube{
+                    background-image: url('../icons/youtube.svg');
+                    &:hover{
+                        background-image: url('../icons/youtubeHover.svg');
+                    }
+                }
+               
+            }
+        }
+    }
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            nav{
+                background-color: #333;
+                position: absolute;
+                left: 0;
+                top: 0;
+                height:100%;
+                display: flex;
+                flex-direction: column;
+                padding: 140px 40px 0px;
+                transform: translateX(-100%);
+              /*   transform: translateX(0%); */
+                transition: 0.5s;
+                /* display: none; */
+                a{
+                    font-size: 24px;
+                    text-transform: uppercase;
+                    letter-spacing: 1.55px;
+                    margin-bottom: 35px; 
+                    line-height: 32.6px;
+                }
+                .close{
+                    background-image: url('../icons/close.svg');
+                    position: absolute;
+                    top: 30px;
+                    right: 30px;
+                    width: 32px;
+                    height: 32px;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+                // .close
+            }
+            // .nav
+            .burger-btn{
+                background: transparent;
+                border: none;
+                width: 40px;
+                height: 40px;
+                padding: 0;
+            }
+            
+            a{
+                color: #fff;
+                font-size: 16px;
+                text-decoration: none;
+                font-weight: 700;
+                &.phone{        //ссылка у которой есть класс .phone должны примениться стили
+                    &:after{
+                        content: '';
+                        display: block;
+                        height: 2px;
+                        background-color:  #D1A954;
+                    }
+                }
+                //.phone
+            }
+        }
+        //.menu
+        .main-top{
+            max-width: 540px;
+            margin: 0 auto;
+            .poster-btn{
+                width: 160px;
+                height: 50px;
+                color: #fff;
+                border: none;
+                text-transform:uppercase;
+                background: #D1A954;
+                font-size: 18px;
+                font-weight: 700;
+                letter-spacing: 4px;
+                margin-top: 45px;
+            }
+            // .poster-btn
+        }
+        // .main-top
+}
+
+
+@media (min-width:576px){
+    .container{
+        max-width: 540px;
+    }
+
+    h1{
+        margin-top: 160px;
+    }
+
+    header{
+     padding-bottom: 250px; 
+    }
+}
+
+@media (min-width:768px){
+    .container{
+        max-width: 960px; 
+    }
+    h1{
+        margin-top: 230px;
+    }
+
+    header{
+        padding-bottom: 360px;
+      /*   height: 100vh; */
+       .contacts{
+        display: flex;
+       /*  height: 136%; */
+        }
+       .menu{
+            flex-wrap: wrap;
+            justify-content: center;
+            nav{
+                    padding: 0;
+                    width: 100%;
+                    transform: translateX(0%);
+                    background-color: transparent;
+                    position: static;
+                    flex-direction: row;
+                    justify-content: center;
+                    margin: 0 auto;
+                    margin-bottom: 50px;
+                    a{
+                      font-size: 18px;
+                      margin: 0 16px;
+                    }
+                    .close{
+                     display: none;
+                    }
+                    // .close
+                }
+                // .nav
+                .burger-btn{
+                  display: none;
+             }
+        }
+         //.menu
+    }
+}
+
+
+@media (min-width: 992px){  // ot 992px and >
+    .container{
+        max-width: 1140px;
+    }
+
+    header{
+        .contacts{
+         padding: 25px;
+        }
+            .menu{
+                justify-content: space-between;
+                align-items: center;
+                margin-left: 73px;
+                nav{
+                    margin:0;
+                    width: auto;
+                    min-width: 825px;
+                    justify-content: space-between;
+                    a{
+                     margin: 0;
+                    }
+                }
+                // .nav 
+            }
+            //.menu
+            .main-top{
+               margin: 73px;
+               
+                // .poster-btn
+            }
+            // .main-top
+    }
+}
