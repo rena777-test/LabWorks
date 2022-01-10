@@ -1,0 +1,116 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #fff;
+}
+
+.container{
+    max-width: 540px;
+    padding: 0 15px;
+    // border: 1px solid #000;
+    margin: 0 auto;
+}
+
+h1{
+    text-transform: uppercase;
+    font-size: 64px;
+    margin: 105px 0 50px 0;
+}
+
+p{
+    font-size: 14px;
+    line-height: 150%;
+    margin: 0;
+}
+
+header{
+    background-image: url('../images/main-bg.jpg');
+    padding-top: 55px;
+    padding-bottom: 105px;
+    position: relative;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            background: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 140px 40px 0;
+            transition: 1s;
+            transform: translateX(-100%);
+            // opacity: 0;
+            // transform: translateX(0%);
+            // display: none;
+            a{
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 1.55px;
+                margin-bottom: 35px;
+                line-height: 32.6px;
+            }
+            .close{
+                background-image: url('../images/icons/close.svg');
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 32px;
+                height: 32px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            // .close
+        }
+        // nav
+        .burger-btn{
+            background: transparent;
+            border: none;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+        a{
+            color: #fff;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            &.phone{
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    background: #D1A954;
+                }
+            }
+            // .phone
+        }
+    }
+    // .menu
+    .main-top{
+        .poster-btn{
+            width: 160px;
+            height: 50px;
+            background: #D1A954;
+            border: none;
+            font-size: 18px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 4px;
+            margin-top: 45px;
+        }
+        // .poster-btn
+    }
+    // .main-top
+}
+
+
+
