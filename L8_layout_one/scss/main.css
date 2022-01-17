@@ -1,0 +1,318 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 540px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 105px 0 50px 0;
+  letter-spacing: 0.1em;
+}
+
+p {
+  line-height: 150%;
+  font-size: 14px;
+  margin: 0;
+}
+
+header {
+  background-image: url("/img/photo_2021-12-29_19-16-26.jpg");
+  padding-top: 55px;
+  padding-bottom: 105px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: rgba(51, 51, 51, 0.75);
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1045px;
+  padding: 60px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .contacts .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  color: #C4C4C4;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1.75px;
+}
+
+header .contacts .text::before {
+  content: '';
+  display: block;
+  width: 3px;
+  height: 80px;
+  background-color: #C4C4C4;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+
+header .contacts .socials a {
+  width: 26px;
+  height: 26px;
+  display: block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 30px;
+}
+
+header .contacts .socials a.insta {
+  background-image: url("../icons/inst.svg");
+}
+
+header .contacts .socials a.insta:hover {
+  background-image: url("../icons/instHover.svg");
+}
+
+header .contacts .socials a.fb {
+  background-image: url("../icons/fb.svg");
+}
+
+header .contacts .socials a.fb:hover {
+  background-image: url("../icons/fbHover.svg");
+}
+
+header .contacts .socials a.vk {
+  background-image: url("../icons/vk.svg");
+}
+
+header .contacts .socials a.vk:hover {
+  background-image: url("../icons/vkHover.svg");
+}
+
+header .contacts .socials a.youtube {
+  background-image: url("../icons/youtube.svg");
+}
+
+header .contacts .socials a.youtube:hover {
+  background-image: url("../icons/youtubeHover.svg");
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu nav {
+  background-color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 140px 40px 0px;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  /*   transform: translateX(0%); */
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  /* display: none; */
+}
+
+header .menu nav a {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.55px;
+  margin-bottom: 35px;
+  line-height: 32.6px;
+}
+
+header .menu nav .close {
+  background-image: url("../icons/close.svg");
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .menu .burger-btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+header .menu a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header .menu a.phone:after {
+  content: '';
+  display: block;
+  height: 2px;
+  background-color: #D1A954;
+}
+
+header .main-top {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+header .main-top .poster-btn {
+  width: 160px;
+  height: 50px;
+  color: #fff;
+  border: none;
+  text-transform: uppercase;
+  background: #D1A954;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-top: 45px;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  h1 {
+    margin-top: 160px;
+  }
+  header {
+    padding-bottom: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+  h1 {
+    margin-top: 230px;
+  }
+  header {
+    padding-bottom: 360px;
+    /*   height: 100vh; */
+  }
+  header .contacts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /*  height: 136%; */
+  }
+  header .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menu nav {
+    padding: 0;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    background-color: transparent;
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  header .menu nav a {
+    font-size: 18px;
+    margin: 0 16px;
+  }
+  header .menu nav .close {
+    display: none;
+  }
+  header .menu .burger-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+  header .contacts {
+    padding: 25px;
+  }
+  header .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 73px;
+  }
+  header .menu nav {
+    margin: 0;
+    width: auto;
+    min-width: 825px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu nav a {
+    margin: 0;
+  }
+  header .main-top {
+    margin: 73px;
+  }
+}
+/*# sourceMappingURL=main.css.map */

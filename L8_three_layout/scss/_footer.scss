@@ -1,0 +1,46 @@
+footer{
+    color: #000;
+    background-color: beige;
+    h2{
+        text-align: center;
+    }
+    .info-for-user{
+        display: flex;
+        border: 1px solid rebeccapurple;
+        .contacts{
+            border: 2px solid aquamarine;
+        }
+        .callback{
+            border: 2px solid palevioletred;
+            form{
+                display: grid;
+                grid-template-areas:
+                 'name company comment'
+                 'phone email comment'
+                 'text  text btn';
+                 grid-gap: 20px;
+                .name{
+                    grid-area: name;
+                }
+                .company{
+                    grid-area: company;
+                }
+                .phone{
+                    grid-area: phone;
+                }
+                .email{
+                    grid-area: email;
+                }
+                textarea{
+                    grid-area: comment;
+                }
+                p{
+                    grid-area: text;
+                }
+                .btn{
+                    grid-area: btn;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,624 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.your-class {
+  color: #000;
+  font-size: 40px;
+  background-color: aquamarine;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 540px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 105px 0 50px 0;
+  letter-spacing: 0.1em;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+}
+
+p::-moz-selection {
+  color: #D1A954;
+}
+
+p::selection {
+  color: #D1A954;
+}
+
+header {
+  background-image: url("../imgs/main-bg.jpg");
+  padding-top: 55px;
+  padding-bottom: 105px;
+  position: relative;
+  background-size: cover;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu nav {
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 140px 40px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header .menu nav a {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.55px;
+  margin-bottom: 35px;
+  line-height: 32.6px;
+}
+
+header .menu nav a:hover {
+  color: #D1A954;
+}
+
+header .menu nav .close {
+  background-image: url("../imgs/icons/close.svg");
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .menu nav .socials {
+  width: 50%;
+  margin: 0  auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+header .menu nav .socials a {
+  width: 24px;
+  height: 24px;
+  display: block;
+  margin: 5px 10px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .menu nav .socials a.insta {
+  background-image: url("../imgs/icons/inst.svg");
+}
+
+header .menu nav .socials a.fb {
+  background-image: url("../imgs/icons/fb.svg");
+}
+
+header .menu nav .socials a.vk {
+  background-image: url("../imgs/icons/vk.svg");
+}
+
+header .menu nav .socials a.youtube {
+  background-image: url("../imgs/icons/youtube.svg");
+}
+
+header .menu nav .socials a.youtube:hover {
+  background-image: url("../imgs/icons/youtubeHover.svg");
+}
+
+header .menu .burger-btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+header .menu a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header .menu a.phone::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #D1A954;
+}
+
+header .main-top {
+  max-width: 540px;
+  margin: 0 auto;
+}
+
+header .main-top .poster-btn {
+  width: 160px;
+  height: 50px;
+  background: #D1A954;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-top: 45px;
+}
+
+.ours-slider {
+  width: 900px;
+  height: 350px;
+  margin: 0 auto;
+}
+
+.ours-slider img {
+  height: 300px;
+}
+
+.slick-arrow {
+  background-color: blue;
+}
+
+.slick-arrow:hover {
+  background-color: #25b2e0;
+}
+
+/* .slick-arrow::before */
+@media (max-width: 992px) {
+  .contacts .text {
+    display: none;
+  }
+}
+
+@media (min-width: 576px) {
+  h1 {
+    margin-top: 160px;
+  }
+  header {
+    padding-bottom: 250px;
+  }
+  header .container {
+    /*   max-width: 720px; */
+    /* дает двойную строку */
+  }
+  header .container .menu nav .socials {
+    margin: 114px 0px 0px 64px;
+  }
+  header .container .menu nav .socials a {
+    margin: 20px 11px;
+  }
+  header .container .menu nav .socials a.insta {
+    background-image: url("../imgs/icons/inst.svg");
+  }
+  header .container .menu nav .socials a.insta:hover {
+    background-image: url("../imgs/icons/instHover.svg");
+  }
+  header .container .menu nav .socials a.fb {
+    background-image: url("../imgs/icons/fb.svg");
+  }
+  header .container .menu nav .socials a.fb:hover {
+    background-image: url("../imgs/icons/fbHover.svg");
+  }
+  header .container .menu nav .socials a.vk {
+    background-image: url("../imgs/icons/vk.svg");
+  }
+  header .container .menu nav .socials a.vk:hover {
+    background-image: url("../imgs/icons/vkHover.svg");
+  }
+  header .container .menu nav .socials a.youtube {
+    background-image: url("../imgs/icons/youtube.svg");
+  }
+  header .container .menu nav .socials a.youtube:hover {
+    background-image: url("../imgs/icons/youtubeHover.svg");
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 960px;
+  }
+  h1 {
+    margin-top: 230px;
+  }
+  header {
+    padding-bottom: 225px;
+  }
+  header .contacts {
+    background: rgba(51, 51, 51, 0.75);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    padding: 60px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .contacts .text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-writing-mode: vertical-lr;
+        -ms-writing-mode: tb-lr;
+            writing-mode: vertical-lr;
+    -webkit-transform: scale(-1);
+            transform: scale(-1);
+    color: #c4c4c4;
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+  }
+  header .contacts .text::before {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 80px;
+    background-color: #c4c4c4;
+    margin-bottom: 40px;
+    margin-top: 10px;
+  }
+  header .contacts .socials a {
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 30px;
+  }
+  header .contacts .socials a.insta {
+    background-image: url("../imgs/icons/inst.svg");
+  }
+  header .contacts .socials a.insta:hover {
+    background-image: url("../imgs/icons/instHover.svg");
+  }
+  header .contacts .socials a.fb {
+    background-image: url("../imgs/icons/fb.svg");
+  }
+  header .contacts .socials a.fb:hover {
+    background-image: url("../imgs/icons/fbHover.svg");
+  }
+  header .contacts .socials a.vk {
+    background-image: url("../imgs/icons/vk.svg");
+  }
+  header .contacts .socials a.vk:hover {
+    background-image: url("../imgs/icons/vkHover.svg");
+  }
+  header .contacts .socials a.youtube {
+    background-image: url("../imgs/icons/youtube.svg");
+  }
+  header .contacts .socials a.youtube:hover {
+    background-image: url("../imgs/icons/youtubeHover.svg");
+  }
+  header .menu {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  header .menu nav {
+    padding: 0;
+    width: 100%;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+    background-color: transparent;
+    position: static;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    /*  max-width: 690px; */
+    margin-bottom: 50px;
+  }
+  header .menu nav a {
+    font-size: 18px;
+    margin: 0 16px;
+  }
+  header .menu nav a:hover {
+    color: #D1A954;
+  }
+  header .menu nav .close {
+    display: none;
+  }
+  header .menu nav .socials {
+    display: none;
+  }
+  header .menu .burger-btn {
+    display: none;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 1140px;
+  }
+  header .menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu nav {
+    width: auto;
+    min-width: 825px;
+    margin: 0;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .menu nav a {
+    margin: 0;
+  }
+  header .menu nav a:hover {
+    color: #D1A954;
+  }
+  header .main-info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    border: 3px solid lightcoral;
+    position: relative;
+    height: 570px;
+    margin-top: 100px;
+  }
+  header .main-info .main-top {
+    margin: 0;
+  }
+  header .main-info .slider {
+    width: 370px;
+    height: 570px;
+    position: absolute;
+    top: 0px;
+    right: 20px;
+    border: 2px solid green;
+  }
+  header .main-info .slider .poster-slider img {
+    height: 518px;
+  }
+  header .main-info .slider .arrowButtons {
+    /*   border: 1px solid rgb(128, 199, 240); */
+    height: 25px;
+    width: 380px;
+    position: absolute;
+    bottom: 0px;
+  }
+  header .main-info .slider .arrowButtons .textForArrowPrev {
+    position: absolute;
+    left: 14px;
+    top: 0;
+  }
+  header .main-info .slider .arrowButtons .textForArrowNext {
+    position: absolute;
+    left: 330px;
+    top: 0;
+  }
+}
+
+footer {
+  color: #000;
+  background-color: beige;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+footer .info-for-user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border: 1px solid rebeccapurple;
+}
+
+footer .info-for-user .contacts {
+  border: 2px solid aquamarine;
+}
+
+footer .info-for-user .callback {
+  border: 2px solid palevioletred;
+}
+
+footer .info-for-user .callback form {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'name company comment' 'phone email comment' 'text  text btn';
+  grid-gap: 20px;
+}
+
+footer .info-for-user .callback form .name {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: name;
+}
+
+footer .info-for-user .callback form .company {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: company;
+}
+
+footer .info-for-user .callback form .phone {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: phone;
+}
+
+footer .info-for-user .callback form .email {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: email;
+}
+
+footer .info-for-user .callback form textarea {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 3;
+  grid-area: comment;
+}
+
+footer .info-for-user .callback form p {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: text;
+}
+
+footer .info-for-user .callback form .btn {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: btn;
+}
+
+/* header{
+  
+    .contacts{
+      
+        .text{
+         
+            &::before{
+             
+            }
+        }
+        .socials{
+            a{
+                &.insta{                   //ссылка с таким классом будет иметь свои стили
+                    background-image: url('../imgs/icons/inst.svg');
+                    &:hover{
+                        background-image: url('../imgs/icons/instHover.svg');
+                    }
+                }                  
+                &.fb{
+                    background-image: url('../imgs/icons/fb.svg');
+                    &:hover{
+                        background-image: url('../imgs/icons/fbHover.svg');
+                    }
+                }
+                &.vk{
+                    background-image: url('../imgs/icons/vk.svg');
+                    &:hover{
+                        background-image: url('../imgs/icons/vkHover.svg');
+                    }
+                }
+                &.youtube{
+                    background-image: url('../imgs/icons/youtube.svg');
+                    &:hover{
+                        background-image: url('../imgs/icons/youtubeHover.svg');
+                    }
+                }
+            }
+        }
+    }
+    .container{
+        .menu{
+            nav{
+                .socials{
+                    a{
+                        &.insta{                   //ссылка с таким классом будет иметь свои стили
+                            background-image: url('../imgs/icons/inst.svg');
+                            &:hover{
+                                background-image: url('../imgs/icons/instHover.svg');
+                            }
+                        }                  
+                        &.fb{
+                            background-image: url('../imgs/icons/fb.svg');
+                            &:hover{
+                                background-image: url('../imgs/icons/fbHover.svg');
+                            }
+                        }
+                        &.vk{
+                            background-image: url('../imgs/icons/vk.svg');
+                            &:hover{
+                                background-image: url('../imgs/icons/vkHover.svg');
+                            }
+                        }
+                        &.youtube{
+                            background-image: url('../imgs/icons/youtube.svg');
+                            &:hover{
+                                background-image: url('../imgs/icons/youtubeHover.svg');
+                            }
+                        }
+                    }
+                   
+                }
+            }
+            // nav
+        }
+        // .menu
+    }
+  // .container
+}
+.menu{
+    nav{
+        .socials{
+            margin: 114px 0px 0px 64px;
+            a{
+                margin:20px 11px;
+            }
+        }
+    }
+} */
+/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,380 @@
+header{
+    background-image: url('../imgs/main-bg.jpg');
+    padding-top: 55px;
+    padding-bottom: 105px;
+    position: relative; 
+    background-size: cover;
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        nav{
+            background: #333;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding: 140px 40px 0;
+            transition: 1s;
+            transform: translateX(-100%);
+            a{
+                font-size: 24px;
+                text-transform: uppercase;
+                letter-spacing: 1.55px;
+                margin-bottom: 35px;
+                line-height: 32.6px;
+            }
+            a:hover{
+                color: $color;
+            }
+            .close{
+                background-image: url('../imgs/icons/close.svg');
+                position: absolute;
+                top: 30px;
+                right: 30px;
+                width: 32px;
+                height: 32px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            // .close
+            .socials{
+                width: 50%;
+                margin:0  auto;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 40px;
+                a{                     // амперсанд нужен чтобы не было вложенности внутри ссылки
+                    width: 24px;        // там есть какой то элемент с таким то классом - нет!
+                    height: 24px;         
+                    display: block;  
+                    margin:5px 10px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                                                 // амперсанд нужен для того что
+                    &.insta{                   //ссылка с таким классом будет иметь свои стили
+                        background-image: url('../imgs/icons/inst.svg');
+                    }                  
+                    &.fb{
+                        background-image: url('../imgs/icons/fb.svg');
+                    }
+                    &.vk{
+                        background-image: url('../imgs/icons/vk.svg');
+                    }
+                    &.youtube{
+                        background-image: url('../imgs/icons/youtube.svg');
+                        &:hover{
+                            background-image: url('../imgs/icons/youtubeHover.svg');
+                        }
+                    }
+                }
+            }
+        }
+        // nav
+        .burger-btn{
+            background: transparent;
+            border: none;
+            width: 40px;
+            height: 40px;
+            padding: 0;
+        }
+        a{
+            color: $lightGray;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: 700;
+            &.phone{
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 2px;
+                    background: $color;
+                }
+            }
+            // .phone
+        }
+    }
+    // .menu
+        .main-top{
+            max-width: 540px;
+            margin: 0 auto;
+            .poster-btn{
+                width: 160px;
+                height: 50px;
+                background: $color;
+                border: none;
+                font-size: 18px;
+                color: $lightGray;
+                text-transform: uppercase;
+                font-weight: 700;
+                letter-spacing: 4px;
+                margin-top: 45px;
+            }
+            // .poster-btn
+        }
+        // .main-top
+  
+}
+
+.ours-slider{
+    width: 900px;
+    height: 350px;
+    margin: 0 auto;
+    img{
+        height: 300px;
+    }
+}
+
+.slick-arrow{
+    background-color: blue;
+}
+
+.slick-arrow:hover{
+    background-color: rgb(37, 178, 224);
+}
+/* .slick-arrow::before */
+
+@media(max-width:992px){ //до 992 px  и менее
+    .contacts{
+         .text{
+         display: none;
+     }
+    }
+}
+
+@media (min-width:576px){  ///от 576 px и до 768px
+    h1{
+        margin-top: 160px;
+    }
+    header{
+     padding-bottom: 250px; 
+        .container{
+          /*   max-width: 720px; */ /* дает двойную строку */
+            .menu{
+                nav{
+                    .socials{
+                        margin: 114px 0px 0px 64px;
+                        a{
+                            margin:20px 11px;
+                            &.insta{                   //ссылка с таким классом будет иметь свои стили
+                                background-image: url('../imgs/icons/inst.svg');
+                                &:hover{
+                                    background-image: url('../imgs/icons/instHover.svg');
+                                }
+                            }                  
+                            &.fb{
+                                background-image: url('../imgs/icons/fb.svg');
+                                &:hover{
+                                    background-image: url('../imgs/icons/fbHover.svg');
+                                }
+                            }
+                            &.vk{
+                                background-image: url('../imgs/icons/vk.svg');
+                                &:hover{
+                                    background-image: url('../imgs/icons/vkHover.svg');
+                                }
+                            }
+                            &.youtube{
+                                background-image: url('../imgs/icons/youtube.svg');
+                                &:hover{
+                                    background-image: url('../imgs/icons/youtubeHover.svg');
+                                }
+                            }
+                        }
+                       
+                    }
+                }
+                // nav
+            }
+            // .menu
+        }
+      // .container
+    }
+}
+
+@media (min-width:768px){ ///от768 px и  до 992px
+    .container{
+        max-width: 960px; 
+    }
+    h1{
+        margin-top: 230px;
+    }
+    header{
+        padding-bottom: 225px;
+        .contacts{
+            background: rgba(51, 51, 51, 0.75);
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            padding: 60px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            .text{
+                display: flex;
+                align-items: center;
+                writing-mode: vertical-lr;
+                transform: scale(-1);
+                color: #c4c4c4;
+                font-size: 18px;
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 2px;
+                &::before{
+                    content:'';
+                    display: block;
+                    width: 3px;
+                    height: 80px;
+                    background-color:#c4c4c4;;
+                    margin-bottom: 40px;
+                    margin-top: 10px;
+                }
+            }
+            .socials{
+                a{
+                    display: block;
+                    width: 26px;
+                    height: 26px;
+                    background-size: contain;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    margin-top: 30px;
+                    &.insta{                   //ссылка с таким классом будет иметь свои стили
+                        background-image: url('../imgs/icons/inst.svg');
+                        &:hover{
+                            background-image: url('../imgs/icons/instHover.svg');
+                        }
+                    }                  
+                    &.fb{
+                        background-image: url('../imgs/icons/fb.svg');
+                        &:hover{
+                            background-image: url('../imgs/icons/fbHover.svg');
+                        }
+                    }
+                    &.vk{
+                        background-image: url('../imgs/icons/vk.svg');
+                        &:hover{
+                            background-image: url('../imgs/icons/vkHover.svg');
+                        }
+                    }
+                    &.youtube{
+                        background-image: url('../imgs/icons/youtube.svg');
+                        &:hover{
+                            background-image: url('../imgs/icons/youtubeHover.svg');
+                        }
+                    }
+                }
+            }
+        }
+        .menu{
+          flex-wrap: wrap;
+          justify-content: center;
+            nav{
+                padding: 0; 
+                width: 100%;
+                transform: translateX(0%);
+                background-color: transparent;
+                position: static;
+                flex-direction: row;
+                margin: 0 auto;
+                justify-content: center;
+               /*  max-width: 690px; *///дает двойную строку у nav
+               margin-bottom: 50px;
+                a{
+                  font-size: 18px;
+                  margin: 0 16px;
+                }
+                a:hover{
+                 color:$color;
+                }
+                .close{
+                display: none;
+                }
+                // .close
+                .socials{
+                  display: none;
+                }
+            }
+            // nav
+            .burger-btn{
+              display: none;
+            }
+        }
+        // .menu
+    }
+}
+
+@media (min-width:992px){ ///от992px и  до >
+    .container{
+        max-width: 1140px; 
+    }
+    header{
+        .menu{
+            justify-content: space-between;
+            align-items: center;
+            nav{
+                width: auto;
+                min-width: 825px;
+                margin: 0;
+                justify-content: space-between;
+               a{
+                margin: 0;
+               }
+               a:hover{
+                   color: #D1A954;
+               }
+            } // nav
+        }
+        // .menu
+        .main-info{
+            display: flex;
+            justify-content: space-between;
+            border: 3px solid lightcoral;
+            position: relative;
+            height: 570px;
+            margin-top: 100px;
+            .main-top{
+               margin: 0;
+            }
+            // .main-top
+            .slider{
+                width: 370px;
+                height: 570px;
+                position: absolute;
+                top: 0px;
+                right: 20px;
+                border: 2px solid green;
+                .poster-slider{
+                    img{
+                        height: 518px;
+                    }
+                }
+                .arrowButtons{
+                  /*   border: 1px solid rgb(128, 199, 240); */
+                    height: 25px;
+                    width: 380px;
+                    position: absolute;
+                    bottom: 0px;
+                    .textForArrowPrev{
+                            position: absolute;
+                            left: 14px;
+                            top: 0;
+                    }
+                    .textForArrowNext{
+                        position: absolute;
+                        left: 330px;
+                        top: 0;
+                    }
+                }
+            }
+        }
+        //  .main-info
+    }
+    // header
+}
+
+

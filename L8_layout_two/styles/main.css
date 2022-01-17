@@ -1,0 +1,138 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+  color: #fff;
+}
+
+.container {
+  max-width: 540px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 64px;
+  margin: 105px 0 50px 0;
+}
+
+p {
+  font-size: 14px;
+  line-height: 150%;
+  margin: 0;
+}
+
+header {
+  background-image: url("../images/main-bg.jpg");
+  padding-top: 55px;
+  padding-bottom: 105px;
+  position: relative;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu nav {
+  background: #333;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 140px 40px 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+}
+
+header .menu nav a {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 1.55px;
+  margin-bottom: 35px;
+  line-height: 32.6px;
+}
+
+header .menu nav .close {
+  background-image: url("../images/icons/close.svg");
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 32px;
+  height: 32px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+header .menu .burger-btn {
+  background: transparent;
+  border: none;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+header .menu a {
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+header .menu a.phone::after {
+  content: '';
+  display: block;
+  height: 2px;
+  background: #D1A954;
+}
+
+header .main-top .poster-btn {
+  width: 160px;
+  height: 50px;
+  background: #D1A954;
+  border: none;
+  font-size: 18px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 4px;
+  margin-top: 45px;
+}
+
+main {
+  background-color: #E5E5E5;
+  border: 2px solid red;
+}
+
+main .about {
+  color: saddlebrown;
+}
+
+main img {
+  color: aquamarine;
+  width: 32px;
+  height: 32px;
+  background-color: seagreen;
+}
+/*# sourceMappingURL=main.css.map */
