@@ -11,6 +11,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="scss/slick-theme.css">
     <link rel="stylesheet" href="scss/slick.css">
+    <link rel="stylesheet" href="scss/animate.min.css">
     <link rel="stylesheet" href="scss/main.css">
 </head>
 
@@ -50,7 +51,7 @@
             </div>
             <!-- MENU END -->
             <div class="main-info">
-                <div class="main-top">
+                <div class="main-top animate__animated animate__backInUp">
                     <h1>Большой театр</h1>
                     <p>Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года —
                         Петербургская
@@ -80,7 +81,7 @@
         <!-- .container END -->
     </header>
     <section>
-            <div class="ours-slider">
+            <div class="ours-slider wow animate__slower animate__fadeInUp">
                <!--  <img src="./imgs/1.jpg" alt="poster"> -->
                 <img src="imgs/2.jpg" alt="poster">
                 <img src="imgs/page.jpg" alt="poster">
@@ -91,15 +92,15 @@
     </section>
     <footer>
         <h2>стать меценатом</h2>
-        <div class="container info-for-user">
-            <div class="contacts">
+        <div class="container2 info-for-user">
+            <div data-wow-delay="3s" class="contacts wow animate__slower animate__fadeInUp">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum quibusdam
                  quasi blanditiis laudantium necessitatibus exercitationem odio, aliquid, sit 
                  molestiae veritatis, ut hic nam eaque laboriosam consequuntur. Corporis, vero 
                  molestias.
             </div>
             <!-- .contacts END -->
-            <div class="callback">
+            <div data-wow-delay="1s" class="callback wow animate__slower animate__fadeInUp">
                 <form>
                     <input class="name" type="text">
                     <input class="company" type="text">
@@ -117,8 +118,10 @@
         </div>
       <!--   .info-for-user END -->
     </footer>
+    <div style="height:300px;"></div>
     <script src="script/jquery.min.js"></script>
     <script src="script/slick.min.js"></script>
+    <script src="script/wow.min.js"></script>
     <script src="script/script.js"></script>
 </body>
 
