@@ -485,54 +485,74 @@ footer .info-for-user .callback {
 footer .info-for-user .callback form {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: 'name company comment' 'phone email comment' 'text  text btn';
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 20px;
 }
 
-footer .info-for-user .callback form .name {
-  -ms-grid-row: 1;
+footer .info-for-user .callback .phone {
   -ms-grid-column: 1;
-  grid-area: name;
+      grid-column-start: 1;
+  grid-column-end: 2;
+  /*    grid-row-start:2;
+              grid-row-end: 3; */
 }
 
-footer .info-for-user .callback form .company {
-  -ms-grid-row: 1;
+footer .info-for-user .callback .email {
   -ms-grid-column: 2;
-  grid-area: company;
+      grid-column-start: 2;
+  grid-column-end: 3;
+  /*   grid-row-start:2;
+                grid-row-end: 3; */
 }
 
-footer .info-for-user .callback form .phone {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: phone;
-}
-
-footer .info-for-user .callback form .email {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: email;
-}
-
-footer .info-for-user .callback form textarea {
+footer .info-for-user .callback textarea {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+  grid-column-end: 4;
   -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: comment;
+      grid-row-start: 1;
+  grid-row-end: 3;
 }
 
-footer .info-for-user .callback form p {
-  -ms-grid-row: 3;
+footer .info-for-user .callback p {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: text;
+      grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-footer .info-for-user .callback form .btn {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: btn;
-}
-
+/* .callback{
+    border: 2px solid palevioletred;
+    form{
+        display: grid;
+        grid-template-areas:
+         'name company comment'
+         'phone email comment'
+         'text  text btn';
+         grid-gap: 20px;
+        .name{
+            grid-area: name;
+        }
+        .company{
+            grid-area: company;
+        }
+        .phone{
+            grid-area: phone;
+        }
+        .email{
+            grid-area: email;
+        }
+        textarea{
+            grid-area: comment;
+        }
+        p{
+            grid-area: text;
+        }
+        .btn{
+            grid-area: btn;
+        }
+    }
+} */
 /* header{
   
     .contacts{
