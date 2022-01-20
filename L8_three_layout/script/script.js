@@ -1,7 +1,8 @@
 const menuBtn = document.querySelector('.burger-btn');//чистый js
 const menu = document.querySelector('.menu nav');
 const closeBtn = document.querySelector('.close');
-/* const posterBtn = document.querySelector('.poster-btn'); */
+const posterBtn = document.querySelector('.poster-btn');
+
 
 menuBtn.addEventListener('click', function(){
     console.dir(menu);
