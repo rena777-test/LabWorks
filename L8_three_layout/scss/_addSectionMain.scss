@@ -1,0 +1,429 @@
+main{
+    .section-main-top{
+       /*  background-color:#333333; */
+        padding: 150px 0 150px 0;
+        .section-wrapper{
+         /*    display: grid;
+            grid-template-columns: repeat(3,445px 255px 350px);
+            gap: 10px 30px; */
+           /*  max-width: 1110px; */
+         /*    margin: 0 auto; */
+            margin-top: 100px; 
+            .theater-section{ 
+              h3{
+                font-family: Open Sans Condensed;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 20px;
+                line-height: 29px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                margin: 0;
+                margin-bottom: 50px;
+              }
+                P{
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 150%; 
+                    height: 210px;
+                }
+            }
+            .in-numbers{
+                position: relative;
+                top: 0px;
+                left: 0px;
+                span{
+                    margin-top: 5px;
+                    font-family: Open Sans Condensed;
+                    font-style: normal;                     
+                    font-weight: bold;
+                    font-size: 16px;
+                    line-height: 22px;
+                    letter-spacing: 0.05em;
+                    margin-bottom: 20px;
+                }
+                span::selection{
+                    color:  #D1A954;
+                }
+                p{
+                    font-family: Open Sans Condensed;
+                    font-size: 21px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 29px;
+                    letter-spacing: 0.1em;
+                    text-align: left;
+                }
+                .icon-armchair{
+                    .top{
+                        width: 45px;
+                        position: absolute;
+                        left: 17px;
+                        top: 63px;
+                    }
+                    .point-one{
+                        width: 5px;
+                        position: absolute;
+                        left: 27px;
+                        top: 73px;
+                    }
+                    .point-two{
+                        width: 5px;
+                        position: absolute;
+                        left: 45px;
+                        top: 73px;
+                    }
+                    .saddle{
+                        width: 60px;
+                        position: absolute;
+                        left: 10px;
+                        top: 90px;
+                    }
+                    span{
+                     position: absolute;
+                     left: 0;
+                     top: 139px; 
+                    }
+                }
+           /*      .icon-clotheForStage{
+                    position: absolute;
+                    left: 0;
+                    top: 180px;
+                    img{
+                        width: 70px;
+                    }
+                    span{
+                        width: 156px;
+                        position: absolute;
+                        left: 0;
+                        top: 76px; 
+                       }
+                } */
+            }
+        }
+    }
+    .our-productions{
+       /*  background-color:$darkColor; */
+       h2{
+           margin-bottom: 60px;
+       }
+            .ours-slider{
+               width: 510px;
+               height: 550px;
+               margin: 0 auto;
+              
+               img{
+                height: 550px;
+               }
+            }
+       }
+    .section-stars{
+       background-image: url('/imgs/Rectangle\ 28@2x.jpg');
+       background-repeat: no-repeat;
+       background-size: cover;
+       display: grid;
+       grid-template-columns: 156px 330px;
+       gap: 2px 24px;
+        
+            h5{
+                font-style: normal;
+                font-weight: bold;
+                font-size: 72px;
+                line-height: 98px;
+                letter-spacing: 0.1em;
+                text-transform: uppercase;
+                color: $color;
+            }
+       
+        .grid-block{
+            display: grid;
+            grid-template-rows:24px 121px;
+            gap: 25px 0px;
+            margin-top: 175px;
+            .starGold{
+                img{
+                    width: 22px;
+                }
+            }
+            p{ 
+                height: 121px;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 25px;
+                line-height: 32px;
+                color: $lightGray;
+            }
+        }
+      
+    }  
+}
+
+@media(max-width:991px){
+    .section-wrapper{
+        .facade-photo{
+            display: none;
+        }
+    }
+}
+
+@media(min-width:578px){
+    main{
+        .section-main-top{
+            padding:50px 0 160px 0;
+            .section-wrapper{
+              width: 510px;
+              height: auto;
+              display: grid;
+              grid-template-columns:1fr;
+              grid-template-rows:1fr 1f;
+              gap: 10px;
+                .theater-section{ 
+                  h3{
+                    text-align: center;
+                    margin-bottom: 30px;
+                  }
+                    P{
+                        text-align: center;
+                    }
+                }
+    
+                .in-numbers{
+                    p{
+                        text-align: center;
+                        font-family: Open Sans Condensed;
+                        font-style: normal;
+                        font-weight: bold;
+                        font-size: 21px;
+                        line-height: 29px;
+                        text-align: center;                     
+                        letter-spacing: 0.1em;
+                        text-transform: uppercase;
+                    }
+                    .icon-armchair{
+                        position: absolute;
+                        left: 58px;
+                        top: -3px;
+                        span{
+                            position: absolute;
+                            left: 15px;
+                            top: 138px;
+                            width: 178px;
+                        }
+                    }
+                    .icon-clotheForStage{
+                        position: absolute;
+                        left: 303px;
+                        top: 60px;
+                    }
+                }
+                .facade-photo{
+                    display: none;
+                }
+            }
+        }
+       /*  .our-productions{
+            h2{
+                margin-bottom: 60px;
+            }
+            .ours-slider2{
+               width: 510px;
+               height: 550px;
+               img{
+                height: 550px;
+                width: 442px;
+               }
+            }
+       } */
+    }
+}
+
+@media(min-width:768px){
+    main{
+        .section-main-top{
+       
+            .section-wrapper{
+                display: grid;
+                grid-template-columns: repeat(2,445px 208px);
+                gap:2px 30px ;
+                width: 690px;
+               /*  margin: 50px auto; */
+                .theater-section{ 
+                    P{
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 150%;
+                    }
+                }
+
+                .in-numbers{
+                span::selection{
+                    color:  #D1A954;
+                }
+                p{
+                    font-size: 20px;
+                }
+                .icon-armchair{
+                    position: absolute;
+                    left: -6px;
+                    top: -4px;
+                    span{
+                        position: absolute;
+                        left: 7px;
+                        top: 135px; 
+                    }
+                }
+                .icon-clotheForStage{
+                    position: absolute;
+                    left: 1px;
+                    top: 171px;
+                  }
+                }
+            }
+        }
+        .our-productions{
+            h2{
+                margin-bottom: 60px;
+            }
+            .ours-slider2{
+               width: 690px;
+               height: 675px;
+               margin: 0 auto;
+               img{
+                height: 550px;
+               }
+            }
+       }
+    } 
+}
+
+@media(min-width:1020px){
+    main{
+        .section-main-top{
+            background-color:#333333;
+            padding: 150px 0 150px 0;
+            .section-wrapper{
+                display: grid;
+                grid-template-columns: repeat(3,410px 240px 260px);
+                gap: 10px 20px;
+                width: 1020px;
+                margin: 0 auto;
+                margin-top: 100px;
+                .theater-section{ 
+                  h3{
+                    font-family: Open Sans Condensed;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 29px;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    margin: 0;
+                    margin-bottom: 50px;
+                  }
+                    P{
+                        font-family: Open Sans;
+                        font-style: normal;
+                        font-weight: normal;
+                        font-size: 14px;
+                        line-height: 150%; 
+                        height: 210px;
+                    }
+                }
+    
+                .in-numbers{
+                    position: relative;
+                    top: 0px;
+                    left: 0px;
+                    span{
+                        margin-top: 5px;
+                        font-family: Open Sans Condensed;
+                        font-style: normal;                     
+                        font-weight: bold;
+                        font-size: 16px;
+                        line-height: 22px;
+                        letter-spacing: 0.05em;
+                        margin-bottom: 20px;
+                    }
+                    span::selection{
+                        color:  #D1A954;
+                    }
+                    p{
+                        font-family: Open Sans Condensed;
+                        font-size: 21px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 29px;
+                        letter-spacing: 0.1em;
+                        text-align: left;
+                    }
+                    .icon-armchair{
+                        .top{
+                            width: 45px;
+                            position: absolute;
+                            left: 17px;
+                            top: 63px;
+                        }
+                        .point-one{
+                            width: 5px;
+                            position: absolute;
+                            left: 27px;
+                            top: 73px;
+                        }
+    
+                        .point-two{
+                            width: 5px;
+                            position: absolute;
+                            left: 45px;
+                            top: 73px;
+                        }
+                        .saddle{
+                            width: 60px;
+                            position: absolute;
+                            left: 10px;
+                            top: 90px;
+                        }
+                        span{
+                         position: absolute;
+                         left: 0;
+                         top: 139px; 
+                        }
+                    }
+                    .icon-clotheForStage{
+                        position: absolute;
+                        left: 0;
+                        top: 180px;
+                        img{
+                            width: 70px;
+                        }
+                        span{
+                            width: 156px;
+                            position: absolute;
+                            left: 0;
+                            top: 76px; 
+                           }
+                    }
+                }
+                .facade-photo{
+                    display: block;
+                }
+            }
+        }
+        .our-productions{
+        
+            .ours-slider2{
+               width: 1772px;
+               height: 550px;
+               margin: 0 auto;
+               img{
+                height: 548px;
+               
+               }
+            }
+       }
+    }
+}
+
