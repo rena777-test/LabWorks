@@ -885,9 +885,20 @@ main .section-stars .grid-block p {
   main .our-productions .ours-slider2 img {
     height: 550px;
   }
+  main .section-stars {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 182px 388px;
+        grid-template-columns: 182px 388px;
+    gap: 2px 24px;
+    padding-left: 99px;
+  }
+  main .section-stars .grid-block p {
+    font-size: 29px;
+  }
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 992px) {
   main .section-main-top {
     background-color: #333333;
     padding: 150px 0 150px 0;
@@ -920,6 +931,7 @@ main .section-stars .grid-block p {
     font-size: 14px;
     line-height: 150%;
     height: 210px;
+    text-align: start;
   }
   main .section-main-top .section-wrapper .in-numbers {
     position: relative;
@@ -1004,6 +1016,186 @@ main .section-stars .grid-block p {
   }
   main .our-productions .ours-slider2 img {
     height: 548px;
+  }
+  main .section-stars {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 182px 450px;
+        grid-template-columns: 182px 450px;
+    gap: 2px 58px;
+    padding: 0 111px 0 191px;
+  }
+  main .section-stars .grid-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 24px 141px;
+        grid-template-rows: 24px 141px;
+    gap: 25px 0px;
+    margin-top: 175px;
+  }
+  main .section-stars .grid-block .starGold img {
+    width: 22px;
+    height: 24px;
+  }
+  main .section-stars .grid-block p {
+    font-size: 34px;
+    height: 141px;
+    line-height: 50px;
+  }
+}
+
+@media (min-width: 1920px) {
+  main .section-main-top {
+    /*  background-color:#333333; */
+    padding: 150px 0 150px 0;
+  }
+  main .section-main-top .section-wrapper {
+    /*    display: grid;
+                grid-template-columns: repeat(3,445px 255px 350px);
+                gap: 10px 30px; */
+    /*  max-width: 1110px; */
+    /*    margin: 0 auto; */
+    margin-top: 100px;
+  }
+  main .section-main-top .section-wrapper .theater-section h3 {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin: 0;
+    margin-bottom: 50px;
+  }
+  main .section-main-top .section-wrapper .theater-section P {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 150%;
+    height: 210px;
+  }
+  main .section-main-top .section-wrapper .in-numbers {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    /*      .icon-clotheForStage{
+                        position: absolute;
+                        left: 0;
+                        top: 180px;
+                        img{
+                            width: 70px;
+                        }
+                        span{
+                            width: 156px;
+                            position: absolute;
+                            left: 0;
+                            top: 76px; 
+                           }
+                    } */
+  }
+  main .section-main-top .section-wrapper .in-numbers span {
+    margin-top: 5px;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20px;
+  }
+  main .section-main-top .section-wrapper .in-numbers span::-moz-selection {
+    color: #D1A954;
+  }
+  main .section-main-top .section-wrapper .in-numbers span::selection {
+    color: #D1A954;
+  }
+  main .section-main-top .section-wrapper .in-numbers p {
+    font-family: Open Sans Condensed;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 29px;
+    letter-spacing: 0.1em;
+    text-align: left;
+  }
+  main .section-main-top .section-wrapper .in-numbers .icon-armchair .top {
+    width: 45px;
+    position: absolute;
+    left: 17px;
+    top: 63px;
+  }
+  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-one {
+    width: 5px;
+    position: absolute;
+    left: 27px;
+    top: 73px;
+  }
+  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-two {
+    width: 5px;
+    position: absolute;
+    left: 45px;
+    top: 73px;
+  }
+  main .section-main-top .section-wrapper .in-numbers .icon-armchair .saddle {
+    width: 60px;
+    position: absolute;
+    left: 10px;
+    top: 90px;
+  }
+  main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+    position: absolute;
+    left: 0;
+    top: 139px;
+  }
+  main .our-productions {
+    /*  background-color:$darkColor; */
+  }
+  main .our-productions h2 {
+    margin-bottom: 60px;
+  }
+  main .our-productions .ours-slider {
+    width: 510px;
+    height: 550px;
+    margin: 0 auto;
+  }
+  main .our-productions .ours-slider img {
+    height: 550px;
+  }
+  main .section-stars {
+    width: 1110px;
+    height: 550px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 182px 540px;
+        grid-template-columns: 182px 540px;
+    gap: 2px 103px;
+    margin: 0 auto;
+    padding: 0 95px 0 190px;
+  }
+  main .section-stars .grid-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 24px 121px;
+        grid-template-rows: 24px 121px;
+    gap: 25px 0px;
+    margin-top: 175px;
+  }
+  main .section-stars .grid-block .starGold {
+    width: 230px;
+  }
+  main .section-stars .grid-block .starGold img {
+    width: 22px;
+    height: 24px;
+    margin: 5px;
+  }
+  main .section-stars .grid-block p {
+    font-family: Open Sans;
+    font-size: 36px;
+    line-height: 49px;
+    height: 149px;
+    letter-spacing: 1px;
   }
 }
 
