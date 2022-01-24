@@ -1,17 +1,34 @@
+$colorBtn: #D1A954;
+$colorInput:#444444;
+$colorBorder: #616161;
+
 footer{
-    color: #000;
-    background-color: beige;
-    h2{
-        text-align: center;
-    }
     .info-for-user{
         display: flex;
-        border: 1px solid rebeccapurple;
+      /*   border: 1px solid rebeccapurple; */
+        width: 1110px;
+        height: 200px;
+        margin: 0 auto;
         .contacts{
-            border: 2px solid aquamarine;
+           /*  border: 2px solid aquamarine; */
+            width: 280px;
+            margin-right: 30px;
+            p{
+                font-family: Open Sans Condensed;
+                font-style: normal;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 22px;
+                letter-spacing: 0.05em;
+                text-transform: uppercase;
+                text-align: start;
+                margin: 6px;
+            }
         }
         .callback{
-            border: 2px solid palevioletred;
+           /*  border: 2px solid palevioletred; */
+            width: 855px;
+            height: 190px;
             form{
                 display: grid;
                 grid-template-areas:
@@ -19,6 +36,16 @@ footer{
                  'phone email comment'
                  'text  text btn';
                  grid-gap: 20px;
+
+                 input,textarea{
+                     border: solid 1px #616161;
+                     background-color: $colorInput;
+                     justify-self: end;
+                 }
+                 input{
+                     width: 180px;
+                     height: 35px;
+                 }
                 .name{
                     grid-area: name;
                 }
@@ -33,14 +60,60 @@ footer{
                 }
                 textarea{
                     grid-area: comment;
+                    width: 310px;
+                    height: 100;
                 }
                 p{
                     grid-area: text;
+                    height: 50px;
+                    width: 390px;
+                    justify-self: end;
+                    font-family: Open Sans;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 12px;
+                    line-height: 150%;
+                    color: #989898;
+                    margin-right: 30px;
                 }
                 .btn{
                     grid-area: btn;
+                    background-color: $colorBtn;
+                    width: 191px;
+                    height: 50px;
+                    margin-left: 20px;
+                    font-family: Open Sans Condensed;
+                    font-style: normal;
+                    font-weight: bold;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: center;
+                    letter-spacing: 0.1em;
+                    text-transform: uppercase;
+                    justify-self: end;
                 }
             }
+        }
+    }
+    .after-form{
+        width: 1110px;
+        height: 40px;
+        display: flex;
+        border-top: 1px solid #565656;
+        margin: 0 auto;
+        justify-content: space-between;
+        p{
+            width: 250px;
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 150%;
+            color: #989898;
+            align-self: center;
+        }
+        p:nth-child(2){
+            justify-self: end;
         }
     }
 }
