@@ -157,10 +157,88 @@ main{
             }
         }
       
-    }  
+    } 
+   
+    .section-theater-partners{
+        h2{
+            margin:60px 0 20px 0;
+        } 
+        .wrapper-for-logos{
+            margin: 0 33px;
+            .block-with-logos{
+                position: relative;
+                height: 80px;
+                  .partner-logo{
+                      position: relative;
+                      .letterG{
+                          background: url(../imgs/icons/path42.svg);
+                          width: 57px;
+                          height: 67px;
+                      }
+                      .icon-fire{
+                          background: url(../imgs/icons/path40.svg);
+                          width: 19px;
+                          height: 61px;
+                          position: absolute;
+                          top: -28px;
+                          left: 35px;
+                      }
+                  }
+                  .letters{
+                       .marg{
+                        margin: 0 1px;
+                       }
+                       display: flex;
+                      height: 35px;
+                      position: absolute;
+                      top: 32px;
+                      left: 58px;
+                 
+                      .letterGSmall{
+                          background: url(../imgs/icons/path26.svg);
+                          height: 34px;
+                          width: 13px;
+                      }
+                      .letterA{
+                          background: url(../imgs/icons/path28.svg);
+                          height: 34px;
+                          width: 17px;
+                      }
+                      .letterZ{
+                          background: url(../imgs/icons/path30.svg);
+                          width: 17px;
+                          height: 34px;
+                      }
+                      .letterP{
+                          background: url(../imgs/icons/path32.svg);
+                          width: 15px;
+                          height: 34px;
+                      }
+                      .letterR{
+                           background: url(../imgs/icons/path34.svg);
+                           width: 16px;
+                          height: 34px;
+                      }
+                      .letterO{
+                           background: url(../imgs/icons/path36.svg);
+                           width: 15px;
+                           height: 34px;
+                      }
+                      .letterM{
+                           background: url(../imgs/icons/path38.svg);
+                           width: 26px;
+                           height: 34px;
+                          
+                      }
+                  }
+               }
+        }
+     
+    }
+    
 }
 
-@media(max-width:991px){
+@media(max-width:991px){////-------------------------------------
     .section-wrapper{
         .facade-photo{
             display: none;
@@ -168,10 +246,10 @@ main{
     }
 }
 
-@media(min-width:578px){
+@media(min-width:576px){//************************************************576***********
     main{
         .section-main-top{
-            padding:50px 0 160px 0;
+              padding:50px 0 160px 0;
             .section-wrapper{
               width: 510px;
               height: auto;
@@ -236,6 +314,29 @@ main{
                }
             }
        } */
+       .section-theater-partners{
+                    h2{
+                        margin-top: 50px;
+                    }
+            .wrapper-for-logos{
+                 margin: 0 auto;
+                 width: 510px;
+                 height: 313px;
+                 display: flex;
+                 flex-flow:row  wrap;
+                 align-content: center;
+                 justify-content:space-between;
+                .block-with-logos{
+                      position: relative;
+                        height: 66px;
+                        width: 190px;
+                        margin-top: 60px;
+                }
+                .block-with-logos:nth-child(odd){
+                   display: none;
+                }
+            }
+        }  
     }
 }
 
@@ -308,7 +409,30 @@ main{
              }
          }
      }  
-    } 
+     .section-theater-partners{
+                    h2{
+                        margin-top: 50px;
+                    }
+            .wrapper-for-logos{
+                 width: 686px;
+                 height: 280px;
+                .block-with-logos{
+                        height: 70px;
+                        width: 172px;
+                        margin-top: 60px;
+                }
+                .block-with-logos:nth-child(odd){
+                   display: block;
+                }
+                .block-with-logos:nth-last-child(2){
+                    display: none;
+                }
+                .none{
+                    display: none;
+                }
+            }
+        }  
+    }
 }
 
 @media(min-width:992px){
@@ -459,6 +583,15 @@ main{
              }
             }
         }
+       .section-theater-partners{
+                    h2{
+                        margin-top: 60px;
+                    }
+            .wrapper-for-logos{
+                 margin: 40 111px;
+                 height: 372px;
+            }
+        }  
     }  
 }
 
@@ -614,6 +747,34 @@ main{
                 }
             }
           
+        }  
+         .section-theater-partners{
+                    h2{
+                        margin-top: 80px;
+                    }
+            .wrapper-for-logos{
+                 width: 1034px;
+                 height: 400px;
+                .block-with-logos{
+                        margin-top: 40px;
+                        width: 210px;
+                        height: 100px;
+                        .letters{
+                            .marg{
+                             margin: 0 2px;
+                            }
+                        }
+                }
+                .block-with-logos:nth-child(odd){
+                   display: block;
+                }
+                .block-with-logos:nth-last-child(2){
+                    display: block;
+                }
+                .none{
+                    display: block;
+                }
+            }
         }  
     }
 }

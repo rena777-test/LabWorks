@@ -504,81 +504,6 @@ header .main-top .poster-btn a {
   }
 }
 
-footer {
-  color: #000;
-  background-color: beige;
-}
-
-footer h2 {
-  text-align: center;
-}
-
-footer .info-for-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border: 1px solid rebeccapurple;
-}
-
-footer .info-for-user .contacts {
-  border: 2px solid aquamarine;
-}
-
-footer .info-for-user .callback {
-  border: 2px solid palevioletred;
-}
-
-footer .info-for-user .callback form {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: 'name company comment' 'phone email comment' 'text  text btn';
-  grid-gap: 20px;
-}
-
-footer .info-for-user .callback form .name {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: name;
-}
-
-footer .info-for-user .callback form .company {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: company;
-}
-
-footer .info-for-user .callback form .phone {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: phone;
-}
-
-footer .info-for-user .callback form .email {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: email;
-}
-
-footer .info-for-user .callback form textarea {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: comment;
-}
-
-footer .info-for-user .callback form p {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: text;
-}
-
-footer .info-for-user .callback form .btn {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: btn;
-}
-
 main .section-main-top {
   /*  background-color:#333333; */
   padding: 150px 0 150px 0;
@@ -758,13 +683,101 @@ main .section-stars .grid-block p {
   color: #fff;
 }
 
+main .section-theater-partners h2 {
+  margin: 60px 0 20px 0;
+}
+
+main .section-theater-partners .wrapper-for-logos {
+  margin: 0 33px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos {
+  position: relative;
+  height: 80px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .partner-logo {
+  position: relative;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .partner-logo .letterG {
+  background: url(../imgs/icons/path42.svg);
+  width: 57px;
+  height: 67px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .partner-logo .icon-fire {
+  background: url(../imgs/icons/path40.svg);
+  width: 19px;
+  height: 61px;
+  position: absolute;
+  top: -28px;
+  left: 35px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 35px;
+  position: absolute;
+  top: 32px;
+  left: 58px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .marg {
+  margin: 0 1px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterGSmall {
+  background: url(../imgs/icons/path26.svg);
+  height: 34px;
+  width: 13px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterA {
+  background: url(../imgs/icons/path28.svg);
+  height: 34px;
+  width: 17px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterZ {
+  background: url(../imgs/icons/path30.svg);
+  width: 17px;
+  height: 34px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterP {
+  background: url(../imgs/icons/path32.svg);
+  width: 15px;
+  height: 34px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterR {
+  background: url(../imgs/icons/path34.svg);
+  width: 16px;
+  height: 34px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterO {
+  background: url(../imgs/icons/path36.svg);
+  width: 15px;
+  height: 34px;
+}
+
+main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .letterM {
+  background: url(../imgs/icons/path38.svg);
+  width: 26px;
+  height: 34px;
+}
+
 @media (max-width: 991px) {
   .section-wrapper .facade-photo {
     display: none;
   }
 }
 
-@media (min-width: 578px) {
+@media (min-width: 576px) {
   main {
     /*  .our-productions{
             h2{
@@ -831,6 +844,35 @@ main .section-stars .grid-block p {
   main .section-main-top .section-wrapper .facade-photo {
     display: none;
   }
+  main .section-theater-partners h2 {
+    margin-top: 50px;
+  }
+  main .section-theater-partners .wrapper-for-logos {
+    margin: 0 auto;
+    width: 510px;
+    height: 313px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row  wrap;
+            flex-flow: row  wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos {
+    position: relative;
+    height: 66px;
+    width: 190px;
+    margin-top: 60px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos:nth-child(odd) {
+    display: none;
+  }
 }
 
 @media (min-width: 768px) {
@@ -895,6 +937,27 @@ main .section-stars .grid-block p {
   }
   main .section-stars .grid-block p {
     font-size: 29px;
+  }
+  main .section-theater-partners h2 {
+    margin-top: 50px;
+  }
+  main .section-theater-partners .wrapper-for-logos {
+    width: 686px;
+    height: 280px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos {
+    height: 70px;
+    width: 172px;
+    margin-top: 60px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos:nth-child(odd) {
+    display: block;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos:nth-last-child(2) {
+    display: none;
+  }
+  main .section-theater-partners .wrapper-for-logos .none {
+    display: none;
   }
 }
 
@@ -1041,6 +1104,13 @@ main .section-stars .grid-block p {
     font-size: 34px;
     height: 141px;
     line-height: 50px;
+  }
+  main .section-theater-partners h2 {
+    margin-top: 60px;
+  }
+  main .section-theater-partners .wrapper-for-logos {
+    margin: 40 111px;
+    height: 372px;
   }
 }
 
@@ -1196,6 +1266,30 @@ main .section-stars .grid-block p {
     line-height: 49px;
     height: 149px;
     letter-spacing: 1px;
+  }
+  main .section-theater-partners h2 {
+    margin-top: 80px;
+  }
+  main .section-theater-partners .wrapper-for-logos {
+    width: 1034px;
+    height: 400px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos {
+    margin-top: 40px;
+    width: 210px;
+    height: 100px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .marg {
+    margin: 0 2px;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos:nth-child(odd) {
+    display: block;
+  }
+  main .section-theater-partners .wrapper-for-logos .block-with-logos:nth-last-child(2) {
+    display: block;
+  }
+  main .section-theater-partners .wrapper-for-logos .none {
+    display: block;
   }
 }
 
