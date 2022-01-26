@@ -504,159 +504,22 @@ header .main-top .poster-btn a {
   }
 }
 
-footer .info-for-user {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  /*   border: 1px solid rebeccapurple; */
-  width: 1110px;
-  height: 200px;
-  margin: 0 auto;
-}
-
-footer .info-for-user .contacts {
-  /*  border: 2px solid aquamarine; */
-  width: 280px;
-  margin-right: 30px;
-}
-
-footer .info-for-user .contacts p {
-  font-family: Open Sans Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 22px;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  text-align: start;
-  margin: 6px;
-}
-
-footer .info-for-user .callback {
-  /*  border: 2px solid palevioletred; */
-  width: 855px;
-  height: 190px;
-}
-
-footer .info-for-user .callback form {
-  display: -ms-grid;
-  display: grid;
-      grid-template-areas: 'name company comment' 'phone email comment' 'text  text btn';
-  grid-gap: 20px;
-}
-
-footer .info-for-user .callback form input, footer .info-for-user .callback form textarea {
-  border: solid 1px #616161;
-  background-color: #444444;
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-footer .info-for-user .callback form input {
-  width: 180px;
-  height: 35px;
-}
-
-footer .info-for-user .callback form .name {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: name;
-}
-
-footer .info-for-user .callback form .company {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: company;
-}
-
-footer .info-for-user .callback form .phone {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: phone;
-}
-
-footer .info-for-user .callback form .email {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  grid-area: email;
-}
-
-footer .info-for-user .callback form textarea {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 3;
-  grid-area: comment;
-  width: 310px;
-  height: 100;
-}
-
-footer .info-for-user .callback form p {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: text;
-  height: 50px;
-  width: 390px;
-  -ms-grid-column-align: end;
-      justify-self: end;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #989898;
-  margin-right: 30px;
-}
-
-footer .info-for-user .callback form .btn {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-  grid-area: btn;
-  background-color: #D1A954;
-  width: 191px;
-  height: 50px;
-  margin-left: 20px;
-  font-family: Open Sans Condensed;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 18px;
-  line-height: 25px;
-  text-align: center;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  -ms-grid-column-align: end;
-      justify-self: end;
-}
-
-footer .after-form {
-  width: 1110px;
-  height: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  border-top: 1px solid #565656;
-  margin: 0 auto;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .after-form p {
-  width: 250px;
-  font-family: Open Sans;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  line-height: 150%;
-  color: #989898;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
-footer .after-form p:nth-child(2) {
-  -ms-grid-column-align: end;
-      justify-self: end;
+main {
+  /*  .our-productions{
+        background-color:$darkColor;
+       h2{
+           margin-bottom: 60px;
+       }
+            .ours-slider{
+               width: 310px;
+               height: 250px;
+               margin: 0 auto;
+              
+               img{
+                height: 150px;
+               }
+            }
+       } */
 }
 
 main .section-main-top {
@@ -775,24 +638,6 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
   position: absolute;
   left: 0;
   top: 139px;
-}
-
-main .our-productions {
-  /*  background-color:$darkColor; */
-}
-
-main .our-productions h2 {
-  margin-bottom: 60px;
-}
-
-main .our-productions .ours-slider {
-  width: 510px;
-  height: 550px;
-  margin: 0 auto;
-}
-
-main .our-productions .ours-slider img {
-  height: 550px;
 }
 
 main .section-stars {
@@ -926,6 +771,26 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
   height: 34px;
 }
 
+.ours-slider {
+  /*  CCCЛАЙДЕР-2 большой центр */
+  width: 1250px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.ours-slider img {
+  height: 350px;
+  width: 300px;
+}
+
+.slick-arrow {
+  background-color: green;
+}
+
+.slick-arrow:hover {
+  background-color: #e0252e;
+}
+
 @media (max-width: 991px) {
   .section-wrapper .facade-photo {
     display: none;
@@ -934,19 +799,17 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 
 @media (min-width: 576px) {
   main {
-    /*  .our-productions{
+    /*      .our-productions{
             h2{
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
             .ours-slider2{
-               width: 510px;
-               height: 550px;
+               width: 500px;
                img{
-                height: 550px;
                 width: 442px;
                }
             }
-       } */
+       }  */
   }
   main .section-main-top {
     padding: 50px 0 160px 0;
@@ -1031,6 +894,19 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 }
 
 @media (min-width: 768px) {
+  main {
+    /*     .our-productions{
+            h2{
+                margin-bottom: 55px;
+            }
+            .ours-slider2{
+               width: 690px;
+               img{
+                height: 250px;
+               }
+            }
+       } */
+  }
   main .section-main-top .section-wrapper {
     display: -ms-grid;
     display: grid;
@@ -1071,17 +947,6 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
     left: 1px;
     top: 171px;
   }
-  main .our-productions h2 {
-    margin-bottom: 60px;
-  }
-  main .our-productions .ours-slider2 {
-    width: 690px;
-    height: 675px;
-    margin: 0 auto;
-  }
-  main .our-productions .ours-slider2 img {
-    height: 550px;
-  }
   main .section-stars {
     display: -ms-grid;
     display: grid;
@@ -1117,6 +982,16 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 }
 
 @media (min-width: 992px) {
+  main {
+    /*   .our-productions{
+            .ours-slider2{
+               img{
+                height: 350px;
+                width: 442px;
+               }
+            }
+       } */
+  }
   main .section-main-top {
     background-color: #333333;
     padding: 150px 0 150px 0;
@@ -1127,7 +1002,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
     -ms-grid-columns: (410px 240px 260px)[3];
         grid-template-columns: repeat(3, 410px 240px 260px);
     gap: 10px 20px;
-    width: 1020px;
+    width: 992px;
     margin: 0 auto;
     margin-top: 100px;
   }
@@ -1227,14 +1102,6 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
   main .section-main-top .section-wrapper .facade-photo {
     display: block;
   }
-  main .our-productions .ours-slider2 {
-    width: 1772px;
-    height: 550px;
-    margin: 0 auto;
-  }
-  main .our-productions .ours-slider2 img {
-    height: 548px;
-  }
   main .section-stars {
     display: -ms-grid;
     display: grid;
@@ -1270,6 +1137,23 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 }
 
 @media (min-width: 1920px) {
+  main {
+    /*  .our-productions{
+            background-color:$darkColor;
+           h2{
+               margin-bottom: 60px;
+           }
+                .ours-slider{
+                   width: 510px;
+                   height: 550px;
+                   margin: 0 auto;
+                  
+                   img{
+                    height: 550px;
+                   }
+                }
+           } */
+  }
   main .section-main-top {
     /*  background-color:#333333; */
     padding: 150px 0 150px 0;
@@ -1374,20 +1258,6 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
     left: 0;
     top: 139px;
   }
-  main .our-productions {
-    /*  background-color:$darkColor; */
-  }
-  main .our-productions h2 {
-    margin-bottom: 60px;
-  }
-  main .our-productions .ours-slider {
-    width: 510px;
-    height: 550px;
-    margin: 0 auto;
-  }
-  main .our-productions .ours-slider img {
-    height: 550px;
-  }
   main .section-stars {
     width: 1110px;
     height: 550px;
@@ -1445,6 +1315,327 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
   }
   main .section-theater-partners .wrapper-for-logos .none {
     display: block;
+  }
+}
+
+footer h2 {
+  font-family: Open Sans Condensed;
+}
+
+footer .info-for-user .callback form p {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 150%;
+  color: #989898;
+}
+
+footer .info-for-user .callback form .btn {
+  background-color: #D1A954;
+  font-family: Open Sans Condensed;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+@media (min-width: 576px) {
+  footer h2 {
+    padding-top: 80px;
+  }
+  footer .info-for-user {
+    padding: 0 33px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 420px 110px;
+        grid-template-rows: 420px 110px;
+    gap: 10px 2px;
+  }
+  footer .info-for-user .contacts-footer {
+    height: 59px;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 17px 17px;
+    -ms-grid-columns: 130px 250px;
+        grid-template: 17px 17px/130px 250px;
+    gap: 12px 140px;
+    grid-auto-flow: column;
+  }
+  footer .info-for-user .contacts-footer p {
+    text-align: center;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+  footer .info-for-user .contacts-footer p:nth-child(3), footer .info-for-user .contacts-footer p:nth-child(4) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .info-for-user .callback form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 230px 230px;
+        grid-template-columns: 230px 230px;
+    -ms-grid-rows: 35px 35px 100px 50px 50px 1fr;
+        grid-template-rows: 35px 35px 100px 50px 50px 1fr;
+    grid-gap: 30px 50px;
+    min-width: 510px;
+  }
+  footer .info-for-user .callback form textarea, footer .info-for-user .callback form input {
+    border: solid 1px #616161;
+    background-color: #444444;
+    padding-left: 15px;
+  }
+  footer .info-for-user .callback form input {
+    width: 230px;
+    height: 35px;
+  }
+  footer .info-for-user .callback form textarea {
+    width: 507px;
+    height: 100px;
+  }
+  footer .info-for-user .callback form p {
+    height: 50px;
+    width: 435px;
+    text-align: center;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 5;
+    -ms-grid-row-span: 1;
+    grid-row: 5/6;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer .info-for-user .callback form .btn {
+    width: 190px;
+    height: 50px;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: 1;
+    grid-row: 4/5;
+    -ms-grid-column-align: center;
+        justify-self: center;
+  }
+  footer .after-form {
+    width: 504px;
+    height: 48px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-top: 1px solid #565656;
+    margin: 0 auto;
+  }
+  footer .after-form p {
+    width: 250px;
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+  }
+  footer .after-form p:nth-child(2) {
+    text-align: end;
+  }
+}
+
+@media (min-width: 768px) {
+  footer h2 {
+    margin-bottom: 60px;
+  }
+  footer .info-for-user {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 210px 100px;
+        grid-template-rows: 210px 100px;
+    gap: 10px 2px;
+    width: 690px;
+    margin: 0 auto;
+  }
+  footer .info-for-user .contacts-footer {
+    gap: 12px 305px;
+  }
+  footer .info-for-user .contacts-footer p:nth-child(3), footer .info-for-user .contacts-footer p:nth-child(4) {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .info-for-user .callback {
+    width: 690px;
+  }
+  footer .info-for-user .callback form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 'name company comment' 'phone email comment' 'text  text btn';
+    grid-gap: 10px 30px;
+  }
+  footer .info-for-user .callback form input, footer .info-for-user .callback form textarea {
+    border: solid 1px #616161;
+    background-color: #444444;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .info-for-user .callback form input {
+    width: 180px;
+    height: 35px;
+  }
+  footer .info-for-user .callback form .name {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: name;
+  }
+  footer .info-for-user .callback form .company {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: company;
+  }
+  footer .info-for-user .callback form .phone {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: phone;
+  }
+  footer .info-for-user .callback form .email {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: email;
+  }
+  footer .info-for-user .callback form textarea {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 3;
+    grid-area: comment;
+    width: 270px;
+  }
+  footer .info-for-user .callback form p {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: text;
+    width: 390px;
+    text-align: start;
+  }
+  footer .info-for-user .callback form .btn {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
+    grid-area: btn;
+    background-color: #D1A954;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .after-form {
+    width: 690px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  footer .after-form p {
+    width: 270px;
+  }
+}
+
+@media (min-width: 992px) {
+  footer {
+    /*  padding: 0 111px 0 191px; */
+  }
+  footer h2 {
+    margin-bottom: 100px;
+  }
+  footer .info-for-user {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 350px 139px;
+        grid-template-rows: 350px 139px;
+    gap: 10px 2px;
+    width: 690px;
+    margin: 0 auto;
+  }
+  footer .after-form {
+    height: 152px;
+  }
+}
+
+@media (min-width: 1920px) {
+  footer .info-for-user {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 1110px;
+    height: 200px;
+  }
+  footer .info-for-user .contacts-footer {
+    height: 59px;
+    width: 280px;
+    margin-right: 30px;
+    display: block;
+  }
+  footer .info-for-user .contacts-footer p {
+    text-align: start;
+    margin: 6px;
+  }
+  footer .info-for-user .contacts-footer p:nth-child(3), footer .info-for-user .contacts-footer p:nth-child(4) {
+    -ms-grid-column-align: start;
+        justify-self: start;
+  }
+  footer .info-for-user .callback {
+    width: 855px;
+    height: 190px;
+  }
+  footer .info-for-user .callback form {
+    grid-gap: 20px;
+  }
+  footer .info-for-user .callback form input, footer .info-for-user .callback form textarea {
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .info-for-user .callback form input {
+    width: 180px;
+    height: 35px;
+  }
+  footer .info-for-user .callback form textarea {
+    grid-area: comment;
+    width: 310px;
+    height: 100;
+  }
+  footer .info-for-user .callback form p {
+    width: 390px;
+    margin-right: 30px;
+  }
+  footer .info-for-user .callback form .btn {
+    width: 191px;
+    height: 50px;
+    margin-left: 20px;
+    -ms-grid-column-align: end;
+        justify-self: end;
+  }
+  footer .after-form {
+    width: 1110px;
+    height: 40px;
   }
 }
 

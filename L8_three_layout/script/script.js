@@ -24,7 +24,7 @@ $('.poster-slider').slick();//задаю функцию доллар, внутр
 $('.ours-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 2,
-   /*  autoplay: true, */
+    autoplay: true,
     responsive: [
         {
           breakpoint: 992,
@@ -32,8 +32,8 @@ $('.ours-slider').slick({
             slidesToShow: 2,
             slidesToScroll: 1,
           }
-        }
-      /*   {
+        },
+        {
           breakpoint: 768,
           settings: {
             slidesToShow: 2,
@@ -44,10 +44,10 @@ $('.ours-slider').slick({
           settings: {
             slidesToShow: 1,
           }
-        } */
-      ]
+        }
+       ] 
 });
 
-new WOW({
+/* new WOW({
   animateClass: 'animate__animated'
-}).init();
+}).init(); */

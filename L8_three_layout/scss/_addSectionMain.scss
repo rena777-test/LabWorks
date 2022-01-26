@@ -104,21 +104,21 @@ main{
             }
         }
     }
-    .our-productions{
-       /*  background-color:$darkColor; */
+   /*  .our-productions{
+        background-color:$darkColor;
        h2{
            margin-bottom: 60px;
        }
             .ours-slider{
-               width: 510px;
-               height: 550px;
+               width: 310px;
+               height: 250px;
                margin: 0 auto;
               
                img{
-                height: 550px;
+                height: 150px;
                }
             }
-       }
+       } */
     .section-stars{
        background-image: url('/imgs/Rectangle\ 28@2x.jpg');
        background-repeat: no-repeat;
@@ -238,6 +238,24 @@ main{
     
 }
 
+.ours-slider{                 /*  CCCЛАЙДЕР-2 большой центр */
+    width: 1250px;
+    height: 500px;
+    margin: 0 auto;
+    img{
+        height: 350px;
+        width: 300px;
+    }
+}
+
+ .slick-arrow{
+    background-color: green;
+}
+
+.slick-arrow:hover{
+    background-color: rgb(224, 37, 46);
+}
+
 @media(max-width:991px){////-------------------------------------
     .section-wrapper{
         .facade-photo{
@@ -301,19 +319,17 @@ main{
                 }
             }
         }
-       /*  .our-productions{
+    /*      .our-productions{
             h2{
-                margin-bottom: 60px;
+                margin-bottom: 50px;
             }
             .ours-slider2{
-               width: 510px;
-               height: 550px;
+               width: 500px;
                img{
-                height: 550px;
                 width: 442px;
                }
             }
-       } */
+       }  */
        .section-theater-partners{
                     h2{
                         margin-top: 50px;
@@ -385,19 +401,17 @@ main{
                 }
             }
         }
-        .our-productions{
+    /*     .our-productions{
             h2{
-                margin-bottom: 60px;
+                margin-bottom: 55px;
             }
             .ours-slider2{
                width: 690px;
-               height: 675px;
-               margin: 0 auto;
                img{
-                height: 550px;
+                height: 250px;
                }
             }
-       }
+       } */
        .section-stars{
         display: grid;
         grid-template-columns: 182px 388px;
@@ -444,7 +458,7 @@ main{
                 display: grid;
                 grid-template-columns: repeat(3,410px 240px 260px);
                 gap: 10px 20px;
-                width: 1020px;
+                width: 992px;
                 margin: 0 auto;
                 margin-top: 100px;
                 .theater-section{ 
@@ -548,18 +562,14 @@ main{
                 }
             }
         }
-        .our-productions{
-        
+      /*   .our-productions{
             .ours-slider2{
-               width: 1772px;
-               height: 550px;
-               margin: 0 auto;
                img{
-                height: 548px;
-               
+                height: 350px;
+                width: 442px;
                }
             }
-       }
+       } */
         .section-stars{
         display: grid;
         grid-template-columns: 182px 450px;
@@ -702,8 +712,8 @@ main{
                 }
             }
         }
-        .our-productions{
-           /*  background-color:$darkColor; */
+       /*  .our-productions{
+            background-color:$darkColor;
            h2{
                margin-bottom: 60px;
            }
@@ -716,7 +726,7 @@ main{
                     height: 550px;
                    }
                 }
-           }
+           } */
         .section-stars{
             width: 1110px;
             height: 550px;
