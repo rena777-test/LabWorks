@@ -39,7 +39,7 @@ p{
     font-family:Open Sans;
 }
 
-p::selection{
+p::selection,h2::selection,h3::selection{
     color: $color;
 }
 
@@ -53,10 +53,6 @@ h2{
     text-transform: uppercase;  
     margin: 0;
     margin-bottom: 100px;
-}
-
-h2::selection{
-    color: #D1A954;
 }
 
 @import 'header';

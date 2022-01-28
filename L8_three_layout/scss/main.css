@@ -36,11 +36,11 @@ p {
   font-family: Open Sans;
 }
 
-p::-moz-selection {
+p::-moz-selection, h2::-moz-selection, h3::-moz-selection {
   color: #D1A954;
 }
 
-p::selection {
+p::selection, h2::selection, h3::selection {
   color: #D1A954;
 }
 
@@ -54,14 +54,6 @@ h2 {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 100px;
-}
-
-h2::-moz-selection {
-  color: #D1A954;
-}
-
-h2::selection {
-  color: #D1A954;
 }
 
 header {
@@ -505,7 +497,7 @@ header .main-top .poster-btn a {
 }
 
 main {
-  /*  .our-productions{
+  /*  .section-our-productions{
         background-color:$darkColor;
        h2{
            margin-bottom: 60px;
@@ -799,7 +791,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 
 @media (min-width: 576px) {
   main {
-    /*      .our-productions{
+    /*      .section-our-productions{
             h2{
                 margin-bottom: 50px;
             }
@@ -895,7 +887,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 
 @media (min-width: 768px) {
   main {
-    /*     .our-productions{
+    /*     .section-our-productions{
             h2{
                 margin-bottom: 55px;
             }
@@ -983,7 +975,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 
 @media (min-width: 992px) {
   main {
-    /*   .our-productions{
+    /*   .section-our-productions{
             .ours-slider2{
                img{
                 height: 350px;
@@ -1138,7 +1130,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
 
 @media (min-width: 1920px) {
   main {
-    /*  .our-productions{
+    /*  .section-our-productions{
             background-color:$darkColor;
            h2{
                margin-bottom: 60px;
