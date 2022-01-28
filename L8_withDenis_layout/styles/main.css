@@ -1,0 +1,123 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.container {
+  max-width: 540px;
+  border: 1px solid red;
+}
+
+header {
+  height: 102px;
+}
+
+header .container-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  padding-top: 33px;
+}
+
+header .container-logo .logo-tools {
+  position: relative;
+  top: -10px;
+}
+
+header .container-logo .logo-tools img {
+  position: absolute;
+}
+
+header .container-logo .logo-tools img:nth-child(1) {
+  left: 39px;
+  top: 12px;
+}
+
+header .container-logo .logo-tools img:nth-child(2) {
+  left: 46px;
+  top: 12px;
+}
+
+header .container-logo .logo-tools img:nth-child(3) {
+  left: 51px;
+  top: 21px;
+}
+
+header .container-logo .logo-tools img:nth-child(4) {
+  left: 58px;
+  top: 21px;
+}
+
+header .container-logo .logo-tools img:nth-child(5) {
+  left: 62px;
+  top: 31px;
+}
+
+header .container-logo .logo-tools img:nth-child(6) {
+  left: 55px;
+  top: 18px;
+}
+
+header .container-logo .logo-tools img:nth-child(7) {
+  left: 57px;
+  top: 12px;
+}
+
+header .container-logo .logo-tools img:nth-child(8) {
+  left: 57px;
+  top: 16px;
+}
+
+header .container-logo .logo-tools img:nth-child(9) {
+  left: 17px;
+  top: 41px;
+}
+
+header .container-logo nav {
+  -ms-flex-item-align: end;
+      -ms-grid-row-align: end;
+      align-self: end;
+}
+
+header .container-logo nav a {
+  padding: 10px;
+  color: #333333;
+  font-size: 12px;
+  line-height: 12px;
+  letter-spacing: 0.2em;
+  text-decoration: none;
+  margin: 0;
+}
+
+header .container-logo nav a:hover {
+  border-bottom: 1px solid #333333;
+  border-top: 1px solid #333333;
+}
+
+.section-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-top .project-name {
+  width: 400px;
+}
+
+.section-top .slider {
+  width: 770px;
+  height: 829px;
+}
+/*# sourceMappingURL=main.css.map */

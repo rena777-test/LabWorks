@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family:sans-serif;
+   
+}
+.container{
+    max-width: 540px;
+    border: 1px solid red;
+}
+
+@import 'header';
+
+.section-top{
+    display: flex;
+    justify-content: space-around;
+    .project-name{
+        width: 400px;
+    }
+    .slider{
+        width: 770px;
+        height: 829px;
+    }
+}
