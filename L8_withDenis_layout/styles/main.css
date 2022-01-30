@@ -8,12 +8,8 @@ body {
   font-family: sans-serif;
 }
 
-.container {
-  max-width: 540px;
-  border: 1px solid red;
-}
-
 header {
+  border: 1px solid grey;
   height: 102px;
 }
 
@@ -21,12 +17,19 @@ header .container-logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -ms-flex-line-pack: center;
       align-content: center;
-  padding-top: 33px;
+  max-width: 1440px;
+  padding: 33px 135px 45px;
+  border: 1px solid red;
+  margin: 0 auto;
 }
 
 header .container-logo .logo-tools {
@@ -93,6 +96,7 @@ header .container-logo nav a {
   padding: 10px;
   color: #333333;
   font-size: 12px;
+  font-weight: 400;
   line-height: 12px;
   letter-spacing: 0.2em;
   text-decoration: none;
@@ -104,20 +108,138 @@ header .container-logo nav a:hover {
   border-top: 1px solid #333333;
 }
 
-.section-top {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+main {
+  margin: 0 auto;
 }
 
-.section-top .project-name {
-  width: 400px;
+main .section-top {
+  width: 1440px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 400px 770px;
+      grid-template-columns: 400px 770px;
+  padding: 0 135px;
+  border: 1px solid #ff00dd;
 }
 
-.section-top .slider {
+main .section-top .project-name {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 460px 145px;
+      grid-template-rows: 460px 145px;
+  gap: 5px;
+}
+
+main .section-top .project-name .nameProg {
+  margin-top: 330px;
+}
+
+main .section-top .project-name .page-slider {
+  position: relative;
+}
+
+main .section-top .project-name .page-slider .arrows {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: lime;
+}
+
+main .section-top .project-name .page-slider .arrows img {
+  position: absolute;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(1) {
+  top: 80px;
+  left: 3px;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(2) {
+  top: 102px;
+  left: 15px;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(3) {
+  top: 107px;
+  left: 19px;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(4) {
+  top: 80px;
+  left: 96px;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(5) {
+  top: 107px;
+  left: 116px;
+}
+
+main .section-top .project-name .page-slider .arrows img:nth-child(6) {
+  top: 102px;
+  left: 130px;
+}
+
+main .section-top .project-name .page-slider .numbers {
+  position: absolute;
+}
+
+main .section-top .project-name .page-slider .numbers img {
+  position: absolute;
+}
+
+main .section-top .project-name .page-slider .numbers img:nth-child(1) {
+  top: 248px;
+  left: 4px;
+}
+
+main .section-top .project-name .page-slider .numbers img:nth-child(2) {
+  top: 242px;
+  left: 60px;
+}
+
+main .section-top .project-name .page-slider .numbers img:nth-child(3) {
+  top: 247px;
+  left: 121px;
+}
+
+main .section-top .slider-show {
   width: 770px;
   height: 829px;
+  position: relative;
+}
+
+main .section-top .slider-show button {
+  position: absolute;
+  top: 758px;
+  left: 0;
+  background-color: #fff;
+  width: 222px;
+  height: 71px;
+  padding: 0;
+  border: none;
+}
+
+main .section-top .slider-show button:active {
+  border: 1px solid lightseagreen;
+}
+
+main .section-top .slider-show button img {
+  position: absolute;
+}
+
+main .section-top .slider-show button img:nth-child(1) {
+  top: 29px;
+  left: 50px;
+}
+
+main .section-top .slider-show button img:nth-child(2) {
+  top: 34px;
+  left: 141px;
+}
+
+main .section-top .slider-show button img:nth-child(3) {
+  top: 30px;
+  left: 154px;
 }
 /*# sourceMappingURL=main.css.map */

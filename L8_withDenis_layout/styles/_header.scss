@@ -1,13 +1,17 @@
 $colorText:#333333;
 
 header{
-  
+    border: 1px solid grey;
     height: 102px;
     .container-logo{
                 display: flex;
-                justify-content: space-evenly;
+                flex-direction: row;
+                justify-content: space-between;
                 align-content: center;
-                padding-top: 33px;
+                max-width: 1440px;
+                padding: 33px 135px 45px;
+                border: 1px solid red;
+                margin: 0 auto;
         .logo-tools{
              position: relative;
              top: -10px;
@@ -61,6 +65,7 @@ header{
                     padding: 10px;
                     color: $colorText;
                     font-size: 12px;
+                    font-weight: 400;
                     line-height: 12px;
                     letter-spacing: 0.2em;
                     text-decoration: none;

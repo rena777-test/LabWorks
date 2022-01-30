@@ -1,26 +1,122 @@
 *{
     box-sizing: border-box;
 }
+
 body{
     margin: 0;
     font-family:sans-serif;
-   
-}
-.container{
-    max-width: 540px;
-    border: 1px solid red;
+  
 }
 
 @import 'header';
 
-.section-top{
-    display: flex;
-    justify-content: space-around;
-    .project-name{
-        width: 400px;
-    }
-    .slider{
-        width: 770px;
-        height: 829px;
+main{
+    margin: 0 auto;
+    .section-top{
+        width: 1440px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 400px 770px;
+        padding: 0 135px;
+        border: 1px solid rgb(255, 0, 221);
+        .project-name{
+            display: grid;
+            grid-template-rows: 460px 145px;
+            gap: 5px;
+            .nameProg{
+                margin-top: 330px;
+            }
+            .page-slider{
+                position: relative;
+                .arrows{
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    background-color: lime;
+                    img{
+                        position: absolute;
+                    }
+                    & img:nth-child(1){
+                        top: 80px;
+                        left: 3px;
+                    }
+                    & img:nth-child(2){
+                        top: 102px;
+                        left: 15px;
+                    }
+                    & img:nth-child(3){
+                        top: 107px;
+                        left: 19px;
+                    }
+                    & img:nth-child(4){
+                        top: 80px;
+                        left: 96px;
+                    }
+                    & img:nth-child(5){
+                        top: 107px;
+                        left: 116px;
+                    }
+                    & img:nth-child(6){
+                        top: 102px;
+                        left: 130px;
+                    }
+                }
+    
+                .numbers{
+                    position: absolute;
+                    img{
+                        position: absolute;
+                    }
+                    & img:nth-child(1){
+                        top: 248px;
+                        left: 4px;
+                    }
+                    & img:nth-child(2){
+                        top: 242px;
+                        left: 60px;
+                    }
+                    & img:nth-child(3){
+                        top: 247px;
+                        left: 121px;
+                    }
+                }
+            }
+        }
+        .slider-show{
+            width: 770px;
+            height: 829px;
+            position: relative;
+            button{
+                position: absolute;
+                top: 758px;
+                left: 0;
+                background-color: #fff;
+                width: 222px;
+                height: 71px;
+                padding: 0;
+                border: none;
+                &:active{
+                    border: 1px solid lightseagreen;
+                }
+                & img{
+                    position: absolute;
+                }
+                & img:nth-child(1){
+                    top: 29px;
+                    left: 50px;
+                }
+
+                & img:nth-child(2){
+                    top: 34px;
+                    left: 141px;
+                }
+                & img:nth-child(3){
+                    top: 30px;
+                    left: 154px;
+                }
+
+            }
+        }
     }
 }
+
