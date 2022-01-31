@@ -25,6 +25,13 @@ p{
     line-height: 27px;
 }
 
+button{
+    width: 222px;
+    height: 71px;
+    border: none;
+    position: absolute;
+}
+
 @import 'header';
 
 main{
@@ -34,12 +41,16 @@ main{
         display: flex;
         justify-content: space-between;
         margin: 0 auto;
+        margin-bottom: 150px;
         .project-name{
             display: grid;
             grid-template-rows: 460px 145px;
             gap: 5px;
             .nameProg{
                 margin-top: 330px;
+                & img{
+                    display: block;
+                }
             }
             .page-slider{
                 position: relative;

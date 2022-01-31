@@ -45,11 +45,7 @@ main{
             align-self: end;
         }
         button{
-            width: 222px;
-            height: 71px;
-            border: none;
             background-color: #fff;
-            position: absolute;
             top: 304px;
             left: 700px;
             & img{
@@ -103,5 +99,43 @@ main{
                width: 120px;
            }
         }
+    }
+    .section-our-projects{
+            max-width: 1170px;
+            margin: 0 auto;
+            
+            h3{
+                margin-top: 120px;
+            }
+            .wrapper-our-proj{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+               img{
+                   margin-bottom: 25px;
+               }
+            }
+            .black-btn{
+                background-color: #333333;
+                color: #fff;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 12px;
+                line-height: 12px;
+                text-transform: uppercase;
+                position: relative;
+                left: 943px;
+                & img{
+                    position: absolute;
+                }
+                & img:nth-child(1){
+                    top: 36px;
+                    left: 159px;
+                }
+                & img:nth-child(2){
+                    top: 32px;
+                    left: 172px;
+                }
+            }
     }
 }

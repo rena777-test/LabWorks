@@ -26,6 +26,13 @@ p {
   line-height: 27px;
 }
 
+button {
+  width: 222px;
+  height: 71px;
+  border: none;
+  position: absolute;
+}
+
 header {
   /*    border: 1px solid grey; */
   height: 102px;
@@ -130,6 +137,7 @@ main .section-top {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
+  margin-bottom: 150px;
 }
 
 main .section-top .project-name {
@@ -142,6 +150,10 @@ main .section-top .project-name {
 
 main .section-top .project-name .nameProg {
   margin-top: 330px;
+}
+
+main .section-top .project-name .nameProg img {
+  display: block;
 }
 
 main .section-top .project-name .page-slider {
@@ -323,11 +335,7 @@ main .section-about-company h3, main .section-about-company p {
 }
 
 main .section-about-company button {
-  width: 222px;
-  height: 71px;
-  border: none;
   background-color: #fff;
-  position: absolute;
   top: 304px;
   left: 700px;
 }
@@ -397,5 +405,55 @@ main .section-tasks .main-tasks-wrapper p:nth-child(2) {
 
 main .section-tasks .main-tasks-wrapper img:nth-child(2) {
   width: 120px;
+}
+
+main .section-our-projects {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+main .section-our-projects h3 {
+  margin-top: 120px;
+}
+
+main .section-our-projects .wrapper-our-proj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section-our-projects .wrapper-our-proj img {
+  margin-bottom: 25px;
+}
+
+main .section-our-projects .black-btn {
+  background-color: #333333;
+  color: #fff;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 12px;
+  text-transform: uppercase;
+  position: relative;
+  left: 943px;
+}
+
+main .section-our-projects .black-btn img {
+  position: absolute;
+}
+
+main .section-our-projects .black-btn img:nth-child(1) {
+  top: 36px;
+  left: 159px;
+}
+
+main .section-our-projects .black-btn img:nth-child(2) {
+  top: 32px;
+  left: 172px;
 }
 /*# sourceMappingURL=main.css.map */
