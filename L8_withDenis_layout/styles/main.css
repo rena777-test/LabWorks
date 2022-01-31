@@ -8,6 +8,24 @@ body {
   font-family: sans-serif;
 }
 
+h3 {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 64px;
+  line-height: 64px;
+}
+
+p {
+  width: 400px;
+  height: 200px;
+  color: #000000;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 27px;
+}
+
 header {
   /*    border: 1px solid grey; */
   height: 102px;
@@ -237,6 +255,7 @@ main .section-about-company {
   width: 1170px;
   height: 435px;
   background-color: #FBFBFB;
+  padding-top: 150px;
   /*   border: 1px solid green; */
   margin: 0 auto;
   display: -ms-grid;
@@ -298,25 +317,9 @@ main .section-about-company .three {
 }
 
 main .section-about-company h3, main .section-about-company p {
-  font-style: normal;
-  font-weight: 300;
   -ms-flex-item-align: end;
       -ms-grid-row-align: end;
       align-self: end;
-}
-
-main .section-about-company h3 {
-  color: #BDBDBD;
-  font-size: 64px;
-  line-height: 64px;
-}
-
-main .section-about-company p {
-  width: 400px;
-  height: 200px;
-  font-size: 15px;
-  line-height: 27px;
-  color: #000000;
 }
 
 main .section-about-company button {
@@ -346,5 +349,53 @@ main .section-about-company button .read-line {
 main .section-about-company button .read-arr {
   top: 30px;
   left: 150px;
+}
+
+main .section-tasks {
+  margin: 0 auto;
+  width: 1170px;
+  padding-top: 26px;
+}
+
+main .section-tasks h3 {
+  margin-bottom: 20px;
+}
+
+main .section-tasks .main-tasks-wrapper {
+  height: 144px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .section-tasks .main-tasks-wrapper p {
+  height: 144px;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 33px;
+  color: #333333;
+  margin: 0;
+  margin-left: -240px;
+}
+
+main .section-tasks .main-tasks-wrapper img {
+  width: 104px;
+  height: 140px;
+}
+
+main .section-tasks .main-tasks-wrapper p:nth-child(2) {
+  width: 279px;
+}
+
+main .section-tasks .main-tasks-wrapper img:nth-child(2) {
+  width: 120px;
 }
 /*# sourceMappingURL=main.css.map */

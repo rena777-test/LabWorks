@@ -3,6 +3,7 @@ main{
         width: 1170px;
         height: 435px;
         background-color: #FBFBFB;
+        padding-top: 150px;
       /*   border: 1px solid green; */
         margin: 0 auto;
         display: grid;
@@ -27,11 +28,8 @@ main{
             grid-column: 3/4;
             grid-row: 3/4;
           }
-
-
         .photo-companies{
             width: 270px;
-
         }
         .one{
             height: 265px;
@@ -44,22 +42,7 @@ main{
         }
 
         h3,p{
-            font-style: normal;
-            font-weight: 300;
             align-self: end;
-        }
-
-        h3{
-            color: #BDBDBD;
-            font-size: 64px;
-            line-height: 64px;
-        }
-        p{
-            width: 400px;
-            height: 200px;
-            font-size: 15px;
-            line-height: 27px;
-            color: #000000;
         }
         button{
             width: 222px;
@@ -85,6 +68,40 @@ main{
                 top: 30px;
                 left: 150px;
             }
+        }
+    }
+    .section-tasks{
+        margin: 0 auto;
+        width: 1170px;
+        padding-top: 26px;
+        h3{
+            margin-bottom: 20px;
+        }
+        .main-tasks-wrapper{
+           height: 144px;
+           width: 100%;
+           display: flex;
+           flex-direction: row;
+           justify-content: space-between;
+           p{
+            height: 144px;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 33px;
+            color: #333333;
+            margin: 0;
+            margin-left: -240px;
+           }
+           img{
+            width: 104px;
+            height: 140px;
+            }
+           & p:nth-child(2){
+               width: 279px;
+           }
+           & img:nth-child(2){
+               width: 120px;
+           }
         }
     }
 }
