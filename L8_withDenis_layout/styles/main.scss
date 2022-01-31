@@ -11,14 +11,12 @@ body{
 @import 'header';
 
 main{
-    margin: 0 auto;
     .section-top{
-        width: 1440px;
+        max-width: 1440px;
+      /*   border: 2px solid rgb(255, 0, 221); */
+        display: flex;
+        justify-content: space-between;
         margin: 0 auto;
-        display: grid;
-        grid-template-columns: 400px 770px;
-        padding: 0 135px;
-        border: 1px solid rgb(255, 0, 221);
         .project-name{
             display: grid;
             grid-template-rows: 460px 145px;
@@ -32,7 +30,7 @@ main{
                     position: absolute;
                     left: 0;
                     top: 0;
-                    background-color: lime;
+                   
                     img{
                         position: absolute;
                     }
@@ -83,7 +81,7 @@ main{
             }
         }
         .slider-show{
-            width: 770px;
+          /*   max-width: 770px; */
             height: 829px;
             position: relative;
             button{
@@ -119,4 +117,5 @@ main{
         }
     }
 }
+@import 'sectionForMainOne';
 

@@ -1,21 +1,20 @@
 $colorText:#333333;
 
 header{
-    border: 1px solid grey;
+ /*    border: 1px solid grey; */
     height: 102px;
     .container-logo{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
                 align-content: center;
-                max-width: 1440px;
-                padding: 33px 135px 45px;
-                border: 1px solid red;
+                width: 1440px;
+                padding: 33px 245px 45px 0px;
+             /*    border: 1px solid red; */
                 margin: 0 auto;
         .logo-tools{
              position: relative;
              top: -10px;
-            
              & img{
                  position: absolute;
              }
@@ -58,10 +57,7 @@ header{
          }
         
              nav{
-               
-                align-self: end;
                  a{
-                   
                     padding: 10px;
                     color: $colorText;
                     font-size: 12px;
