@@ -138,4 +138,67 @@ main{
                 }
             }
     }
+    .section-to-contact-us{
+        /*   border: 1px solid green; */
+          margin: 0 auto;
+          width: 1170px;
+        .callback{
+         /*    border: 1px solid rgb(38, 0, 128); */
+            height: 517px;
+            display: flex;
+            & img{
+                width: 749px;
+                height: 369px;
+            }
+            form{
+                display: flex;
+                flex-direction: column;
+                & p{
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 17px;
+                    letter-spacing: 1px;
+                    margin-left: 15px;
+                }
+                input,textarea{
+                    background-color: #F3F3F3;
+                    width: 391px;
+                    border: none;
+                    margin-top: 5px;
+                    padding: 25px 23px;
+                }
+                input{
+                    height: 46px;
+                    margin-bottom: 10px;
+                }
+                textarea{
+                    height: 147px;
+                    padding-bottom: 70px;
+                }
+                .btn{
+                    width: 222px;
+                    height: 71px;
+                    background-color: #333333;
+                    color: #FFFFFF;
+                    background-image: url('../imgs/our_projects_img/line_white.jpg');
+                    background-repeat: no-repeat;
+                    background-position-x: 148px;
+                    background-position-y: 33px;
+                    background-image: url('../imgs/icons/Vector\ 2\ \(Stroke\)@2x.png');
+                    background-repeat: no-repeat;
+                    background-position-x: 180px;
+                    background-position-y: 28px;
+                   
+                }
+               /*  .btn::after{
+                    content: '';
+                  width: 17px;
+                  height: 1px;
+                  color: yellow;
+                  background-position-x: 170px;
+                  background-position-y: 28px;
+                } */
+            }
+        }
+    }
 }

@@ -456,4 +456,82 @@ main .section-our-projects .black-btn img:nth-child(2) {
   top: 32px;
   left: 172px;
 }
+
+main .section-to-contact-us {
+  /*   border: 1px solid green; */
+  margin: 0 auto;
+  width: 1170px;
+}
+
+main .section-to-contact-us .callback {
+  /*    border: 1px solid rgb(38, 0, 128); */
+  height: 517px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .section-to-contact-us .callback img {
+  width: 749px;
+  height: 369px;
+}
+
+main .section-to-contact-us .callback form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  /*  .btn::after{
+                    content: '';
+                  width: 17px;
+                  height: 1px;
+                  color: yellow;
+                  background-position-x: 170px;
+                  background-position-y: 28px;
+                } */
+}
+
+main .section-to-contact-us .callback form p {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  margin-left: 15px;
+}
+
+main .section-to-contact-us .callback form input, main .section-to-contact-us .callback form textarea {
+  background-color: #F3F3F3;
+  width: 391px;
+  border: none;
+  margin-top: 5px;
+  padding: 25px 23px;
+}
+
+main .section-to-contact-us .callback form input {
+  height: 46px;
+  margin-bottom: 10px;
+}
+
+main .section-to-contact-us .callback form textarea {
+  height: 147px;
+  padding-bottom: 70px;
+}
+
+main .section-to-contact-us .callback form .btn {
+  width: 222px;
+  height: 71px;
+  background-color: #333333;
+  color: #FFFFFF;
+  background-image: url("../imgs/our_projects_img/line_white.jpg");
+  background-repeat: no-repeat;
+  background-position-x: 148px;
+  background-position-y: 33px;
+  background-image: url("../imgs/icons/Vector 2 (Stroke)@2x.png");
+  background-repeat: no-repeat;
+  background-position-x: 180px;
+  background-position-y: 28px;
+}
 /*# sourceMappingURL=main.css.map */
