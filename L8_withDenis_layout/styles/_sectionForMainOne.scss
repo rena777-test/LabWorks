@@ -64,6 +64,9 @@ main{
                 top: 30px;
                 left: 150px;
             }
+            &:active{
+                border: 1px solid lightseagreen;
+            }
         }
     }
     .section-tasks{
@@ -114,6 +117,11 @@ main{
                img{
                    margin-bottom: 25px;
                }
+               & img:nth-child(1){
+                background-image: url('../imgs/our_projects_img/Rectangle\ 12\ \(1\).jpg');
+                background-size: cover;
+               
+               }
             }
             .black-btn{
                 background-color: #333333;
@@ -136,10 +144,12 @@ main{
                     top: 32px;
                     left: 172px;
                 }
+                &:active{
+                   box-shadow: 0px 22px  10px lightgrey;
+                }
             }
     }
     .section-to-contact-us{
-        /*   border: 1px solid green; */
           margin: 0 auto;
           width: 1170px;
         .callback{
