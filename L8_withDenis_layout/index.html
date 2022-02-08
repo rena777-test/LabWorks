@@ -6,11 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&
-display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/slick-theme.css">
+    <link rel="stylesheet" href="styles/slick.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -47,11 +48,7 @@ display=swap" rel="stylesheet">
                 <div class="page-slider">
                     <div class="arrows">
                         <img src="imgs/icons/Rectangle 8.jpg" alt="square gray">
-                        <img src="imgs/icons/arrow_prev.svg" alt="leftArrow">
-                        <img src="imgs/icons/arrow.svg" alt="line">
                         <img src="imgs/icons/Rectangle 8.jpg" alt="square gray">
-                        <img src="imgs/icons/arrow.svg" alt="line">
-                        <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
                     </div> <!-- .arrows End -->
                     <div class="numbers">
                         <img src="imgs/icons/01.jpg" alt="digit">
@@ -61,13 +58,15 @@ display=swap" rel="stylesheet">
                 </div><!--  .page-slider  End -->
             </div><!-- .project-name  End-->
             <div class="slider-show">
-                <img src="imgs/Rectangle 6.jpg" alt="mainPage">
-                <button>
-                    <img src="imgs/icons/ВЗГЛЯНУТЬ.jpg" alt="look">
+                <div class="test-slider">
+                    <img class="slid-img" src="imgs/Rectangle 6.jpg" alt="mainPage">
+                    <img class="slid-img" src="imgs/sect_about1.jpg" alt="mainPage">
+                    <img class="slid-img" src="imgs/sect_about2.jpg" alt="mainPage">
+                </div>
+                <button class="btn white">Взглянуть
                     <img src="imgs/icons/arrow.svg" alt="line">
                     <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
                 </button>
-
             </div> <!-- .slider-show End-- -->
         </div>
         <!-- .section-top END -->
@@ -83,10 +82,9 @@ display=swap" rel="stylesheet">
                 specimen book. It has survived not only five centuries, but also the leap into
                 electronic typesetting, remaining essentially unchanged.
             </p>
-            <button>
-                <img src="imgs/icons/ЧИТАТЬ.svg" alt="text">
-                <img class="read-line" src="imgs/icons/arrow.svg" alt="line">
-                <img class="read-arr" src="imgs/icons/arrow_right.svg" alt="arrowRight">
+            <button class="btn white">читать
+                <img src="imgs/icons/arrow.svg" alt="line">
+                <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
             </button>
         </div>
         <!-- .section-about-company END -->
@@ -106,80 +104,121 @@ display=swap" rel="stylesheet">
         </div>
         <div class="section-our-projects">
             <h3>Наши проекты</h3>
-            <div class="wrapper-our-proj">
-                <img src="imgs/our_projects_img/Rectangle 17.jpg" alt="picture shadow">
-                <img src="imgs/our_projects_img/image 15.jpg" alt="picture">
-                <img src="imgs/our_projects_img/image 16.jpg" alt="picture">
-                <img src="imgs/our_projects_img/image 17.jpg" alt="picture">
-                <img src="imgs/our_projects_img/image 18.jpg" alt="picture">
-                <button class="black-btn">ВСЕ ПРОЕКТЫ
+            <div class="wrapper-projects">
+                <div class="wrapper-picture">
+                    <img src="imgs/our_projects_img/Rectangle_12.jpg" alt="photo">
+                    <div class="img-description">
+                        <p>ДОСУГОВЫЙ ЦЕНТР</p>
+                        <button>Подробнее ---</button>
+                    </div>
+                </div>
+                <div class="wrapper-picture">
+                    <img src="imgs/our_projects_img/image_15.jpg" alt="photo">
+                    <div class="img-description">
+                        <p>Музей</p>
+                        <button>Подробнее ---</button>
+                    </div>
+                </div>
+                <div class="wrapper-picture">
+                    <img src="imgs/our_projects_img/image_16.jpg" alt="photo">
+                    <div class="img-description" style="width: 270px;">
+                        <p>Спорт</p>
+                        <button>Подробнее ---</button>
+                    </div>
+                </div>
+                <div class="wrapper-picture">
+                    <img src="imgs/our_projects_img/image_17.jpg" alt="photo">
+                    <div class="img-description" style="width: 470px;">
+                        <p>Школа</p>
+                        <button>Подробнее ---</button>
+                    </div>
+                </div>
+                <div class="wrapper-picture">
+                    <img src="imgs/our_projects_img/image_18.jpg" alt="photo">
+                    <div class="img-description" style="width: 370px;">
+                        <p>Спальный район</p>
+                        <button>Подробнее ---</button>
+                    </div>
+                </div>
+            </div>
+            <!-- .wrapper-our-proj END -->
+            <div class="all-proj">
+                <button class="black btn last-btn">ВСЕ ПРОЕКТЫ
                     <img src="imgs/icons/line_white.svg" alt="line white">
                     <img src="imgs/icons/arrow_right_white.svg" alt="arrow white">
                 </button>
             </div>
         </div>
+        <!-- .section-our-projects END -->
         <div class="section-to-contact-us">
             <h3>Связаться с нами</h3>
             <div class="callback">
                 <form>
                     <input class="name" type="text" placeholder="Имя">
-                    <input class="company" type="text" placeholder="Компания">
-                    <input class="phone" type="text" placeholder="Телефон">
-                    <input class="email" type="text" placeholder="E-mail">
-                    <textarea id="message" placeholder="Сообщение"></textarea>
-                    <p>Отправляя заявку Вы соглашаетесь
+                    <input class="phone" type="text" placeholder="Телефон*">
+                    <input class="email" type="text" placeholder="E-mail*">
+                    <input class="company" type="text" placeholder="Интересующий товар/услуга">
+                    <textarea id="message" placeholder="Сообщение*"></textarea>
+                    <p class="form-text">Отправляя заявку Вы соглашаетесь
                         с политикой
                         конфиденциальности</p>
-                    <input class="btn" type="submit" value="Отправить">
+                    <button class="black btn line-with-css"> Отправить
+                        <img src="imgs/icons/arrow_white.png" alt="arrow white">
+                    </button>
+
                 </form>
-                <img src="imgs/our_projects_img/image 12.jpg" alt="photo with phone">
+                <img src="imgs/our_projects_img/image_12.jpg" alt="photo with phone">
             </div>
             <!-- .callback End -->
         </div>
         <!--  .section-to-contact-us END -->
     </main>
     <footer>
-        <div class="white-color-logo-tools">
-            <img src="./imgs/our_projects_img/Group 11 1 (1).svg" alt="white logo">
-        </div>
-        <div class="contaner-footer">
-            <div class="info-block">
-                <h5>Информация</h5>
-                <a href="#">Главная</a>
-                <a href="#">Галерея</a>
-                <a href="#">Проекты</a>
-                <a href="#">Сертификаты</a>
-                <a href="#">Контакты</a>
+        <div class="footer-wrapper">
+            <div class="white-color-logo-tools">
+                <img src="./imgs/our_projects_img/Group 11 1 (1).svg" alt="white logo">
             </div>
-            <div class="contacts-block">
-                <h5>Контакты</h5>
-                <span class="geolocation"></span>
-                <p>
-                    100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
-                </p>
-                <span class="phone"></span>
-                <p>+38 (000) 000 00 00</p>
-                <span class="envelope"></span>
-                <p>mail@gmail.com</p>
-            </div>
-            <div class="socials-block">
-                <h5>Социальные сети</h5>
-                <div class="socials">
-                    <a href="#" class="icon fb"></a>
-                    <a href="#" class="icon tv"></a>
-                    <a href="#" class="icon ins"></a>
-                    <a href="#" class="icon pin"></a>
-                    <div class="div"></div>
+            <div class="contaner-footer">
+                <div class="info-block">
+                    <h5>Информация</h5>
+                    <a href="#">Главная</a>
+                    <a href="#">Галерея</a>
+                    <a href="#">Проекты</a>
+                    <a href="#">Сертификаты</a>
+                    <a href="#">Контакты</a>
                 </div>
+                <div class="contacts-block">
+                    <h5>Контакты</h5>
+                    <span class="geolocation"></span>
+                    <p>
+                        100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
+                    </p>
+                    <span class="phone"></span>
+                    <p>+38 (000) 000 00 00</p>
+                    <span class="envelope"></span>
+                    <p>mail@gmail.com</p>
+                </div>
+                <div class="socials-block">
+                    <h5>Социальные сети</h5>
+                    <div class="socials">
+                        <a href="#" class="icon fb"></a>
+                        <a href="#" class="icon tv"></a>
+                        <a href="#" class="icon ins"></a>
+                        <a href="#" class="icon pin"></a>
+                        <div class="div"></div>
+                    </div>
+                </div>
+                <!--  .socials-block END -->
             </div>
-           <!--  .socials-block END -->
+            <!--   .contaner-footer END -->
+            <div class="lowest">
+                <p>© 2019 Digital Project. Все права защищены.</p>
+            </div>
         </div>
-      <!--   .contaner-footer END -->
-      <div class="lowest">
-          <p>© 2019 Digital Project. Все права защищены.</p>
-      </div>
     </footer>
-    <div style="height: 300px;"></div>
+    <script src="scripts/jquery.min.js"></script>
+    <script src="scripts/slick.min.js"></script>
+    <script src="scripts/script.js"></script>
 </body>
 
 </html>

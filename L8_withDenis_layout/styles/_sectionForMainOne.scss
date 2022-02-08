@@ -4,11 +4,10 @@ main{
         height: 435px;
         background-color: #FBFBFB;
         padding-top: 150px;
-      /*   border: 1px solid green; */
         margin: 0 auto;
         display: grid;
         grid-template-columns: 270px 270px 400px;
-        grid-template-rows: repeat(3,125px);
+        grid-template-rows: 125px 125px 125px;
         gap: 30px 30px;
         padding: 30px 70px 30px 100px;
         position: relative;
@@ -21,6 +20,7 @@ main{
             grid-row: 3/4;
           }
           & p:nth-child(5) {
+            height: 187px;
             grid-column: 3/4;
             grid-row: 2/3;
           }
@@ -45,24 +45,18 @@ main{
             align-self: end;
         }
         button{
-            background-color: #fff;
             top: 304px;
             left: 700px;
             & img{
                 position: absolute;
             }
-
             & img:nth-child(1){
-                top: 29px;
-                left: 74px;
+               top: 34px;
+               left: 140px;
             }
-            & .read-line{
-               top: 4px;
-               left: 136px;
-            }
-            & .read-arr{
-                top: 30px;
-                left: 150px;
+            & img:nth-child(2){
+                top: 0px;
+                left: 153px;
             }
             &:active{
                 border: 1px solid lightseagreen;
@@ -74,7 +68,7 @@ main{
         width: 1170px;
         padding-top: 26px;
         h3{
-            margin-bottom: 20px;
+            margin-top: 150px;
         }
         .main-tasks-wrapper{
            height: 144px;
@@ -110,27 +104,73 @@ main{
             h3{
                 margin-top: 120px;
             }
-            .wrapper-our-proj{
+            .wrapper-projects{
+                height: 540px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: space-between;
-               img{
-                   margin-bottom: 25px;
-               }
-               & img:nth-child(1){
-                background-image: url('../imgs/our_projects_img/Rectangle\ 12\ \(1\).jpg');
-                background-size: cover;
-               
-               }
+                align-content: space-between;
+              /*   border: 2px solid red; */
+                .wrapper-picture{
+                    position: relative;
+                    height: 255px;
+                  .img-description{
+                      display: none;
+                  }
+                }
             }
-            .black-btn{
-                background-color: #333333;
-                color: #fff;
-                font-style: normal;
-                font-weight: normal;
-                font-size: 12px;
-                line-height: 12px;
-                text-transform: uppercase;
+            .wrapper-projects{
+                .wrapper-picture:hover{
+                    .img-description{
+                        background-color: #333333;
+                        display: block;
+                        padding-left: 14%;
+                        width: 100%;
+                        height: 100%;
+                        opacity: 0.8;
+                        position: absolute;
+                        top: 0px;
+                        left: 0px;
+
+                         p{
+                         color: #FFFFFF;
+                         width: auto;
+                         height: 122px;
+                         font-weight: bold;
+                         font-size: 64px;
+                         line-height: 64px;
+                         text-align: start;
+                       }
+                      
+                       button{
+                         font-size: 12px;
+                         color: #FFFFFF;
+                         background-color: #333333;
+                         position: absolute;
+                         top: 200px;
+                         left: 14px;
+                         height: 15px;
+                         background-image: url('../imgs/icons/arrow_right_white.svg');
+                         background-size: 8px;
+                         background-repeat: no-repeat;
+                        /*  background-size: cover; */
+                         background-position-x: 158px;
+                         background-position-y:3px ;
+                       }
+                     }
+                }
+                .wrapper-picture:nth-last-child(1){
+                    .img-description{
+                        p{
+                         font-size: 52px;
+                        }
+                   }
+                }
+            }
+          .all-proj{
+              margin-top: 30px;
+              margin-bottom: 100px;
+            .last-btn{
                 position: relative;
                 left: 943px;
                 & img{
@@ -145,9 +185,10 @@ main{
                     left: 172px;
                 }
                 &:active{
-                   box-shadow: 0px 22px  10px lightgrey;
+                   box-shadow: -5px 5px  5px lightgrey;
                 }
             }
+          }
     }
     .section-to-contact-us{
           margin: 0 auto;
@@ -163,12 +204,13 @@ main{
             form{
                 display: flex;
                 flex-direction: column;
+                position: relative;
                 & p{
                     font-weight: normal;
                     font-size: 14px;
                     line-height: 17px;
                     letter-spacing: 1px;
-                    margin-left: 15px;
+                    margin-left: 23px;
                 }
                 input,textarea{
                     background-color: #F3F3F3;
@@ -179,35 +221,31 @@ main{
                 }
                 input{
                     height: 46px;
-                    margin-bottom: 10px;
+                    margin-bottom: 5px;
                 }
                 textarea{
                     height: 147px;
                     padding-bottom: 70px;
                 }
-                .btn{
-                    width: 222px;
-                    height: 71px;
-                    background-color: #333333;
-                    color: #FFFFFF;
+                .line-with-css{
+                 /*    background-color: #333333;
+                    color: #FFFFFF; */
                     background-image: url('../imgs/our_projects_img/line_white.jpg');
+                    background-position-x: 155px;
+                    background-position-y: 34px;
                     background-repeat: no-repeat;
-                    background-position-x: 148px;
-                    background-position-y: 33px;
-                    background-image: url('../imgs/icons/Vector\ 2\ \(Stroke\)@2x.png');
-                    background-repeat: no-repeat;
-                    background-position-x: 180px;
-                    background-position-y: 28px;
-                   
+                    top: 449px;
+                    &:active{
+                        box-shadow: -5px 5px  5px lightgrey;
+                     }
                 }
-               /*  .btn::after{
-                    content: '';
-                  width: 17px;
-                  height: 1px;
-                  color: yellow;
-                  background-position-x: 170px;
-                  background-position-y: 28px;
-                } */
+                img{
+                    width: 5px;
+                    height: 8px;
+                    position: absolute;
+                    top: 30px;
+                    left: 171px;
+                }
             }
         }
     }

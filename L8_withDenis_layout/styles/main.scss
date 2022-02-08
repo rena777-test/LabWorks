@@ -28,8 +28,28 @@ p{
 button{
     width: 222px;
     height: 71px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
     border: none;
+    padding: 0;
     position: absolute;
+}
+
+.btn{
+  
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 1px;
+}
+
+.white{
+    color: #333333;
+    background-color: #FFFFFF;
+}
+.black {
+    background-color: #333333;
+    color: #fff;        
 }
 
 @import 'header';
@@ -42,6 +62,7 @@ main{
         justify-content: space-between;
         margin: 0 auto;
         margin-bottom: 150px;
+    
         .project-name{
             display: grid;
             grid-template-rows: 460px 145px;
@@ -67,24 +88,8 @@ main{
                         left: 3px;
                     }
                     & img:nth-child(2){
-                        top: 102px;
-                        left: 15px;
-                    }
-                    & img:nth-child(3){
-                        top: 107px;
-                        left: 19px;
-                    }
-                    & img:nth-child(4){
                         top: 80px;
                         left: 96px;
-                    }
-                    & img:nth-child(5){
-                        top: 107px;
-                        left: 116px;
-                    }
-                    & img:nth-child(6){
-                        top: 102px;
-                        left: 130px;
                     }
                 }
     
@@ -109,18 +114,37 @@ main{
             }
         }
         .slider-show{
-          /*   max-width: 770px; */
+            width: 770px;
             height: 829px;
             position: relative;
+            .test-slider{
+                .slid-img{
+                    width: 770px;
+                    height: 829px;
+                }
+            }
+           .slick-arrow{  /* /slick */
+               width: 53px;
+               height: 53px;
+               position: absolute;
+           }
+           .slick-next:before,.slick-prev:before{
+            background-color: #f2f2f2;
+            color: #333333;
+           }
+           .slick-prev{
+            top: 568px;
+            left: -668px;
+           }
+           .slick-next{
+            top: 568px;
+            left: -572px; 
+           }
+           
             button{
                 position: absolute;
                 top: 758px;
                 left: 0;
-                background-color: #fff;
-                width: 222px;
-                height: 71px;
-                padding: 0;
-                border: none;
                 &:active{
                     border: 1px solid lightseagreen;
                 }
@@ -128,17 +152,12 @@ main{
                     position: absolute;
                 }
                 & img:nth-child(1){
-                    top: 29px;
-                    left: 50px;
-                }
-
-                & img:nth-child(2){
                     top: 34px;
-                    left: 141px;
-                }
-                & img:nth-child(3){
-                    top: 30px;
                     left: 154px;
+                }
+                & img:nth-child(2){
+                    top: 30px;
+                    left: 166px;
                 }
 
             }

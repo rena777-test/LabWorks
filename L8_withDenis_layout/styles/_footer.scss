@@ -1,150 +1,152 @@
 footer{
-    width: 1440px;
-    height: auto;
     background-color: #2C2C2C;
-    margin: 0 auto;
-    margin-top: 120px;
-    position: relative;
-    .white-color-logo-tools{
-        width: 145px;
-        height: 94px;
-        position: absolute;
-        top: 58px;
-        left: 116px;
-    }
-    .contaner-footer{
-        width: 717px;
+    .footer-wrapper{
+     /*    width: 1440px; */
         height: auto;
-        display: flex;
-        margin: 0px auto;
-        a,p,h5{
-            color: #FFFFFF;
+        margin: 0 auto;
+        margin-top: 120px;
+        position: relative;
+        .white-color-logo-tools{
+            width: 145px;
+            height: 94px;
+            position: absolute;
+            top: 58px;
+            left: 116px;
         }
-        h5{
-            font-weight: bold;
-            font-size: 16px;
-            line-height: 20px;
-            margin-top: 50px;
-        }
-      
-        .info-block{
+        .contaner-footer{
+            width: 717px;
+            height: auto;
             display: flex;
-            flex-direction: column;
-            a{
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 35px;
-                align-items: center;
-                letter-spacing: 0.03em;
-                text-decoration: none;
+            margin: 0px auto;
+            a,p,h5{
+                color: #FFFFFF;
             }
-        }
-        .contacts-block{
-            position: relative;
-            margin-left: 140px;
             h5{
-                margin-bottom: 33px;
+                font-weight: bold;
+                font-size: 16px;
+                line-height: 20px;
+                margin-top: 50px;
             }
-            .geolocation{
-                width: 11px;
-                height: 16px;
-                background-image: url('/imgs/icons_for_footer/Vector\ \(2\).svg');
-                position: absolute;
-                top: 102px;
-                left: 2px;
-            }
-            .phone{
-                    width: 16px;
-                    height: 16px;
-                    background-image: url('/imgs/icons_for_footer/Vector\ \(3\).svg');
-                    position: absolute;
-                    top: 195px;
-                    left: 2px;
-            }
-            .envelope{
-                width: 16px;
-                height: 11px;
-                background-image: url('/imgs/icons_for_footer/Vector\ \(4\).svg');
-                position: absolute;
-                top: 248px;
-                left: 3px;
-            }
-            p{
-                font-style: normal;
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 24px;
-                letter-spacing: 1px;
-                width: 300px;
-                margin-left: 33px;
-            }
-            & p:nth-child(3){
-                height: 72px;
-            }
-            & p:nth-child(5){
-                height: 24px;
-            }
-            & p:nth-child(7){
-                height: 24px;
-                margin-top: 29px;
-            }
-        }
-        .socials-block{
-            display: flex;
-            flex-direction: column;
-            margin-left: 100px;
-            h5{
-                margin-left: 21px;
-            }
-            .socials{
+          
+            .info-block{
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 a{
-                    width: 16px;        // там есть какой то элемент с таким то классом - нет!
-                    height: 20px;         
-                    display: block;  
-                    margin:5px 21px;
-                    background-size: contain;
-                    background-repeat: no-repeat;
-                    background-position: center;
-                    &.fb{
-                        background-image: url('../imgs/our_projects_img/Shape.svg');
-                    }
-                    &.tv{
-                        background-image: url('/imgs/our_projects_img/Shape\ \(1\).svg');
-                    }
-                    &.ins{
-                        background-image: url('/imgs/our_projects_img/icons8-instagram.svg');
-                        width: 20px;
-                        height: 18px;
-                    }
-                    &.pin{
-                        background-image: url('/imgs/our_projects_img/Shape\ \(2\).svg');
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 35px;
+                    align-items: center;
+                    letter-spacing: 0.03em;
+                    text-decoration: none;
+                }
+            }
+            .contacts-block{
+                position: relative;
+                margin-left: 140px;
+                h5{
+                    margin-bottom: 33px;
+                }
+                .geolocation{
+                    width: 11px;
+                    height: 16px;
+                    background-image: url('/imgs/icons_for_footer/Vector_2.svg');
+                    position: absolute;
+                    top: 102px;
+                    left: 2px;
+                }
+                .phone{
+                        width: 16px;
+                        height: 16px;
+                        background-image: url('/imgs/icons_for_footer/Vector_3.svg');
+                        position: absolute;
+                        top: 195px;
+                        left: 2px;
+                }
+                .envelope{
+                    width: 16px;
+                    height: 11px;
+                    background-image: url('/imgs/icons_for_footer/Vector_4.svg');
+                    position: absolute;
+                    top: 248px;
+                    left: 3px;
+                }
+                p{
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    letter-spacing: 1px;
+                    width: 300px;
+                    margin-left: 33px;
+                }
+                & p:nth-child(3){
+                    height: 72px;
+                }
+                & p:nth-child(5){
+                    height: 24px;
+                }
+                & p:nth-child(7){
+                    height: 24px;
+                    margin-top: 29px;
+                }
+            }
+            .socials-block{
+                display: flex;
+                flex-direction: column;
+                margin-left: 100px;
+                h5{
+                    margin-left: 21px;
+                }
+                .socials{
+                    display: flex;
+                    flex-direction: row;
+                    a{
+                        width: 16px;        // там есть какой то элемент с таким то классом - нет!
+                        height: 20px;         
+                        display: block;  
+                        margin:5px 21px;
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        &.fb{
+                            background-image: url('../imgs/our_projects_img/Shape.svg');
+                        }
+                        &.tv{
+                            background-image: url('/imgs/our_projects_img/Shape\ \(1\).svg');
+                        }
+                        &.ins{
+                            background-image: url('/imgs/our_projects_img/icons8-instagram.svg');
+                            width: 20px;
+                            height: 18px;
+                        }
+                        &.pin{
+                            background-image: url('/imgs/our_projects_img/Shape\ \(2\).svg');
+                        }
                     }
                 }
             }
         }
-    }
-    .lowest{
-        padding-top: 50px;
-      
-       p{
-        color: #C8C8C8;
-        width: 258px;
-        height: 22px;
-        font-size: 12px;
-        line-height: 22px;
-       margin: 0 auto;
-       padding: 24px 0 43px 0;
-       }
-    }
-    .lowest::before{
-        content: '';
-        width: 1440px;
-        height: 1px;
-        display: block;
-        background:#C8C8C8;        ;
-     
+        .lowest{
+            padding-top: 50px;
+          
+           p{
+            color: #C8C8C8;
+            width: 258px;
+            height: 22px;
+            font-size: 12px;
+            line-height: 22px;
+           margin: 0 auto;
+           padding: 24px 0 43px 0;
+           }
+        }
+        .lowest::before{
+            content: '';
+            width: 100%;
+            height: 1px;
+            display: block;
+            background:#C8C8C8;        ;
+         
+        }
     }
 }
