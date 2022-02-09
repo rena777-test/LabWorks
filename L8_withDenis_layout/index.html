@@ -63,7 +63,7 @@
                     <img class="slid-img" src="imgs/sect_about1.jpg" alt="mainPage">
                     <img class="slid-img" src="imgs/sect_about2.jpg" alt="mainPage">
                 </div>
-                <button class="btn white">Взглянуть
+                <button class="white">Взглянуть
                     <img src="imgs/icons/arrow.svg" alt="line">
                     <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
                 </button>
@@ -71,21 +71,26 @@
         </div>
         <!-- .section-top END -->
         <div class="section-about-company">
-            <img class="photo-companies one" src="imgs/sect_about1.jpg" alt="photo">
-            <img class="photo-companies two" src="imgs/sect_about2.jpg" alt="photo">
-            <img class="photo-companies three" src="imgs/sect_about3_.jpg" alt="photo">
-            <h3>О компании</h3>
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                en an unknown printer took a galley of type and scrambled it to make a type
-                specimen book. It has survived not only five centuries, but also the leap into
-                electronic typesetting, remaining essentially unchanged.
-            </p>
-            <button class="btn white">читать
-                <img src="imgs/icons/arrow.svg" alt="line">
-                <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
-            </button>
+            <div class="photo-gallery">
+                <img class="photo-companies one" src="imgs/sect_about1.jpg" alt="photo">
+                <img class="photo-companies two" src="imgs/sect_about2.jpg" alt="photo">
+                <img class="photo-companies three" src="imgs/sect_about3_.jpg" alt="photo">
+            </div>
+            <div class="read-more">
+                <h3>О компании</h3>
+                <p>
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    en an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries, but also the leap into
+                    electronic typesetting, remaining essentially unchanged.
+                </p>
+                <button class="white">читать
+                    <img src="imgs/icons/arrow.svg" alt="line">
+                    <img src="imgs/icons/arrow_right.svg" alt="arrowRight">
+                </button>
+            </div>
+            <!--  .read-more END -->
         </div>
         <!-- .section-about-company END -->
 
@@ -143,7 +148,7 @@
             </div>
             <!-- .wrapper-our-proj END -->
             <div class="all-proj">
-                <button class="black btn last-btn">ВСЕ ПРОЕКТЫ
+                <button class="black last-btn">ВСЕ ПРОЕКТЫ
                     <img src="imgs/icons/line_white.svg" alt="line white">
                     <img src="imgs/icons/arrow_right_white.svg" alt="arrow white">
                 </button>
@@ -162,7 +167,7 @@
                     <p class="form-text">Отправляя заявку Вы соглашаетесь
                         с политикой
                         конфиденциальности</p>
-                    <button class="black btn line-with-css"> Отправить
+                    <button class="black line-with-css"> Отправить
                         <img src="imgs/icons/arrow_white.png" alt="arrow white">
                     </button>
 
@@ -189,14 +194,18 @@
                 </div>
                 <div class="contacts-block">
                     <h5>Контакты</h5>
-                    <span class="geolocation"></span>
-                    <p>
-                        100000, Республика Казахстан, г. Караганда, ул. Телевизионная 10
-                    </p>
-                    <span class="phone"></span>
-                    <p>+38 (000) 000 00 00</p>
-                    <span class="envelope"></span>
-                    <p>mail@gmail.com</p>
+                    <div>
+                        <img src="imgs/icons_for_footer/Vector_2.svg" alt="geolocation icon">
+                        <span>&nbsp; 100000, Республика Казахстан,&nbsp;&nbsp; г. Караганда, ул. Телевизионная 10</span>
+                    </div>
+                    <div>
+                        <img src="imgs/icons_for_footer/Vector_3.svg" alt="phone icon">
+                        <span>+38 (000) 000 00 00</span>
+                    </div>
+                    <div>
+                        <img src="imgs/icons_for_footer/Vector_4.svg" alt="envelope icon">
+                        <span>mail@gmail.com</span>
+                    </div>
                 </div>
                 <div class="socials-block">
                     <h5>Социальные сети</h5>
@@ -211,9 +220,9 @@
                 <!--  .socials-block END -->
             </div>
             <!--   .contaner-footer END -->
-            <div class="lowest">
-                <p>© 2019 Digital Project. Все права защищены.</p>
-            </div>
+        </div>
+        <div class="lowest">
+            <p>© 2019 Digital Project. Все права защищены.</p>
         </div>
     </footer>
     <script src="scripts/jquery.min.js"></script>
