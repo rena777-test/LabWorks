@@ -3,63 +3,66 @@ main{
         width: 1170px;
         height: 435px;
         background-color: #FBFBFB;
-        padding-top: 150px;
         margin: 0 auto;
         display: grid;
-        grid-template-columns: 270px 270px 400px;
-        grid-template-rows: 125px 125px 125px;
-        gap: 30px 30px;
-        padding: 30px 70px 30px 100px;
-        position: relative;
+        grid-template-columns: 1fr 1fr;
+     /*    border: 2px solid red; */
+        .photo-gallery{
+            display: grid;
+            grid-template-columns: 270px 270px ;
+            grid-template-rows: 265px 140px;
+            gap: 30px 30px;
+            padding: 30px 30px 30px 100px;
 
-        & img:nth-child(2) {
-          padding-top: 30px;
-          }
-        & img:nth-child(3) {
-            grid-column: 1/2;
-            grid-row: 3/4;
-          }
-          & p:nth-child(5) {
-            height: 187px;
-            grid-column: 3/4;
-            grid-row: 2/3;
-          }
-          & button:nth-child(5) {
-            grid-column: 3/4;
-            grid-row: 3/4;
-          }
-        .photo-companies{
-            width: 270px;
-        }
-        .one{
-            height: 265px;
-        }
-        .two{
-            height: 345px;
-        }
-        .three{
-            height: 140px;
+            & img:nth-child(2) {
+                padding-top: 30px;
+                }
+              & img:nth-child(3) {
+                  grid-column: 1/2;
+                  grid-row: 2/4;
+                }
+                .photo-companies{
+                    width: 270px;
+                }
+                .one{
+                    height: 265px;
+                }
+                .two{
+                    height: 345px;
+                }
+                .three{
+                    height: 140px;
+                }
         }
 
-        h3,p{
-            align-self: end;
-        }
-        button{
-            top: 304px;
-            left: 700px;
-            & img{
-                position: absolute;
+        .read-more{
+            h3{
+                margin: 25px 0 15px;
             }
-            & img:nth-child(1){
-               top: 34px;
-               left: 140px;
+            p{
+                width: 400px;
+                height: 200px;
+                margin: 0;
             }
-            & img:nth-child(2){
-                top: 0px;
-                left: 153px;
-            }
-            &:active{
-                border: 1px solid lightseagreen;
+           /*  h3,p{
+                align-self: end;
+            } */
+            button{
+               position: relative;
+                & img{
+                    position: absolute;
+                }
+                & img:nth-child(1){
+                   top: 34px;
+                   left: 140px;
+                }
+                & img:nth-child(2){
+                    top: 30px;
+                    left: 153px;
+                }
+                &:active{
+                    border: 1px solid lightseagreen;
+                }
             }
         }
     }
@@ -77,6 +80,7 @@ main{
            flex-direction: row;
            justify-content: space-between;
            p{
+            width: 420px;
             height: 144px;
             font-weight: normal;
             font-size: 20px;
@@ -110,7 +114,7 @@ main{
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-content: space-between;
-              /*   border: 2px solid red; */
+                margin-bottom: 30px;
                 .wrapper-picture{
                     position: relative;
                     height: 255px;
@@ -140,21 +144,19 @@ main{
                          font-size: 64px;
                          line-height: 64px;
                          text-align: start;
+                         margin: 55px 0 14px;
                        }
                       
                        button{
                          font-size: 12px;
                          color: #FFFFFF;
                          background-color: #333333;
-                         position: absolute;
-                         top: 200px;
-                         left: 14px;
+                         text-align: start;
                          height: 15px;
                          background-image: url('../imgs/icons/arrow_right_white.svg');
                          background-size: 8px;
                          background-repeat: no-repeat;
-                        /*  background-size: cover; */
-                         background-position-x: 158px;
+                         background-position-x: 100px;
                          background-position-y:3px ;
                        }
                      }
@@ -168,11 +170,10 @@ main{
                 }
             }
           .all-proj{
-              margin-top: 30px;
-              margin-bottom: 100px;
+           display: flex;
+           justify-content: end;
             .last-btn{
                 position: relative;
-                left: 943px;
                 & img{
                     position: absolute;
                 }
@@ -194,7 +195,6 @@ main{
           margin: 0 auto;
           width: 1170px;
         .callback{
-         /*    border: 1px solid rgb(38, 0, 128); */
             height: 517px;
             display: flex;
             & img{
@@ -204,7 +204,6 @@ main{
             form{
                 display: flex;
                 flex-direction: column;
-                position: relative;
                 & p{
                     font-weight: normal;
                     font-size: 14px;
@@ -228,13 +227,11 @@ main{
                     padding-bottom: 70px;
                 }
                 .line-with-css{
-                 /*    background-color: #333333;
-                    color: #FFFFFF; */
+                    position: relative;
                     background-image: url('../imgs/our_projects_img/line_white.jpg');
                     background-position-x: 155px;
                     background-position-y: 34px;
                     background-repeat: no-repeat;
-                    top: 449px;
                     &:active{
                         box-shadow: -5px 5px  5px lightgrey;
                      }

@@ -17,8 +17,6 @@ h3 {
 }
 
 p {
-  width: 400px;
-  height: 200px;
   color: #000000;
   font-style: normal;
   font-weight: 300;
@@ -34,10 +32,6 @@ button {
   text-transform: uppercase;
   border: none;
   padding: 0;
-  position: absolute;
-}
-
-.btn {
   font-size: 12px;
   line-height: 12px;
   letter-spacing: 1px;
@@ -284,93 +278,89 @@ main .section-about-company {
   width: 1170px;
   height: 435px;
   background-color: #FBFBFB;
-  padding-top: 150px;
   margin: 0 auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 270px 270px 400px;
-      grid-template-columns: 270px 270px 400px;
-  -ms-grid-rows: 125px 125px 125px;
-      grid-template-rows: 125px 125px 125px;
-  gap: 30px 30px;
-  padding: 30px 70px 30px 100px;
-  position: relative;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  /*    border: 2px solid red; */
 }
 
-main .section-about-company img:nth-child(2) {
+main .section-about-company .photo-gallery {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 270px 270px;
+      grid-template-columns: 270px 270px;
+  -ms-grid-rows: 265px 140px;
+      grid-template-rows: 265px 140px;
+  gap: 30px 30px;
+  padding: 30px 30px 30px 100px;
+}
+
+main .section-about-company .photo-gallery img:nth-child(2) {
   padding-top: 30px;
 }
 
-main .section-about-company img:nth-child(3) {
+main .section-about-company .photo-gallery img:nth-child(3) {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-main .section-about-company p:nth-child(5) {
-  height: 187px;
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
   -ms-grid-row: 2;
-  -ms-grid-row-span: 1;
-  grid-row: 2/3;
+  -ms-grid-row-span: 2;
+  grid-row: 2/4;
 }
 
-main .section-about-company button:nth-child(5) {
-  -ms-grid-column: 3;
-  -ms-grid-column-span: 1;
-  grid-column: 3/4;
-  -ms-grid-row: 3;
-  -ms-grid-row-span: 1;
-  grid-row: 3/4;
-}
-
-main .section-about-company .photo-companies {
+main .section-about-company .photo-gallery .photo-companies {
   width: 270px;
 }
 
-main .section-about-company .one {
+main .section-about-company .photo-gallery .one {
   height: 265px;
 }
 
-main .section-about-company .two {
+main .section-about-company .photo-gallery .two {
   height: 345px;
 }
 
-main .section-about-company .three {
+main .section-about-company .photo-gallery .three {
   height: 140px;
 }
 
-main .section-about-company h3, main .section-about-company p {
-  -ms-flex-item-align: end;
-      -ms-grid-row-align: end;
-      align-self: end;
+main .section-about-company .read-more {
+  /*  h3,p{
+                align-self: end;
+            } */
 }
 
-main .section-about-company button {
-  top: 304px;
-  left: 700px;
+main .section-about-company .read-more h3 {
+  margin: 25px 0 15px;
 }
 
-main .section-about-company button img {
+main .section-about-company .read-more p {
+  width: 400px;
+  height: 200px;
+  margin: 0;
+}
+
+main .section-about-company .read-more button {
+  position: relative;
+}
+
+main .section-about-company .read-more button img {
   position: absolute;
 }
 
-main .section-about-company button img:nth-child(1) {
+main .section-about-company .read-more button img:nth-child(1) {
   top: 34px;
   left: 140px;
 }
 
-main .section-about-company button img:nth-child(2) {
-  top: 0px;
+main .section-about-company .read-more button img:nth-child(2) {
+  top: 30px;
   left: 153px;
 }
 
-main .section-about-company button:active {
+main .section-about-company .read-more button:active {
   border: 1px solid lightseagreen;
 }
 
@@ -400,6 +390,7 @@ main .section-tasks .main-tasks-wrapper {
 }
 
 main .section-tasks .main-tasks-wrapper p {
+  width: 420px;
   height: 144px;
   font-weight: normal;
   font-size: 20px;
@@ -443,7 +434,7 @@ main .section-our-projects .wrapper-projects {
           justify-content: space-between;
   -ms-flex-line-pack: justify;
       align-content: space-between;
-  /*   border: 2px solid red; */
+  margin-bottom: 30px;
 }
 
 main .section-our-projects .wrapper-projects .wrapper-picture {
@@ -475,21 +466,19 @@ main .section-our-projects .wrapper-projects .wrapper-picture:hover .img-descrip
   font-size: 64px;
   line-height: 64px;
   text-align: start;
+  margin: 55px 0 14px;
 }
 
 main .section-our-projects .wrapper-projects .wrapper-picture:hover .img-description button {
   font-size: 12px;
   color: #FFFFFF;
   background-color: #333333;
-  position: absolute;
-  top: 200px;
-  left: 14px;
+  text-align: start;
   height: 15px;
   background-image: url("../imgs/icons/arrow_right_white.svg");
   background-size: 8px;
   background-repeat: no-repeat;
-  /*  background-size: cover; */
-  background-position-x: 158px;
+  background-position-x: 100px;
   background-position-y: 3px;
 }
 
@@ -498,13 +487,16 @@ main .section-our-projects .wrapper-projects .wrapper-picture:nth-last-child(1) 
 }
 
 main .section-our-projects .all-proj {
-  margin-top: 30px;
-  margin-bottom: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
 }
 
 main .section-our-projects .all-proj .last-btn {
   position: relative;
-  left: 943px;
 }
 
 main .section-our-projects .all-proj .last-btn img {
@@ -532,7 +524,6 @@ main .section-to-contact-us {
 }
 
 main .section-to-contact-us .callback {
-  /*    border: 1px solid rgb(38, 0, 128); */
   height: 517px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,7 +543,6 @@ main .section-to-contact-us .callback form {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: relative;
 }
 
 main .section-to-contact-us .callback form p {
@@ -582,13 +572,11 @@ main .section-to-contact-us .callback form textarea {
 }
 
 main .section-to-contact-us .callback form .line-with-css {
-  /*    background-color: #333333;
-                    color: #FFFFFF; */
+  position: relative;
   background-image: url("../imgs/our_projects_img/line_white.jpg");
   background-position-x: 155px;
   background-position-y: 34px;
   background-repeat: no-repeat;
-  top: 449px;
 }
 
 main .section-to-contact-us .callback form .line-with-css:active {
@@ -609,23 +597,25 @@ footer {
 }
 
 footer .footer-wrapper {
-  /*    width: 1440px; */
   height: auto;
   margin: 0 auto;
   margin-top: 120px;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 footer .footer-wrapper .white-color-logo-tools {
   width: 145px;
   height: 94px;
-  position: absolute;
-  top: 58px;
-  left: 116px;
+}
+
+footer .footer-wrapper .white-color-logo-tools img {
+  margin: 50px 0px 0 326px;
 }
 
 footer .footer-wrapper .contaner-footer {
-  width: 717px;
+  width: 920px;
   height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -645,6 +635,7 @@ footer .footer-wrapper .contaner-footer h5 {
 }
 
 footer .footer-wrapper .contaner-footer .info-block {
+  width: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -667,7 +658,6 @@ footer .footer-wrapper .contaner-footer .info-block a {
 }
 
 footer .footer-wrapper .contaner-footer .contacts-block {
-  position: relative;
   margin-left: 140px;
 }
 
@@ -675,54 +665,17 @@ footer .footer-wrapper .contaner-footer .contacts-block h5 {
   margin-bottom: 33px;
 }
 
-footer .footer-wrapper .contaner-footer .contacts-block .geolocation {
-  width: 11px;
-  height: 16px;
-  background-image: url("/imgs/icons_for_footer/Vector_2.svg");
-  position: absolute;
-  top: 102px;
-  left: 2px;
-}
-
-footer .footer-wrapper .contaner-footer .contacts-block .phone {
-  width: 16px;
-  height: 16px;
-  background-image: url("/imgs/icons_for_footer/Vector_3.svg");
-  position: absolute;
-  top: 195px;
-  left: 2px;
-}
-
-footer .footer-wrapper .contaner-footer .contacts-block .envelope {
-  width: 16px;
-  height: 11px;
-  background-image: url("/imgs/icons_for_footer/Vector_4.svg");
-  position: absolute;
-  top: 248px;
-  left: 3px;
-}
-
-footer .footer-wrapper .contaner-footer .contacts-block p {
+footer .footer-wrapper .contaner-footer .contacts-block div {
   font-style: normal;
   font-weight: 500;
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 1px;
-  width: 300px;
-  margin-left: 33px;
+  color: #FFFFFF;
 }
 
-footer .footer-wrapper .contaner-footer .contacts-block p:nth-child(3) {
-  height: 72px;
-}
-
-footer .footer-wrapper .contaner-footer .contacts-block p:nth-child(5) {
-  height: 24px;
-}
-
-footer .footer-wrapper .contaner-footer .contacts-block p:nth-child(7) {
-  height: 24px;
-  margin-top: 29px;
+footer .footer-wrapper .contaner-footer .contacts-block div:nth-child(2), footer .footer-wrapper .contaner-footer .contacts-block div:nth-child(3) {
+  margin-bottom: 32px;
 }
 
 footer .footer-wrapper .contaner-footer .socials-block {
@@ -778,11 +731,11 @@ footer .footer-wrapper .contaner-footer .socials-block .socials a.pin {
   background-image: url("/imgs/our_projects_img/Shape (2).svg");
 }
 
-footer .footer-wrapper .lowest {
+footer .lowest {
   padding-top: 50px;
 }
 
-footer .footer-wrapper .lowest p {
+footer .lowest p {
   color: #C8C8C8;
   width: 258px;
   height: 22px;
@@ -792,7 +745,7 @@ footer .footer-wrapper .lowest p {
   padding: 24px 0 43px 0;
 }
 
-footer .footer-wrapper .lowest::before {
+footer .lowest::before {
   content: '';
   width: 100%;
   height: 1px;
