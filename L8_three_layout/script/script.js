@@ -20,7 +20,28 @@ closeBtn.addEventListener('click', function(){
 });
  */
 //выполняю подключение слайдера
-$('.poster-slider').slick();//задаю функцию доллар, внутри селектор кот меня интересует,вызываю метод slick
+$('.poster-slider').slick(
+  {
+    centerMode: true,
+    slidesToShow: 1,
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          centerMode: true,
+          slidesToShow: 1
+        }
+      }
+    ]
+  }
+);//задаю функцию доллар, внутри селектор кот меня интересует,вызываю метод slick
 $('.ours-slider').slick({
     slidesToShow: 4,
     slidesToScroll: 2,

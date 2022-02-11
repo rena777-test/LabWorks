@@ -56,15 +56,29 @@ main{
         margin: 0 auto;
         margin-bottom: 150px;
     
-        .project-name{
+        .project-details{
             display: grid;
             grid-template-rows: 460px 145px;
             gap: 5px;
-            .nameProg{
+            .project-name{
                 margin-top: 330px;
-                & img{
-                    display: block;
+                width: 280px;
+                h1,span{
+                    text-transform: uppercase;
+                    font-size: 64px;
+                    line-height: 64px;
+                    letter-spacing:-4px;
+                    margin: 0;
                 }
+               h1{
+                   color: #BDBDBD;
+                   font-style: normal;
+                   font-weight: normal;
+               }
+               span{
+                   color: #333333;
+                   font-weight: bold;
+               }
             }
             .page-slider{
                 position: relative;

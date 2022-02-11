@@ -223,6 +223,15 @@ header .main-top .poster-btn a {
 }
 
 /* .slick-arrow::before */
+/* .slick-slide {
+	margin: 0 26px 26px 0 !important;
+  
+} */
+/* the parent */
+.slick-list {
+  margin: 0 -26px -26px 0 !important;
+}
+
 @media (max-width: 991px) {
   .contacts .text {
     display: none;
@@ -1610,7 +1619,7 @@ footer .info-for-user .callback form .btn {
     height: 35px;
   }
   footer .info-for-user .callback form textarea {
-    grid-area: comment;
+    /*   grid-area: comment; */
     width: 310px;
     height: 100;
   }

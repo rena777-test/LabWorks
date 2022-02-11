@@ -141,6 +141,15 @@ header{
 }
 /* .slick-arrow::before */
 
+/* .slick-slide {
+	margin: 0 26px 26px 0 !important;
+  
+} */
+/* the parent */
+.slick-list {
+	margin: 0 -26px -26px 0 !important;
+}
+
 @media(max-width:991px){ //до 992 px  и менее
     .contacts{
          .text{
@@ -365,8 +374,11 @@ header{
                 top: 0px;
                 right: 20px;
                 border: 2px solid green;
+                
+
                 .poster-slider{
                     position: relative;
+                    
                     .showImg1{
                         position: absolute;
                         left: 0px;

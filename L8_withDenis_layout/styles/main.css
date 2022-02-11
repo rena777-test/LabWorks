@@ -154,7 +154,7 @@ main .section-top {
   margin-bottom: 150px;
 }
 
-main .section-top .project-name {
+main .section-top .project-details {
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 460px 145px;
@@ -162,57 +162,73 @@ main .section-top .project-name {
   gap: 5px;
 }
 
-main .section-top .project-name .nameProg {
+main .section-top .project-details .project-name {
   margin-top: 330px;
+  width: 280px;
 }
 
-main .section-top .project-name .nameProg img {
-  display: block;
+main .section-top .project-details .project-name h1, main .section-top .project-details .project-name span {
+  text-transform: uppercase;
+  font-size: 64px;
+  line-height: 64px;
+  letter-spacing: -4px;
+  margin: 0;
 }
 
-main .section-top .project-name .page-slider {
+main .section-top .project-details .project-name h1 {
+  color: #BDBDBD;
+  font-style: normal;
+  font-weight: normal;
+}
+
+main .section-top .project-details .project-name span {
+  color: #333333;
+  font-weight: bold;
+}
+
+main .section-top .project-details .page-slider {
   position: relative;
 }
 
-main .section-top .project-name .page-slider .arrows {
+main .section-top .project-details .page-slider .arrows {
   position: absolute;
   left: 0;
   top: 0;
 }
 
-main .section-top .project-name .page-slider .arrows img {
+main .section-top .project-details .page-slider .arrows img {
   position: absolute;
 }
 
-main .section-top .project-name .page-slider .arrows img:nth-child(1) {
+main .section-top .project-details .page-slider .arrows img:nth-child(1) {
   top: 80px;
   left: 3px;
 }
 
-main .section-top .project-name .page-slider .arrows img:nth-child(2) {
+main .section-top .project-details .page-slider .arrows img:nth-child(2) {
   top: 80px;
   left: 96px;
 }
 
-main .section-top .project-name .page-slider .numbers {
+main .section-top .project-details .page-slider .numbers {
   position: absolute;
 }
 
-main .section-top .project-name .page-slider .numbers img {
+main .section-top .project-details .page-slider .numbers img {
   position: absolute;
 }
 
-main .section-top .project-name .page-slider .numbers img:nth-child(1) {
+main .section-top .project-details .page-slider .numbers img:nth-child(1) {
   top: 248px;
   left: 4px;
 }
 
-main .section-top .project-name .page-slider .numbers img:nth-child(2) {
+main .section-top .project-details .page-slider .numbers img:nth-child(2) {
   top: 242px;
   left: 60px;
 }
 
-main .section-top .project-name .page-slider .numbers img:nth-child(3) {
+main .section-top .project-details .page-slider .numbers img:nth-child(3) {
   top: 247px;
   left: 121px;
 }
@@ -384,9 +400,7 @@ main .section-tasks .main-tasks-wrapper {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  /*  justify-content: space-between; */
 }
 
 main .section-tasks .main-tasks-wrapper p {
@@ -397,7 +411,7 @@ main .section-tasks .main-tasks-wrapper p {
   line-height: 33px;
   color: #333333;
   margin: 0;
-  margin-left: -240px;
+  /*  margin-left: -240px; */
 }
 
 main .section-tasks .main-tasks-wrapper img {
@@ -405,12 +419,19 @@ main .section-tasks .main-tasks-wrapper img {
   height: 140px;
 }
 
-main .section-tasks .main-tasks-wrapper p:nth-child(2) {
-  width: 279px;
+main .section-tasks .main-tasks-wrapper img:nth-child(3) {
+  width: 120px;
+  margin-left: 254px;
 }
 
-main .section-tasks .main-tasks-wrapper img:nth-child(2) {
-  width: 120px;
+main .section-tasks .main-tasks-wrapper p:nth-child(2) {
+  width: 279px;
+  margin-left: 30px;
+}
+
+main .section-tasks .main-tasks-wrapper p:nth-child(4) {
+  width: 420px;
+  margin-left: 30px;
 }
 
 main .section-our-projects {
@@ -467,6 +488,7 @@ main .section-our-projects .wrapper-projects .wrapper-picture:hover .img-descrip
   line-height: 64px;
   text-align: start;
   margin: 55px 0 14px;
+  text-transform: uppercase;
 }
 
 main .section-our-projects .wrapper-projects .wrapper-picture:hover .img-description button {
@@ -478,12 +500,28 @@ main .section-our-projects .wrapper-projects .wrapper-picture:hover .img-descrip
   background-image: url("../imgs/icons/arrow_right_white.svg");
   background-size: 8px;
   background-repeat: no-repeat;
-  background-position-x: 100px;
-  background-position-y: 3px;
+  background-position-x: 106px;
+  background-position-y: 16px;
+  margin-top: 5px;
+  border: 1px solid lightslategrey;
+  width: 123px;
+  padding: 15px 0px 22px 5px;
+}
+
+main .section-our-projects .wrapper-projects .wrapper-picture:nth-last-child(1) .img-description {
+  padding-left: 12px;
 }
 
 main .section-our-projects .wrapper-projects .wrapper-picture:nth-last-child(1) .img-description p {
   font-size: 52px;
+  padding-left: 18px;
+}
+
+main .section-our-projects .wrapper-projects .wrapper-picture:nth-last-child(1) .img-description button {
+  font-size: 10px;
+  background-position-x: 95px;
+  background-size: 6px;
+  margin-left: 17px;
 }
 
 main .section-our-projects .all-proj {
