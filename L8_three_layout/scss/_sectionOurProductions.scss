@@ -1,0 +1,16 @@
+.ours-slider{                 /*  CCCЛАЙДЕР-2 большой центр */
+    width: 1250px;
+    height: 500px;
+    margin: 0 auto;
+    img{
+        height: 350px;
+        width: 300px;
+    }
+    .slick-arrow{
+        background-color: green;
+    }
+    
+    .slick-arrow:hover{
+        background-color: rgb(224, 37, 46);
+    }
+}

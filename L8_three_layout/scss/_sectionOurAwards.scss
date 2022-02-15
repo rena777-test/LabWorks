@@ -1,0 +1,117 @@
+main{
+    .section-our-awards{
+        background-image: url('/imgs/Rectangle\ 28@2x.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 156px 330px;
+        gap: 2px 24px;
+             h5{
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 72px;
+                 line-height: 98px;
+                 letter-spacing: 0.1em;
+                 text-transform: uppercase;
+                 color: $color;
+             }
+         .grid-block{
+             display: grid;
+             grid-template-rows:24px 121px;
+             gap: 25px 0px;
+             margin-top: 175px;
+             .starGold{
+                 img{
+                     width: 22px;
+                 }
+             }
+             p{ 
+                 height: 121px;
+                 font-style: normal;
+                 font-weight: bold;
+                 font-size: 25px;
+                 line-height: 32px;
+                 color: $lightGray;
+             }
+         }
+     } 
+}
+
+@media(min-width:768px){
+    main{
+        .section-our-awards{
+            display: grid;
+            grid-template-columns: 182px 388px;
+            gap: 2px 24px;
+            padding-left: 99px;
+             .grid-block{
+                 p{ 
+                     font-size: 29px;
+                 }
+             }
+         }  
+    }
+}
+
+@media(min-width:992px){
+    main{
+        .section-our-awards{
+            display: grid;
+            grid-template-columns: 182px 450px;
+            gap: 2px 58px;
+            padding: 0 111px 0 191px;
+                .grid-block{
+                 display: grid;
+                 grid-template-rows:24px 141px;
+                 gap: 25px 0px;
+                 margin-top: 175px;
+                 .starGold{
+                     img{
+                         width: 22px;
+                         height: 24px;
+                     }
+                 }
+                 p{ 
+                     font-size: 34px;
+                     height: 141px;
+                     line-height: 50px;
+                 }
+                }
+            }
+    }
+}
+
+@media(min-width:1920px){
+    main{
+        .section-our-awards{
+            width: 1110px;
+            height: 550px;
+           display: grid;
+           grid-template-columns: 182px 540px;
+           gap: 2px 103px;
+           margin: 0 auto;
+           padding: 0 95px 0 190px;
+            .grid-block{
+                display: grid;
+                grid-template-rows:24px 121px;
+                gap: 25px 0px;
+                margin-top: 175px;
+                .starGold{
+                    width: 230px;
+                    img{
+                        width: 22px;
+                        height: 24px;
+                        margin: 5px;
+                    }
+                }
+                p{ 
+                    font-family:  Open Sans;
+                    font-size: 36px;
+                    line-height: 49px;
+                    height: 149px;
+                    letter-spacing: 1px;
+                }
+            }
+        } 
+    }
+}

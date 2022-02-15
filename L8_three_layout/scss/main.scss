@@ -36,7 +36,7 @@ p{
     font-size: 14px;
     line-height: 150%;
     margin: 0;
-    font-family:Open Sans;
+    font-family: 'Open Sans';
 }
 
 p::selection,h2::selection,h3::selection{
@@ -56,97 +56,17 @@ h2{
 }
 
 @import 'header';
+@import 'sectionMainTop';/* 1 */
+@import 'sectionOurProductions';/* 2 второй слайдер*/
+@import 'sectionOurAwards';/* 3*/
+@import 'sectionTheaterPartners';/* 4*/
 @import 'addSectionMain';
 @import 'footer';
 
-
-
-//-----------------------------------------------------------------------
-/* header{
-  
-    .contacts{
-      
-        .text{
-         
-            &::before{
-             
-            }
-        }
-        .socials{
-            a{
-                &.insta{                   //ссылка с таким классом будет иметь свои стили
-                    background-image: url('../imgs/icons/inst.svg');
-                    &:hover{
-                        background-image: url('../imgs/icons/instHover.svg');
-                    }
-                }                  
-                &.fb{
-                    background-image: url('../imgs/icons/fb.svg');
-                    &:hover{
-                        background-image: url('../imgs/icons/fbHover.svg');
-                    }
-                }
-                &.vk{
-                    background-image: url('../imgs/icons/vk.svg');
-                    &:hover{
-                        background-image: url('../imgs/icons/vkHover.svg');
-                    }
-                }
-                &.youtube{
-                    background-image: url('../imgs/icons/youtube.svg');
-                    &:hover{
-                        background-image: url('../imgs/icons/youtubeHover.svg');
-                    }
-                }
-            }
+@media(max-width:991px){
+    .section-wrapper{
+        .facade-photo{
+            display: none;
         }
     }
-    .container{
-        .menu{
-            nav{
-                .socials{
-                    a{
-                        &.insta{                   //ссылка с таким классом будет иметь свои стили
-                            background-image: url('../imgs/icons/inst.svg');
-                            &:hover{
-                                background-image: url('../imgs/icons/instHover.svg');
-                            }
-                        }                  
-                        &.fb{
-                            background-image: url('../imgs/icons/fb.svg');
-                            &:hover{
-                                background-image: url('../imgs/icons/fbHover.svg');
-                            }
-                        }
-                        &.vk{
-                            background-image: url('../imgs/icons/vk.svg');
-                            &:hover{
-                                background-image: url('../imgs/icons/vkHover.svg');
-                            }
-                        }
-                        &.youtube{
-                            background-image: url('../imgs/icons/youtube.svg');
-                            &:hover{
-                                background-image: url('../imgs/icons/youtubeHover.svg');
-                            }
-                        }
-                    }
-                   
-                }
-            }
-            // nav
-        }
-        // .menu
-    }
-  // .container
 }
-.menu{
-    nav{
-        .socials{
-            margin: 114px 0px 0px 64px;
-            a{
-                margin:20px 11px;
-            }
-        }
-    }
-} */
