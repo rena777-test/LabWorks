@@ -79,7 +79,8 @@
 
 .slick-prev
 {
-    left: -25px;
+    left: 0px;
+    top: 553px;
 }
 [dir='rtl'] .slick-prev
 {
@@ -88,7 +89,13 @@
 }
 .slick-prev:before
 {
-    content: '←';
+ /*    content: '← пред';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    white-space: nowrap;
+    font-family: sans-serif; */
 }
 [dir='rtl'] .slick-prev:before
 {
@@ -97,7 +104,8 @@
 
 .slick-next
 {
-    right: -25px;
+    right: 52px;
+    top: 553px;
 }
 [dir='rtl'] .slick-next
 {
@@ -106,7 +114,13 @@
 }
 .slick-next:before
 {
-    content: '→';
+   /*  content: 'CЛЕД →';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    white-space: nowrap;
+    font-family: sans-serif; */
 }
 [dir='rtl'] .slick-next:before
 {

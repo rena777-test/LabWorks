@@ -1,8 +1,8 @@
 main{
     .section-our-awards{
         background-image: url('/imgs/Rectangle\ 28@2x.jpg');
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-position:center center;
+        background-size:cover;
         display: grid;
         grid-template-columns: 156px 330px;
         gap: 2px 24px;
@@ -36,14 +36,54 @@ main{
          }
      } 
 }
+@media(min-width:576px){
+    main{
+        .section-our-awards{
+            background-image: url('/imgs/Rectangle\ 28@2x.jpg');
+            background-position:center -20px;
+            background-repeat: no-repeat;
+            background-size:cover;
+            display: grid;
+            grid-template-columns: 156px 330px;
+            gap: 2px 24px;
+            width: 576px;
+            height: 550px;
+            padding-left: 33px;
+                 h5{
+                   padding-top: 100px;
+                 }
+             .grid-block{
+                 display: grid;
+                 grid-template-rows:24px 121px;
+                 gap: 25px 0px;
+                 margin-top: 175px;
+                 .starGold{
+                     img{
+                         width: 22px;
+                     }
+                 }
+                 p{ 
+                     height: 121px;
+                     font-style: normal;
+                     font-weight: bold;
+                     font-size: 25px;
+                     line-height: 32px;
+                     color: $lightGray;
+                 }
+             }
+         } 
+    }
+}
 
 @media(min-width:768px){
     main{
         .section-our-awards{
+            background-position:center center;
+            background-size:cover;
             display: grid;
             grid-template-columns: 182px 388px;
-            gap: 2px 24px;
-            padding-left: 99px;
+            width: 768px;
+            padding: 0 99px;
              .grid-block{
                  p{ 
                      font-size: 29px;
@@ -56,10 +96,14 @@ main{
 @media(min-width:992px){
     main{
         .section-our-awards{
+            background-position:center center;
+            background-size:cover;
             display: grid;
             grid-template-columns: 182px 450px;
             gap: 2px 58px;
             padding: 0 111px 0 191px;
+            width: auto;
+
                 .grid-block{
                  display: grid;
                  grid-template-rows:24px 141px;
@@ -81,9 +125,12 @@ main{
     }
 }
 
-@media(min-width:1920px){
+@media(min-width:1020px){
     main{
         .section-our-awards{
+            h5{
+                padding-top: 140px;
+            }
             width: 1110px;
             height: 550px;
            display: grid;

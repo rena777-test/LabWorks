@@ -3,7 +3,10 @@ html {
   scroll-behavior: smooth;
 }
 
-* {
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  bottom: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -54,6 +57,16 @@ h2 {
   text-transform: uppercase;
   margin: 0;
   margin-bottom: 100px;
+}
+
+.slick-list {
+  overflow: hidden;
+}
+
+.slick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 header {
@@ -215,17 +228,15 @@ header .main-top .poster-btn a {
 }
  */
 /* the parent */
-.slick-list {
-  margin: 0 -26px -26px 0 !important;
-}
-
 @media (max-width: 991px) {
   .contacts .text {
     display: none;
   }
-  .main-info .slider {
-    display: none;
-  }
+  /*   .main-info{
+        .slider-wrapper{
+            display: none;
+         }
+    } */
 }
 
 @media (min-width: 576px) {
@@ -238,11 +249,6 @@ header .main-top .poster-btn a {
   header .container {
     /*   max-width: 720px; */
     /* дает двойную строку */
-    /*    .main-info{
-                .slider{
-                    display: none;
-                 }
-            } */
   }
   header .container .menu nav .socials {
     margin: 114px 0px 0px 64px;
@@ -273,6 +279,9 @@ header .main-top .poster-btn a {
   }
   header .container .menu nav .socials a.youtube:hover {
     background-image: url("../imgs/icons/youtubeHover.svg");
+  }
+  header .container .main-info .slider-wrapper {
+    display: none;
   }
 }
 
@@ -451,70 +460,62 @@ header .main-top .poster-btn a {
 }
 
 @media (min-width: 1020px) {
-  header .container .main-info .slider {
-    min-width: 370px;
-    border: 2px solid red;
+  header .container .main-info .slider-wrapper {
+    display: block;
   }
-  header .container .main-info .slider .poster-slider {
+  header .container .main-info .slider-wrapper .poster-slider {
+    width: 350px;
     position: relative;
-    top: 2px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    /*    ------------------------------------ */
   }
-  header .container .main-info .slider .poster-slider .slick-arrow {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    top: 552px;
-    cursor: pointer;
-    /*  z-index: 1; */
-  }
-  header .container .main-info .slider .poster-slider .slick-prev {
-    left: 2px;
-  }
-  header .container .main-info .slider .poster-slider .slick-next {
-    right: 2px;
-  }
-  header .container .main-info .slider .poster-slider div:nth-child(1) {
-    z-index: 1;
-  }
-  header .container .main-info .slider .poster-slider div:nth-child(2) {
-    position: absolute;
-    top: 20px;
-    left: 20px;
-  }
-  header .container .main-info .slider .arrowButtons {
-    width: 380px;
-    position: absolute;
-    bottom: 0px;
-    margin: 0 auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  header .container .main-info .slider .arrowButtons div {
-    font-style: normal;
-    font-weight: bold;
+  header .container .main-info .slider-wrapper .poster-slider .slick-prev:before {
+    content: '← пред';
     font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
+    font-weight: 500;
     text-transform: uppercase;
     color: #C4C4C4;
+    white-space: nowrap;
+    font-family: sans-serif;
+  }
+  header .container .main-info .slider-wrapper .poster-slider .slick-next:before {
+    content: 'CЛЕД →';
+    font-size: 18px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    white-space: nowrap;
+    font-family: sans-serif;
+  }
+  header .container .main-info .slider-wrapper .poster-slider .slick-track {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container .main-info .slider-wrapper .poster-slider .slider_item {
+    height: 500px;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  header .container .main-info .slider-wrapper .poster-slider .slick-active {
+    opacity: 1;
+  }
+  header .container .main-info .slider-wrapper .poster-slider .slider_item img {
+    width: 350px;
+    height: 490px;
   }
 }
 
-main .section-main-top {
+main .section-about {
   padding: 150px 0 150px 0;
 }
 
-main .section-main-top .section-wrapper {
+main .section-about .section-wrapper {
   margin-top: 100px;
 }
 
-main .section-main-top .section-wrapper .theater-section h3 {
+main .section-about .section-wrapper .theater-section h3 {
   font-family: Open Sans Condensed;
   font-style: normal;
   font-weight: bold;
@@ -526,7 +527,7 @@ main .section-main-top .section-wrapper .theater-section h3 {
   margin-bottom: 50px;
 }
 
-main .section-main-top .section-wrapper .theater-section P {
+main .section-about .section-wrapper .theater-section P {
   font-family: Open Sans;
   font-style: normal;
   font-weight: normal;
@@ -535,13 +536,13 @@ main .section-main-top .section-wrapper .theater-section P {
   height: 210px;
 }
 
-main .section-main-top .section-wrapper .in-numbers {
+main .section-about .section-wrapper .in-numbers {
   position: relative;
   top: 0px;
   left: 0px;
 }
 
-main .section-main-top .section-wrapper .in-numbers span {
+main .section-about .section-wrapper .in-numbers span {
   margin-top: 5px;
   font-family: Open Sans Condensed;
   font-style: normal;
@@ -552,15 +553,15 @@ main .section-main-top .section-wrapper .in-numbers span {
   margin-bottom: 20px;
 }
 
-main .section-main-top .section-wrapper .in-numbers span::-moz-selection {
+main .section-about .section-wrapper .in-numbers span::-moz-selection {
   color: #D1A954;
 }
 
-main .section-main-top .section-wrapper .in-numbers span::selection {
+main .section-about .section-wrapper .in-numbers span::selection {
   color: #D1A954;
 }
 
-main .section-main-top .section-wrapper .in-numbers p {
+main .section-about .section-wrapper .in-numbers p {
   font-family: Open Sans Condensed;
   font-size: 21px;
   font-style: normal;
@@ -570,45 +571,49 @@ main .section-main-top .section-wrapper .in-numbers p {
   text-align: left;
 }
 
-main .section-main-top .section-wrapper .in-numbers .icon-armchair .top {
+main .section-about .section-wrapper .in-numbers .icon-armchair .top {
   width: 45px;
   position: absolute;
   left: 17px;
   top: 63px;
 }
 
-main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-one {
+main .section-about .section-wrapper .in-numbers .icon-armchair .point-one {
   width: 5px;
   position: absolute;
   left: 27px;
   top: 73px;
 }
 
-main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-two {
+main .section-about .section-wrapper .in-numbers .icon-armchair .point-two {
   width: 5px;
   position: absolute;
   left: 45px;
   top: 73px;
 }
 
-main .section-main-top .section-wrapper .in-numbers .icon-armchair .saddle {
+main .section-about .section-wrapper .in-numbers .icon-armchair .saddle {
   width: 60px;
   position: absolute;
   left: 10px;
   top: 90px;
 }
 
-main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+main .section-about .section-wrapper .in-numbers .icon-armchair span {
   position: absolute;
   left: 0;
   top: 139px;
 }
 
 @media (min-width: 576px) {
-  main .section-main-top {
+  main .section-about {
     padding: 50px 0 160px 0;
   }
-  main .section-main-top .section-wrapper {
+  main .section-about h2 {
+    margin-bottom: 0;
+  }
+  main .section-about .section-wrapper {
+    margin-top: 50px;
     width: 510px;
     height: auto;
     display: -ms-grid;
@@ -619,14 +624,14 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
         grid-template-rows: 1fr 1f;
     gap: 10px;
   }
-  main .section-main-top .section-wrapper .theater-section h3 {
+  main .section-about .section-wrapper .theater-section h3 {
     text-align: center;
     margin-bottom: 30px;
   }
-  main .section-main-top .section-wrapper .theater-section P {
+  main .section-about .section-wrapper .theater-section P {
     text-align: center;
   }
-  main .section-main-top .section-wrapper .in-numbers p {
+  main .section-about .section-wrapper .in-numbers p {
     text-align: center;
     font-family: Open Sans Condensed;
     font-style: normal;
@@ -637,29 +642,35 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     letter-spacing: 0.1em;
     text-transform: uppercase;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair {
+  main .section-about .section-wrapper .in-numbers .icon-armchair {
     position: absolute;
     left: 58px;
     top: -3px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+  main .section-about .section-wrapper .in-numbers .icon-armchair span {
     position: absolute;
     left: 15px;
     top: 138px;
     width: 178px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-clotheForStage {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage {
     position: absolute;
     left: 303px;
     top: 60px;
   }
-  main .section-main-top .section-wrapper .facade-photo {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage span {
+    position: absolute;
+    left: 0px;
+    top: 76px;
+    width: 125px;
+  }
+  main .section-about .section-wrapper .facade-photo {
     display: none;
   }
 }
 
 @media (min-width: 768px) {
-  main .section-main-top .section-wrapper {
+  main .section-about .section-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (445px 208px)[2];
@@ -667,33 +678,33 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     gap: 2px 30px;
     width: 690px;
   }
-  main .section-main-top .section-wrapper .theater-section P {
+  main .section-about .section-wrapper .theater-section P {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
   }
-  main .section-main-top .section-wrapper .in-numbers span::-moz-selection {
+  main .section-about .section-wrapper .in-numbers span::-moz-selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers span::selection {
+  main .section-about .section-wrapper .in-numbers span::selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers p {
+  main .section-about .section-wrapper .in-numbers p {
     font-size: 20px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair {
+  main .section-about .section-wrapper .in-numbers .icon-armchair {
     position: absolute;
     left: -6px;
     top: -4px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+  main .section-about .section-wrapper .in-numbers .icon-armchair span {
     position: absolute;
     left: 7px;
     top: 135px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-clotheForStage {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage {
     position: absolute;
     left: 1px;
     top: 171px;
@@ -701,11 +712,11 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
 }
 
 @media (min-width: 992px) {
-  main .section-main-top {
+  main .section-about {
     background-color: #333333;
     padding: 150px 0 150px 0;
   }
-  main .section-main-top .section-wrapper {
+  main .section-about .section-wrapper {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (410px 240px 260px)[3];
@@ -715,7 +726,7 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     margin: 0 auto;
     margin-top: 100px;
   }
-  main .section-main-top .section-wrapper .theater-section h3 {
+  main .section-about .section-wrapper .theater-section h3 {
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
@@ -726,7 +737,7 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     margin: 0;
     margin-bottom: 50px;
   }
-  main .section-main-top .section-wrapper .theater-section P {
+  main .section-about .section-wrapper .theater-section P {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -735,12 +746,12 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     height: 210px;
     text-align: start;
   }
-  main .section-main-top .section-wrapper .in-numbers {
+  main .section-about .section-wrapper .in-numbers {
     position: relative;
     top: 0px;
     left: 0px;
   }
-  main .section-main-top .section-wrapper .in-numbers span {
+  main .section-about .section-wrapper .in-numbers span {
     margin-top: 5px;
     font-family: Open Sans Condensed;
     font-style: normal;
@@ -750,13 +761,13 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     letter-spacing: 0.05em;
     margin-bottom: 20px;
   }
-  main .section-main-top .section-wrapper .in-numbers span::-moz-selection {
+  main .section-about .section-wrapper .in-numbers span::-moz-selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers span::selection {
+  main .section-about .section-wrapper .in-numbers span::selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers p {
+  main .section-about .section-wrapper .in-numbers p {
     font-family: Open Sans Condensed;
     font-size: 21px;
     font-style: normal;
@@ -765,67 +776,63 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     letter-spacing: 0.1em;
     text-align: left;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .top {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .top {
     width: 45px;
     position: absolute;
     left: 17px;
     top: 63px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-one {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .point-one {
     width: 5px;
     position: absolute;
     left: 27px;
     top: 73px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-two {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .point-two {
     width: 5px;
     position: absolute;
     left: 45px;
     top: 73px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .saddle {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .saddle {
     width: 60px;
     position: absolute;
     left: 10px;
     top: 90px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+  main .section-about .section-wrapper .in-numbers .icon-armchair span {
     position: absolute;
     left: 0;
     top: 139px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-clotheForStage {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage {
     position: absolute;
     left: 0;
     top: 180px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-clotheForStage img {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage img {
     width: 70px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-clotheForStage span {
+  main .section-about .section-wrapper .in-numbers .icon-clotheForStage span {
     width: 156px;
     position: absolute;
     left: 0;
     top: 76px;
   }
-  main .section-main-top .section-wrapper .facade-photo {
+  main .section-about .section-wrapper .facade-photo {
     display: block;
   }
 }
 
-@media (min-width: 1920px) {
-  main .section-main-top {
+@media (min-width: 1020px) {
+  main .section-about {
     padding: 150px 0 150px 0;
   }
-  main .section-main-top .section-wrapper {
-    /*    display: grid;
-                grid-template-columns: repeat(3,445px 255px 350px);
-                gap: 10px 30px; */
-    /*  max-width: 1110px; */
-    /*    margin: 0 auto; */
+  main .section-about .section-wrapper {
+    width: 1110px;
     margin-top: 100px;
   }
-  main .section-main-top .section-wrapper .theater-section h3 {
+  main .section-about .section-wrapper .theater-section h3 {
     font-family: Open Sans Condensed;
     font-style: normal;
     font-weight: bold;
@@ -836,7 +843,7 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     margin: 0;
     margin-bottom: 50px;
   }
-  main .section-main-top .section-wrapper .theater-section P {
+  main .section-about .section-wrapper .theater-section P {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
@@ -844,7 +851,7 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     line-height: 150%;
     height: 210px;
   }
-  main .section-main-top .section-wrapper .in-numbers {
+  main .section-about .section-wrapper .in-numbers {
     position: relative;
     top: 0px;
     left: 0px;
@@ -863,7 +870,7 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
                            }
                     } */
   }
-  main .section-main-top .section-wrapper .in-numbers span {
+  main .section-about .section-wrapper .in-numbers span {
     margin-top: 5px;
     font-family: Open Sans Condensed;
     font-style: normal;
@@ -873,13 +880,13 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     letter-spacing: 0.05em;
     margin-bottom: 20px;
   }
-  main .section-main-top .section-wrapper .in-numbers span::-moz-selection {
+  main .section-about .section-wrapper .in-numbers span::-moz-selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers span::selection {
+  main .section-about .section-wrapper .in-numbers span::selection {
     color: #D1A954;
   }
-  main .section-main-top .section-wrapper .in-numbers p {
+  main .section-about .section-wrapper .in-numbers p {
     font-family: Open Sans Condensed;
     font-size: 21px;
     font-style: normal;
@@ -888,31 +895,31 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
     letter-spacing: 0.1em;
     text-align: left;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .top {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .top {
     width: 45px;
     position: absolute;
     left: 17px;
     top: 63px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-one {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .point-one {
     width: 5px;
     position: absolute;
     left: 27px;
     top: 73px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .point-two {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .point-two {
     width: 5px;
     position: absolute;
     left: 45px;
     top: 73px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair .saddle {
+  main .section-about .section-wrapper .in-numbers .icon-armchair .saddle {
     width: 60px;
     position: absolute;
     left: 10px;
     top: 90px;
   }
-  main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
+  main .section-about .section-wrapper .in-numbers .icon-armchair span {
     position: absolute;
     left: 0;
     top: 139px;
@@ -920,30 +927,122 @@ main .section-main-top .section-wrapper .in-numbers .icon-armchair span {
 }
 
 /* 1 */
-.ours-slider {
-  /*  CCCЛАЙДЕР-2 большой центр */
-  width: 1250px;
-  height: 500px;
-  margin: 0 auto;
+@media (min-width: 576px) {
+  .section-our-productions {
+    margin: 80px 0;
+  }
+  .section-our-productions .wrapper-for-ours-slider {
+    height: 100%;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider {
+    width: 510px;
+    /*  CCCЛАЙДЕР-2 большой справа */
+    margin: 0 33px;
+    position: relative;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item {
+    height: 550px;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .slick-current {
+    opacity: 1;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item img {
+    width: 442px;
+  }
 }
 
-.ours-slider img {
-  height: 350px;
-  width: 300px;
+@media (min-width: 768px) {
+  .section-our-productions {
+    margin-bottom: 80px;
+  }
+  .section-our-productions .wrapper-for-ours-slider {
+    height: 100%;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider {
+    width: 690px;
+    /*  CCCЛАЙДЕР-2 большой справа */
+    margin: 0 39px;
+    position: relative;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item {
+    height: 550px;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .slick-current {
+    opacity: 1;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item img {
+    width: 442px;
+  }
 }
 
-.ours-slider .slick-arrow {
-  background-color: green;
+@media (min-width: 992px) {
+  .section-our-productions {
+    margin-bottom: 80px;
+  }
+  .section-our-productions .wrapper-for-ours-slider {
+    height: 100%;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider {
+    width: 690px;
+    margin: 0 111px 0 191px;
+    position: relative;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item {
+    height: 550px;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .slick-current {
+    opacity: 1;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item img {
+    width: 442px;
+  }
 }
 
-.ours-slider .slick-arrow:hover {
-  background-color: #e0252e;
+@media (min-width: 950px) {
+  .section-our-productions {
+    margin-bottom: 150px;
+  }
+  .section-our-productions .wrapper-for-ours-slider {
+    height: 100%;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider {
+    width: 1770px;
+    height: 550px;
+    /*  CCCЛАЙДЕР-2 большой справа */
+    margin-left: 150px;
+    position: relative;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item {
+    height: 550px;
+    text-align: center;
+    opacity: 0.4;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .slick-current {
+    opacity: 1;
+  }
+  .section-our-productions .wrapper-for-ours-slider .ours-slider .big_item img {
+    width: 442px;
+  }
 }
 
 /* 2 второй слайдер*/
 main .section-our-awards {
   background-image: url("/imgs/Rectangle 28@2x.jpg");
-  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
   display: -ms-grid;
   display: grid;
@@ -984,14 +1083,55 @@ main .section-our-awards .grid-block p {
   color: #fff;
 }
 
+@media (min-width: 576px) {
+  main .section-our-awards {
+    background-image: url("/imgs/Rectangle 28@2x.jpg");
+    background-position: center -20px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 156px 330px;
+        grid-template-columns: 156px 330px;
+    gap: 2px 24px;
+    width: 576px;
+    height: 550px;
+    padding-left: 33px;
+  }
+  main .section-our-awards h5 {
+    padding-top: 100px;
+  }
+  main .section-our-awards .grid-block {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 24px 121px;
+        grid-template-rows: 24px 121px;
+    gap: 25px 0px;
+    margin-top: 175px;
+  }
+  main .section-our-awards .grid-block .starGold img {
+    width: 22px;
+  }
+  main .section-our-awards .grid-block p {
+    height: 121px;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 32px;
+    color: #fff;
+  }
+}
+
 @media (min-width: 768px) {
   main .section-our-awards {
+    background-position: center center;
+    background-size: cover;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 182px 388px;
         grid-template-columns: 182px 388px;
-    gap: 2px 24px;
-    padding-left: 99px;
+    width: 768px;
+    padding: 0 99px;
   }
   main .section-our-awards .grid-block p {
     font-size: 29px;
@@ -1000,12 +1140,15 @@ main .section-our-awards .grid-block p {
 
 @media (min-width: 992px) {
   main .section-our-awards {
+    background-position: center center;
+    background-size: cover;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 182px 450px;
         grid-template-columns: 182px 450px;
     gap: 2px 58px;
     padding: 0 111px 0 191px;
+    width: auto;
   }
   main .section-our-awards .grid-block {
     display: -ms-grid;
@@ -1026,7 +1169,7 @@ main .section-our-awards .grid-block p {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1020px) {
   main .section-our-awards {
     width: 1110px;
     height: 550px;
@@ -1037,6 +1180,9 @@ main .section-our-awards .grid-block p {
     gap: 2px 103px;
     margin: 0 auto;
     padding: 0 95px 0 190px;
+  }
+  main .section-our-awards h5 {
+    padding-top: 140px;
   }
   main .section-our-awards .grid-block {
     display: -ms-grid;
@@ -1194,7 +1340,7 @@ main .section-theater-partners .wrapper-for-logos .block-with-logos .letters .le
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1020px) {
   main .section-theater-partners h2 {
     margin-top: 80px;
   }
@@ -1312,6 +1458,7 @@ footer .info-for-user .callback form .btn {
   footer .info-for-user .callback form textarea {
     width: 507px;
     height: 100px;
+    padding-top: 11px;
   }
   footer .info-for-user .callback form p {
     height: 50px;
@@ -1484,13 +1631,14 @@ footer .info-for-user .callback form .btn {
   }
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1020px) {
   footer .info-for-user {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     width: 1110px;
     height: 200px;
+    margin-bottom: 80px;
   }
   footer .info-for-user .contacts-footer {
     height: 59px;
@@ -1524,11 +1672,11 @@ footer .info-for-user .callback form .btn {
   footer .info-for-user .callback form textarea {
     /*   grid-area: comment; */
     width: 310px;
-    height: 100;
+    height: 104px;
   }
   footer .info-for-user .callback form p {
     width: 390px;
-    margin-right: 30px;
+    margin-left: 14px;
   }
   footer .info-for-user .callback form .btn {
     width: 191px;
@@ -1538,8 +1686,8 @@ footer .info-for-user .callback form .btn {
         justify-self: end;
   }
   footer .after-form {
-    width: 1110px;
-    height: 40px;
+    width: 1044px;
+    height: 78px;
   }
 }
 

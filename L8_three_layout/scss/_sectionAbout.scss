@@ -1,5 +1,5 @@
 main{
-    .section-main-top{
+    .section-about{
         padding: 150px 0 150px 0;
         .section-wrapper{
             margin-top: 100px; 
@@ -88,9 +88,13 @@ main{
 
 @media(min-width:576px){
     main{
-        .section-main-top{
+        .section-about{
             padding:50px 0 160px 0;
+            h2{
+                margin-bottom: 0;
+            }
           .section-wrapper{
+            margin-top: 50px; 
             width: 510px;
             height: auto;
             display: grid;
@@ -134,6 +138,12 @@ main{
                       position: absolute;
                       left: 303px;
                       top: 60px;
+                      span{
+                        position: absolute;
+                        left: 0px;
+                        top: 76px;
+                        width: 125px;
+                    }
                   }
               }
               .facade-photo{
@@ -146,7 +156,7 @@ main{
 
 @media(min-width:768px){
     main{
-        .section-main-top{
+        .section-about{
             .section-wrapper{
                 display: grid;
                 grid-template-columns: repeat(2,445px 208px);
@@ -192,7 +202,7 @@ main{
 
 @media(min-width:992px){
     main{
-        .section-main-top{
+        .section-about{
             background-color:#333333;
             padding: 150px 0 150px 0;
             .section-wrapper{
@@ -306,17 +316,12 @@ main{
     }
 }
 
-@media(min-width:1920px){
+@media(min-width:1020px){
     main{
-        .section-main-top{
-          
+        .section-about{
             padding: 150px 0 150px 0;
             .section-wrapper{
-             /*    display: grid;
-                grid-template-columns: repeat(3,445px 255px 350px);
-                gap: 10px 30px; */
-               /*  max-width: 1110px; */
-             /*    margin: 0 auto; */
+                width: 1110px;
                 margin-top: 100px; 
                 .theater-section{ 
                   h3{

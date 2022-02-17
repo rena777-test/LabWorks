@@ -1,16 +1,115 @@
-.ours-slider{                 /*  CCCЛАЙДЕР-2 большой центр */
-    width: 1250px;
-    height: 500px;
-    margin: 0 auto;
-    img{
-        height: 350px;
-        width: 300px;
+
+@media (min-width:576px){
+    .section-our-productions{
+        margin: 80px 0;
+        .wrapper-for-ours-slider{
+              height: 100%;
+               .ours-slider{   
+                width: 510px;             /*  CCCЛАЙДЕР-2 большой справа */
+                margin: 0 33px; 
+                position: relative;
+               .big_item{
+                  height: 550px;
+                  text-align:center;
+                  opacity: 0.4;
+                  transition: all 0.3s ease 0s;
+               }
+               .slick-current{
+                opacity: 1;
+               }
+                .big_item{
+                      img{
+                         width: 442px;
+                      }
+                }
+            }
+        }
     }
-    .slick-arrow{
-        background-color: green;
+}
+
+@media (min-width:768px){
+    .section-our-productions{
+        margin-bottom: 80px;
+        .wrapper-for-ours-slider{
+              height: 100%;
+               .ours-slider{   
+                width: 690px;             /*  CCCЛАЙДЕР-2 большой справа */
+                margin: 0 39px; 
+                position: relative;
+               .big_item{
+                  height: 550px;
+                  text-align:center;
+                  opacity: 0.4;
+                  transition: all 0.3s ease 0s;
+               }
+               .slick-current{
+                opacity: 1;
+               }
+                .big_item{
+                      img{
+                         width: 442px;
+                      }
+                }
+            }
+        }
     }
-    
-    .slick-arrow:hover{
-        background-color: rgb(224, 37, 46);
+}
+
+@media (min-width:992px){
+    .section-our-productions{
+        margin-bottom: 80px;
+        .wrapper-for-ours-slider{
+              height: 100%;
+               .ours-slider{   
+                   width: 690px;
+               margin: 0 111px 0 191px; 
+                position: relative;
+               .big_item{
+                  height: 550px;
+                  text-align:center;
+                  opacity: 0.4;
+                  transition: all 0.3s ease 0s;
+               }
+               .slick-current{
+                opacity: 1;
+               }
+                .big_item{
+                      img{
+                         width: 442px;
+                      }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:950px){
+    .section-our-productions{
+        margin-bottom: 150px;
+
+        .wrapper-for-ours-slider{
+              height: 100%;
+               .ours-slider{   
+                   width: 1770px;
+                   height: 550px;              /*  CCCЛАЙДЕР-2 большой справа */
+                margin-left: 150px; 
+                position: relative;
+              
+               .big_item{
+                  height: 550px;
+                  text-align:center;
+                  opacity: 0.4;
+                  transition: all 0.3s ease 0s;
+               }
+               .slick-current{
+                opacity: 1;
+               }
+                .big_item{
+                      img{
+                         width: 442px;
+                      }
+                }
+            }
+        }
     }
 }

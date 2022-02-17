@@ -6,7 +6,10 @@ $darkColor:#333;
 html { scroll-behavior: smooth; 
 } 
 
-*{
+*,*::before,*::after{
+    padding: 0;
+    margin: 0;
+    bottom: 0;
     box-sizing: border-box;
 }
 
@@ -55,12 +58,18 @@ h2{
     margin-bottom: 100px;
 }
 
+.slick-list{      // для всех слайдеров
+    overflow: hidden;
+}
+.slick-track{
+    display: flex;
+}
+
 @import 'header';
-@import 'sectionMainTop';/* 1 */
+@import 'sectionAbout';/* 1 */
 @import 'sectionOurProductions';/* 2 второй слайдер*/
 @import 'sectionOurAwards';/* 3*/
 @import 'sectionTheaterPartners';/* 4*/
-@import 'addSectionMain';
 @import 'footer';
 
 @media(max-width:991px){

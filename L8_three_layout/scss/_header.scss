@@ -136,9 +136,7 @@ header{
 
 
 /* the parent */
-.slick-list {
-	margin: 0 -26px -26px 0 !important;
-}
+
 
 @media(max-width:991px){ //до 992 px  и менее
     .contacts{
@@ -146,11 +144,11 @@ header{
          display: none;
      }
     }
-    .main-info{
-        .slider{
+  /*   .main-info{
+        .slider-wrapper{
             display: none;
          }
-    }
+    } */
 }
 
 @media (min-width:576px){  ///от 576 px и до 768px
@@ -199,18 +197,17 @@ header{
                 // nav
             }
             // .menu
-         /*    .main-info{
-                .slider{
+            .main-info{
+                .slider-wrapper{
                     display: none;
                  }
-            } */
+            }
         }
       // .container
     }
 }
 
 @media (min-width:768px){ ///от768 px и  до 992px
-   
     .container{
         max-width: 960px; 
     }
@@ -367,52 +364,52 @@ header{
     header{
         .container{
             .main-info{
-                .slider{
-                    min-width: 370px;
-                    border: 2px solid red;
+                .slider-wrapper{
+                    display: block;
                     .poster-slider{
+                        width:350px;
                         position: relative;
-                        top: 2px;
-                        display: flex;
-                        .slick-arrow{
-                            position: absolute;
-                            width: 30px;
-                            height: 30px;
-                            top: 552px;
-                            cursor: pointer;
-                           /*  z-index: 1; */  
-                        }
-                        .slick-prev{
-                            left: 2px;
-                        }
-                        .slick-next{
-                            right: 2px;
-                        }
-                        & div:nth-child(1){
-                            z-index:1;
-                        }
-                        & div:nth-child(2){
-                           position: absolute;
-                           top: 20px;
-                           left: 20px;
-                        }
-                    }
-                    .arrowButtons{
-                        width: 380px;
-                        position: absolute;
-                        bottom: 0px;
-                        margin: 0 auto;
-                        display: flex;
-                        justify-content: space-around;
-                        & div{
-                            font-style: normal;
-                            font-weight: bold;
+                        .slick-prev:before
+                        {
+                            content: '← пред';
                             font-size: 18px;
-                            line-height: 25px;
-                            letter-spacing: 0.1em;
+                            font-weight: 500;
                             text-transform: uppercase;
                             color: #C4C4C4;
+                            white-space: nowrap;
+                            font-family: sans-serif;
                         }
+
+                        .slick-next:before
+                        {
+                            content: 'CЛЕД →';
+                            font-size: 18px;
+                            font-weight: 500;
+                            text-transform: uppercase;
+                            color: #C4C4C4;
+                            white-space: nowrap;
+                            font-family: sans-serif;
+                        }
+
+                     /*    ------------------------------------ */
+                       .slick-track{
+                        display: flex;
+                        }
+                        .slider_item{
+                            height: 500px;
+                            text-align:center;
+                            opacity: 0.4;
+                            transition: all 0.3s ease 0s;
+                        }
+                        .slick-active{
+                            opacity: 1;
+                        }
+                        .slider_item{
+                            img{
+                                width: 350px;
+                                height: 490px;
+                            }
+                         }
                     }
                 }
             }
