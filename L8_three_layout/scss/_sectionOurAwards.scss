@@ -1,8 +1,5 @@
 main{
     .section-our-awards{
-        background-image: url('/imgs/Rectangle\ 28@2x.jpg');
-        background-position:center center;
-        background-size:cover;
         display: grid;
         grid-template-columns: 156px 330px;
         gap: 2px 24px;
@@ -36,18 +33,16 @@ main{
          }
      } 
 }
+
 @media(min-width:576px){
     main{
         .section-our-awards{
-            background-image: url('/imgs/Rectangle\ 28@2x.jpg');
-            background-position:center -20px;
-            background-repeat: no-repeat;
+            background-image: url('/imgs/background.jpg');
+            background-position:-35px;
             background-size:cover;
             display: grid;
             grid-template-columns: 156px 330px;
             gap: 2px 24px;
-            width: 576px;
-            height: 550px;
             padding-left: 33px;
                  h5{
                    padding-top: 100px;
@@ -82,7 +77,7 @@ main{
             background-size:cover;
             display: grid;
             grid-template-columns: 182px 388px;
-            width: 768px;
+            min-width: 768px;
             padding: 0 99px;
              .grid-block{
                  p{ 
@@ -102,7 +97,6 @@ main{
             grid-template-columns: 182px 450px;
             gap: 2px 58px;
             padding: 0 111px 0 191px;
-            width: auto;
 
                 .grid-block{
                  display: grid;
@@ -121,7 +115,7 @@ main{
                      line-height: 50px;
                  }
                 }
-            }
+        }
     }
 }
 

@@ -670,6 +670,9 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
 }
 
 @media (min-width: 768px) {
+  main .section-about {
+    padding: 90px 0 26px 0;
+  }
   main .section-about .section-wrapper {
     display: -ms-grid;
     display: grid;
@@ -678,12 +681,19 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
     gap: 2px 30px;
     width: 690px;
   }
+  main .section-about .section-wrapper .theater-section {
+    margin-left: 39px;
+  }
+  main .section-about .section-wrapper .theater-section h3 {
+    text-align: start;
+  }
   main .section-about .section-wrapper .theater-section P {
     font-family: Open Sans;
     font-style: normal;
     font-weight: normal;
     font-size: 14px;
     line-height: 150%;
+    text-align: start;
   }
   main .section-about .section-wrapper .in-numbers span::-moz-selection {
     color: #D1A954;
@@ -959,6 +969,9 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
   .section-our-productions {
     margin-bottom: 80px;
   }
+  .section-our-productions h2 {
+    margin-bottom: 55px;
+  }
   .section-our-productions .wrapper-for-ours-slider {
     height: 100%;
   }
@@ -1010,7 +1023,7 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
   }
 }
 
-@media (min-width: 950px) {
+@media (min-width: 1000px) {
   .section-our-productions {
     margin-bottom: 150px;
   }
@@ -1018,7 +1031,7 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
     height: 100%;
   }
   .section-our-productions .wrapper-for-ours-slider .ours-slider {
-    width: 1770px;
+    width: 89%;
     height: 550px;
     /*  CCCЛАЙДЕР-2 большой справа */
     margin-left: 150px;
@@ -1041,9 +1054,6 @@ main .section-about .section-wrapper .in-numbers .icon-armchair span {
 
 /* 2 второй слайдер*/
 main .section-our-awards {
-  background-image: url("/imgs/Rectangle 28@2x.jpg");
-  background-position: center center;
-  background-size: cover;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 156px 330px;
@@ -1085,17 +1095,14 @@ main .section-our-awards .grid-block p {
 
 @media (min-width: 576px) {
   main .section-our-awards {
-    background-image: url("/imgs/Rectangle 28@2x.jpg");
-    background-position: center -20px;
-    background-repeat: no-repeat;
+    background-image: url("/imgs/background.jpg");
+    background-position: -35px;
     background-size: cover;
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 156px 330px;
         grid-template-columns: 156px 330px;
     gap: 2px 24px;
-    width: 576px;
-    height: 550px;
     padding-left: 33px;
   }
   main .section-our-awards h5 {
@@ -1130,7 +1137,7 @@ main .section-our-awards .grid-block p {
     display: grid;
     -ms-grid-columns: 182px 388px;
         grid-template-columns: 182px 388px;
-    width: 768px;
+    min-width: 768px;
     padding: 0 99px;
   }
   main .section-our-awards .grid-block p {
@@ -1148,7 +1155,6 @@ main .section-our-awards .grid-block p {
         grid-template-columns: 182px 450px;
     gap: 2px 58px;
     padding: 0 111px 0 191px;
-    width: auto;
   }
   main .section-our-awards .grid-block {
     display: -ms-grid;

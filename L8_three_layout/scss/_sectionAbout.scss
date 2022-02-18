@@ -157,18 +157,24 @@ main{
 @media(min-width:768px){
     main{
         .section-about{
+            padding:90px 0 26px 0;
             .section-wrapper{
                 display: grid;
                 grid-template-columns: repeat(2,445px 208px);
                 gap:2px 30px ;
                 width: 690px;
                 .theater-section{ 
+                    margin-left: 39px;
+                         h3{
+                           text-align: start;
+                         }
                     P{
                         font-family: Open Sans;
                         font-style: normal;
                         font-weight: normal;
                         font-size: 14px;
                         line-height: 150%;
+                        text-align: start;
                     }
                 }
 

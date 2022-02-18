@@ -30,6 +30,9 @@
 @media (min-width:768px){
     .section-our-productions{
         margin-bottom: 80px;
+        h2{
+            margin-bottom: 55px;
+        }
         .wrapper-for-ours-slider{
               height: 100%;
                .ours-slider{   
@@ -83,14 +86,14 @@
     }
 }
 
-@media (min-width:950px){
+@media (min-width:1000px){
     .section-our-productions{
         margin-bottom: 150px;
 
         .wrapper-for-ours-slider{
               height: 100%;
                .ours-slider{   
-                   width: 1770px;
+                   width: 89%;
                    height: 550px;              /*  CCCЛАЙДЕР-2 большой справа */
                 margin-left: 150px; 
                 position: relative;
